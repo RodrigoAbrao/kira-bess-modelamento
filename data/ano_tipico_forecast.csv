@@ -1,0 +1,1249 @@
+Grandeza,Medicao,HoraDia,Media,Mediana,P95,Max,Mes,Tipo,MesOrdem
+Consumo,Consumo Reativo,0,57.399,41.22,148.44,174.48,Nov,Real (pos-carga),0
+Consumo,Consumo ativo Fora de Ponta,0,378.89008333333334,382.139,487.073,506.519,Nov,Real (pos-carga),0
+Demanda,Demanda Reativa,0,229.595525,164.88,593.759,697.919,Nov,Real (pos-carga),0
+Demanda,Demanda ativa Fora de Ponta,0,1515.5608,1528.557,1948.292,2026.076,Nov,Real (pos-carga),0
+Consumo,Consumo Reativo,1,0.065,0.0,0.0,7.8,Nov,Real (pos-carga),0
+Consumo,Consumo ativo Fora de Ponta,1,379.56801666666667,369.179,456.743,483.839,Nov,Real (pos-carga),0
+Demanda,Demanda Reativa,1,0.26,0.0,0.0,31.2,Nov,Real (pos-carga),0
+Demanda,Demanda ativa Fora de Ponta,1,1518.2727166666666,1476.717,1826.972,1935.356,Nov,Real (pos-carga),0
+Consumo,Consumo Reativo,2,0.068,0.0,0.0,7.44,Nov,Real (pos-carga),0
+Consumo,Consumo ativo Fora de Ponta,2,357.15205,350.099,442.235,448.679,Nov,Real (pos-carga),0
+Demanda,Demanda Reativa,2,0.272,0.0,0.0,29.76,Nov,Real (pos-carga),0
+Demanda,Demanda ativa Fora de Ponta,2,1428.6089583333335,1400.397,1768.94,1794.716,Nov,Real (pos-carga),0
+Consumo,Consumo Reativo,3,0.255,0.0,0.005999999999999658,9.0,Nov,Real (pos-carga),0
+Consumo,Consumo ativo Fora de Ponta,3,342.94710000000003,333.419,431.18899999999996,438.959,Nov,Real (pos-carga),0
+Demanda,Demanda Reativa,3,1.02,0.0,0.023999999999998634,36.0,Nov,Real (pos-carga),0
+Demanda,Demanda ativa Fora de Ponta,3,1371.7890583333333,1333.6770000000001,1724.7559999999999,1755.836,Nov,Real (pos-carga),0
+Consumo,Consumo Reativo,4,0.18299999999999997,0.0,0.005999999999999658,9.12,Nov,Real (pos-carga),0
+Consumo,Consumo ativo Fora de Ponta,4,336.4241166666667,323.639,424.001,429.959,Nov,Real (pos-carga),0
+Demanda,Demanda Reativa,4,0.7319999999999999,0.0,0.023999999999998634,36.48,Nov,Real (pos-carga),0
+Demanda,Demanda ativa Fora de Ponta,4,1345.69715,1294.557,1696.004,1719.836,Nov,Real (pos-carga),0
+Consumo,Consumo Reativo,5,0.029,0.0,0.0,1.92,Nov,Real (pos-carga),0
+Consumo,Consumo ativo Fora de Ponta,5,337.55411666666663,324.059,427.217,429.839,Nov,Real (pos-carga),0
+Demanda,Demanda Reativa,5,0.116,0.0,0.0,7.68,Nov,Real (pos-carga),0
+Demanda,Demanda ativa Fora de Ponta,5,1350.2171166666667,1296.237,1708.868,1719.356,Nov,Real (pos-carga),0
+Consumo,Consumo Reativo,6,46.910999999999994,0.0,134.454,145.44,Nov,Real (pos-carga),0
+Consumo,Consumo ativo Fora de Ponta,6,346.03409999999997,333.35900000000004,429.86899999999997,434.279,Nov,Real (pos-carga),0
+Demanda,Demanda Reativa,6,187.643575,0.0,537.815,581.759,Nov,Real (pos-carga),0
+Demanda,Demanda ativa Fora de Ponta,6,1384.1369750000001,1333.437,1719.4759999999999,1737.116,Nov,Real (pos-carga),0
+Consumo,Consumo Reativo,7,117.05300000000001,122.46,169.11,179.4,Nov,Real (pos-carga),0
+Consumo,Consumo ativo Fora de Ponta,7,365.73609166666665,378.179,461.969,489.959,Nov,Real (pos-carga),0
+Demanda,Demanda Reativa,7,468.2110916666667,489.839,676.4390000000001,717.599,Nov,Real (pos-carga),0
+Demanda,Demanda ativa Fora de Ponta,7,1462.9448833333333,1512.717,1847.876,1959.836,Nov,Real (pos-carga),0
+Consumo,Consumo Reativo,8,151.156,154.92,199.11,216.48,Nov,Real (pos-carga),0
+Consumo,Consumo ativo Fora de Ponta,8,432.68604166666665,439.07899999999995,541.4449999999999,564.719,Nov,Real (pos-carga),0
+Demanda,Demanda Reativa,8,604.6228,619.679,796.4379999999999,865.918,Nov,Real (pos-carga),0
+Demanda,Demanda ativa Fora de Ponta,8,1730.7443916666666,1756.3159999999998,2165.779,2258.875,Nov,Real (pos-carga),0
+Consumo,Consumo Reativo,9,146.995,145.92000000000002,204.24599999999998,229.44,Nov,Real (pos-carga),0
+Consumo,Consumo ativo Fora de Ponta,9,450.1540083333333,465.23900000000003,589.727,618.119,Nov,Real (pos-carga),0
+Demanda,Demanda Reativa,9,587.9788166666666,583.6790000000001,816.982,917.758,Nov,Real (pos-carga),0
+Demanda,Demanda ativa Fora de Ponta,9,1800.6162,1860.9560000000001,2358.907,2472.475,Nov,Real (pos-carga),0
+Consumo,Consumo Reativo,10,189.50898333333333,194.7,217.92,248.399,Nov,Real (pos-carga),0
+Consumo,Consumo ativo Fora de Ponta,10,522.083,553.6189999999999,607.2289999999999,647.279,Nov,Real (pos-carga),0
+Demanda,Demanda Reativa,10,758.0342583333334,778.798,871.678,993.598,Nov,Real (pos-carga),0
+Demanda,Demanda ativa Fora de Ponta,10,2088.3316083333334,2214.4750000000004,2428.915,2589.115,Nov,Real (pos-carga),0
+Consumo,Consumo Reativo,11,191.38,196.68,217.944,228.0,Nov,Real (pos-carga),0
+Consumo,Consumo ativo Fora de Ponta,11,573.327,593.159,624.725,691.079,Nov,Real (pos-carga),0
+Demanda,Demanda Reativa,11,765.5181749999999,786.7180000000001,871.774,911.998,Nov,Real (pos-carga),0
+Demanda,Demanda ativa Fora de Ponta,11,2293.3071916666668,2372.635,2498.899,2764.314,Nov,Real (pos-carga),0
+Consumo,Consumo Reativo,12,194.387,198.0,219.984,228.96,Nov,Real (pos-carga),0
+Consumo,Consumo ativo Fora de Ponta,12,583.1,601.799,634.4029999999999,707.279,Nov,Real (pos-carga),0
+Demanda,Demanda Reativa,12,777.5462416666667,791.998,879.934,915.838,Nov,Real (pos-carga),0
+Demanda,Demanda ativa Fora de Ponta,12,2332.3991833333334,2407.195,2537.611,2829.114,Nov,Real (pos-carga),0
+Consumo,Consumo Reativo,13,192.971,194.7,217.92,221.4,Nov,Real (pos-carga),0
+Consumo,Consumo ativo Fora de Ponta,13,597.4240000000001,609.539,629.663,706.559,Nov,Real (pos-carga),0
+Demanda,Demanda Reativa,13,771.88225,778.798,871.678,885.598,Nov,Real (pos-carga),0
+Demanda,Demanda ativa Fora de Ponta,13,2389.695083333333,2438.1549999999997,2518.651,2826.234,Nov,Real (pos-carga),0
+Consumo,Consumo Reativo,14,198.118,201.96,219.0,222.96,Nov,Real (pos-carga),0
+Consumo,Consumo ativo Fora de Ponta,14,607.775,608.9390000000001,632.531,639.959,Nov,Real (pos-carga),0
+Demanda,Demanda Reativa,14,792.470175,807.838,875.998,891.838,Nov,Real (pos-carga),0
+Demanda,Demanda ativa Fora de Ponta,14,2431.099,2435.755,2530.1229999999996,2559.835,Nov,Real (pos-carga),0
+Consumo,Consumo Reativo,15,197.684,200.16,216.96,232.44,Nov,Real (pos-carga),0
+Consumo,Consumo ativo Fora de Ponta,15,606.617,607.8589999999999,626.0509999999999,635.519,Nov,Real (pos-carga),0
+Demanda,Demanda Reativa,15,790.7341333333334,800.6379999999999,867.838,929.758,Nov,Real (pos-carga),0
+Demanda,Demanda ativa Fora de Ponta,15,2426.4669999999996,2431.4350000000004,2504.203,2542.075,Nov,Real (pos-carga),0
+Consumo,Consumo Reativo,16,196.43800000000002,198.0,216.48,232.44,Nov,Real (pos-carga),0
+Consumo,Consumo ativo Fora de Ponta,16,600.5859999999999,601.679,625.697,637.439,Nov,Real (pos-carga),0
+Demanda,Demanda Reativa,16,785.7501333333333,791.998,865.918,929.758,Nov,Real (pos-carga),0
+Demanda,Demanda ativa Fora de Ponta,16,2402.3430166666667,2406.715,2502.7870000000003,2549.755,Nov,Real (pos-carga),0
+Consumo,Consumo Reativo,17,175.667,169.2,209.4,234.48,Nov,Real (pos-carga),0
+Consumo,Consumo ativo Fora de Ponta,17,558.379,579.8389999999999,619.241,700.919,Nov,Real (pos-carga),0
+Demanda,Demanda Reativa,17,702.666675,676.799,837.598,937.918,Nov,Real (pos-carga),0
+Demanda,Demanda ativa Fora de Ponta,17,2233.5153999999998,2319.355,2476.963,2803.674,Nov,Real (pos-carga),0
+Consumo,Consumo Reativo,18,167.81899166666665,163.44,201.984,240.479,Nov,Real (pos-carga),0
+Consumo,Consumo ativo Fora de Ponta,18,515.8591650485437,507.839,593.867,725.518,Nov,Real (pos-carga),0
+Consumo,Consumo ativo de Ponta,18,516.3801176470588,498.479,617.8067999999998,720.238,Nov,Real (pos-carga),0
+Demanda,Demanda Reativa,18,671.2748666666666,653.759,807.934,961.918,Nov,Real (pos-carga),0
+Demanda,Demanda ativa Fora de Ponta,18,2063.4366601941747,2031.356,2375.4669999999996,2902.074,Nov,Real (pos-carga),0
+Demanda,Demanda ativa de Ponta,18,2065.520529411765,1993.916,2471.2268,2880.954,Nov,Real (pos-carga),0
+Consumo,Consumo Reativo,19,168.75598333333335,166.2,204.048,241.439,Nov,Real (pos-carga),0
+Consumo,Consumo ativo Fora de Ponta,19,515.807,515.399,538.733,548.159,Nov,Real (pos-carga),0
+Consumo,Consumo ativo de Ponta,19,520.5364625,504.599,632.723,725.398,Nov,Real (pos-carga),0
+Demanda,Demanda Reativa,19,675.02285,664.799,816.19,965.758,Nov,Real (pos-carga),0
+Demanda,Demanda ativa Fora de Ponta,19,2063.22795,2061.596,2154.9319499999997,2192.635,Nov,Real (pos-carga),0
+Demanda,Demanda ativa de Ponta,19,2082.145825,2018.396,2530.891,2901.594,Nov,Real (pos-carga),0
+Consumo,Consumo Reativo,20,164.443,162.24,203.478,213.0,Nov,Real (pos-carga),0
+Consumo,Consumo ativo Fora de Ponta,20,511.838,515.639,531.1850000000001,542.159,Nov,Real (pos-carga),0
+Consumo,Consumo ativo de Ponta,20,511.57550000000003,496.199,620.723,628.319,Nov,Real (pos-carga),0
+Demanda,Demanda Reativa,20,657.7708416666667,648.9590000000001,813.91,851.998,Nov,Real (pos-carga),0
+Demanda,Demanda ativa Fora de Ponta,20,2047.351975,2062.556,2124.7400000000002,2168.635,Nov,Real (pos-carga),0
+Demanda,Demanda ativa de Ponta,20,2046.3018375,1984.796,2482.8909999999996,2513.275,Nov,Real (pos-carga),0
+Consumo,Consumo Reativo,21,147.137,148.68,182.502,209.4,Nov,Real (pos-carga),0
+Consumo,Consumo ativo Fora de Ponta,21,460.68952631578946,474.599,521.015,600.599,Nov,Real (pos-carga),0
+Consumo,Consumo ativo de Ponta,21,500.93233333333336,482.159,606.5390000000001,621.719,Nov,Real (pos-carga),0
+Demanda,Demanda Reativa,21,588.5469333333333,594.719,730.006,837.598,Nov,Real (pos-carga),0
+Demanda,Demanda ativa Fora de Ponta,21,1842.7582807017543,1898.396,2084.06,2402.395,Nov,Real (pos-carga),0
+Demanda,Demanda ativa de Ponta,21,2003.7291587301588,1928.636,2426.155,2486.875,Nov,Real (pos-carga),0
+Consumo,Consumo Reativo,22,80.52600000000001,78.96,121.58999999999999,153.0,Nov,Real (pos-carga),0
+Consumo,Consumo ativo Fora de Ponta,22,335.83209999999997,301.55899999999997,482.687,569.399,Nov,Real (pos-carga),0
+Demanda,Demanda Reativa,22,322.103225,315.839,486.359,611.999,Nov,Real (pos-carga),0
+Demanda,Demanda ativa Fora de Ponta,22,1343.3292333333334,1206.237,1930.748,2277.595,Nov,Real (pos-carga),0
+Consumo,Consumo Reativo,23,82.889,73.44,156.024,166.92,Nov,Real (pos-carga),0
+Consumo,Consumo ativo Fora de Ponta,23,275.69345833333335,245.399,455.525,496.919,Nov,Real (pos-carga),0
+Demanda,Demanda Reativa,23,331.5553,293.759,624.095,667.679,Nov,Real (pos-carga),0
+Demanda,Demanda ativa Fora de Ponta,23,1102.7736666666667,981.598,1822.1,1987.676,Nov,Real (pos-carga),0
+Consumo,Consumo Reativo,0,61.585161290322574,8.22,165.0,222.0,Dez,Real (pos-carga),1
+Consumo,Consumo ativo Fora de Ponta,0,389.2858306451613,382.55899999999997,483.479,492.959,Dez,Real (pos-carga),1
+Demanda,Demanda Reativa,0,240.13950833333334,32.88,659.999,745.918,Dez,Real (pos-carga),1
+Demanda,Demanda ativa Fora de Ponta,0,1557.8942479338843,1529.757,1933.916,1971.836,Dez,Real (pos-carga),1
+Consumo,Consumo Reativo,1,0.00967741935483871,0.0,0.0,1.2,Dez,Real (pos-carga),1
+Consumo,Consumo ativo Fora de Ponta,1,377.48809677419354,366.599,455.10499999999996,473.999,Dez,Real (pos-carga),1
+Demanda,Demanda Reativa,1,0.04,0.0,0.0,4.8,Dez,Real (pos-carga),1
+Demanda,Demanda ativa Fora de Ponta,1,1503.5687333333333,1453.437,1820.972,1895.996,Dez,Real (pos-carga),1
+Consumo,Consumo Reativo,2,0.07180327868852458,0.0,0.0,3.12,Dez,Real (pos-carga),1
+Consumo,Consumo ativo Fora de Ponta,2,357.904430894309,345.959,439.823,447.599,Dez,Real (pos-carga),1
+Demanda,Demanda Reativa,2,0.29694915254237286,0.0,0.0,12.48,Dez,Real (pos-carga),1
+Demanda,Demanda ativa Fora de Ponta,2,1422.0836218487395,1355.997,1759.868,1790.396,Dez,Real (pos-carga),1
+Consumo,Consumo Reativo,3,0.097,0.0,0.0,3.72,Dez,Real (pos-carga),1
+Consumo,Consumo ativo Fora de Ponta,3,351.5550583333333,367.799,423.503,428.159,Dez,Real (pos-carga),1
+Demanda,Demanda Reativa,3,0.4013793103448276,0.0,0.0,14.88,Dez,Real (pos-carga),1
+Demanda,Demanda ativa Fora de Ponta,3,1397.8233448275862,1324.797,1694.396,1712.636,Dez,Real (pos-carga),1
+Consumo,Consumo Reativo,4,0.08754098360655738,0.0,0.0,3.12,Dez,Real (pos-carga),1
+Consumo,Consumo ativo Fora de Ponta,4,348.5276611570248,396.479,422.159,427.799,Dez,Real (pos-carga),1
+Demanda,Demanda Reativa,4,0.36203389830508476,0.0,0.0,12.48,Dez,Real (pos-carga),1
+Demanda,Demanda ativa Fora de Ponta,4,1385.5643162393162,1318.557,1688.828,1711.196,Dez,Real (pos-carga),1
+Consumo,Consumo Reativo,5,0.061395348837209304,0.0,0.0,3.48,Dez,Real (pos-carga),1
+Consumo,Consumo ativo Fora de Ponta,5,351.37796062992123,399.239,425.723,435.959,Dez,Real (pos-carga),1
+Demanda,Demanda Reativa,5,0.25344,0.0,0.0,13.92,Dez,Real (pos-carga),1
+Demanda,Demanda ativa Fora de Ponta,5,1397.9327073170732,1592.637,1702.988,1743.836,Dez,Real (pos-carga),1
+Consumo,Consumo Reativo,6,53.166363636363634,0.0,153.696,157.44,Dez,Real (pos-carga),1
+Consumo,Consumo ativo Fora de Ponta,6,351.12360606060605,340.43899999999996,433.181,442.439,Dez,Real (pos-carga),1
+Demanda,Demanda Reativa,6,209.7220546875,0.0,611.0629999999999,629.759,Dez,Real (pos-carga),1
+Demanda,Demanda ativa Fora de Ponta,6,1397.1495546875,1344.717,1733.972,1769.756,Dez,Real (pos-carga),1
+Consumo,Consumo Reativo,7,124.20727272727274,116.7,180.432,188.4,Dez,Real (pos-carga),1
+Consumo,Consumo ativo Fora de Ponta,7,357.7772575757576,352.919,453.431,467.639,Dez,Real (pos-carga),1
+Demanda,Demanda Reativa,7,490.7352734375,462.719,719.159,737.758,Dez,Real (pos-carga),1
+Demanda,Demanda ativa Fora de Ponta,7,1422.878171875,1409.517,1814.492,1870.556,Dez,Real (pos-carga),1
+Consumo,Consumo Reativo,8,146.0090909090909,147.72,203.83799999999997,216.48,Dez,Real (pos-carga),1
+Consumo,Consumo ativo Fora de Ponta,8,400.47634090909094,408.959,509.399,545.399,Dez,Real (pos-carga),1
+Demanda,Demanda Reativa,8,576.681421875,589.919,804.9819999999999,865.918,Dez,Real (pos-carga),1
+Demanda,Demanda ativa Fora de Ponta,8,1593.1504296875,1622.877,2037.596,2181.595,Dez,Real (pos-carga),1
+Consumo,Consumo Reativo,9,135.40090909090907,129.96,191.36999999999992,231.48,Dez,Real (pos-carga),1
+Consumo,Consumo ativo Fora de Ponta,9,414.5971818181818,396.71900000000005,555.5269999999999,635.159,Dez,Real (pos-carga),1
+Demanda,Demanda Reativa,9,545.5338671875,526.799,770.7579999999998,925.918,Dez,Real (pos-carga),1
+Demanda,Demanda ativa Fora de Ponta,9,1663.8489921875,1596.9569999999999,2227.0989999999997,2540.635,Dez,Real (pos-carga),1
+Consumo,Consumo Reativo,10,189.48815909090908,192.24,230.40599999999998,257.999,Dez,Real (pos-carga),1
+Consumo,Consumo ativo Fora de Ponta,10,540.0517272727272,557.6990000000001,628.3609999999998,710.159,Dez,Real (pos-carga),1
+Demanda,Demanda Reativa,10,759.8794609375,769.918,922.486,1031.998,Dez,Real (pos-carga),1
+Demanda,Demanda ativa Fora de Ponta,10,2164.990390625,2236.795,2531.0109999999995,2840.634,Dez,Real (pos-carga),1
+Consumo,Consumo Reativo,11,196.10175757575757,197.4,255.215,278.999,Dez,Real (pos-carga),1
+Consumo,Consumo ativo Fora de Ponta,11,581.0680984848485,587.159,690.7789999999999,727.438,Dez,Real (pos-carga),1
+Demanda,Demanda Reativa,11,783.5981484375,789.598,1021.246,1115.998,Dez,Real (pos-carga),1
+Demanda,Demanda ativa Fora de Ponta,11,2323.7238125,2348.635,2771.7539999999995,2909.754,Dez,Real (pos-carga),1
+Consumo,Consumo Reativo,12,200.58083333333332,200.94,255.86299999999997,303.959,Dez,Real (pos-carga),1
+Consumo,Consumo ativo Fora de Ponta,12,603.0116893939394,607.979,709.8829999999999,787.198,Dez,Real (pos-carga),1
+Demanda,Demanda Reativa,12,800.5339147286821,799.678,1024.606,1215.837,Dez,Real (pos-carga),1
+Demanda,Demanda ativa Fora de Ponta,12,2411.1062421875,2428.795,2843.946,3148.793,Dez,Real (pos-carga),1
+Consumo,Consumo Reativo,13,199.07354545454544,197.7,250.17499999999998,310.439,Dez,Real (pos-carga),1
+Consumo,Consumo ativo Fora de Ponta,13,604.3680454545454,610.319,719.0029999999999,785.158,Dez,Real (pos-carga),1
+Demanda,Demanda Reativa,13,794.9493671875,789.598,1001.086,1241.757,Dez,Real (pos-carga),1
+Demanda,Demanda ativa Fora de Ponta,13,2415.1525625,2439.835,2876.586,3140.633,Dez,Real (pos-carga),1
+Consumo,Consumo Reativo,14,204.69313846153847,203.7,261.743,392.88,Dez,Real (pos-carga),1
+Consumo,Consumo ativo Fora de Ponta,14,610.5745419847328,614.999,711.659,792.478,Dez,Real (pos-carga),1
+Demanda,Demanda Reativa,14,805.457,811.678,997.342,1277.757,Dez,Real (pos-carga),1
+Demanda,Demanda ativa Fora de Ponta,14,2441.9250787401575,2459.995,2848.65,3169.913,Dez,Real (pos-carga),1
+Consumo,Consumo Reativo,15,205.3019527559055,201.96,285.01099999999997,402.0,Dez,Real (pos-carga),1
+Consumo,Consumo ativo Fora de Ponta,15,605.62771875,610.979,709.055,797.998,Dez,Real (pos-carga),1
+Demanda,Demanda Reativa,15,795.0615609756097,801.598,1004.0139999999998,1259.997,Dez,Real (pos-carga),1
+Demanda,Demanda ativa Fora de Ponta,15,2422.241483870968,2443.915,2841.21,3191.993,Dez,Real (pos-carga),1
+Consumo,Consumo Reativo,16,202.27154032258062,199.68,253.18099999999998,399.84,Dez,Real (pos-carga),1
+Consumo,Consumo ativo Fora de Ponta,16,599.3922016129032,605.219,697.847,740.398,Dez,Real (pos-carga),1
+Demanda,Demanda Reativa,16,785.2181666666668,797.758,968.086,1107.838,Dez,Real (pos-carga),1
+Demanda,Demanda ativa Fora de Ponta,16,2400.4030333333335,2423.2749999999996,2791.8179999999998,2961.594,Dez,Real (pos-carga),1
+Consumo,Consumo Reativo,17,176.0322016129032,168.48000000000002,274.9069999999998,360.96,Dez,Real (pos-carga),1
+Consumo,Consumo ativo Fora de Ponta,17,549.4373629032258,538.439,698.3389999999999,748.918,Dez,Real (pos-carga),1
+Demanda,Demanda Reativa,17,688.74275,671.999,968.182,1129.918,Dez,Real (pos-carga),1
+Demanda,Demanda ativa Fora de Ponta,17,2207.8234749999997,2157.8360000000002,2797.386,2995.674,Dez,Real (pos-carga),1
+Consumo,Consumo Reativo,18,170.74545161290322,165.48,250.775,336.96,Dez,Real (pos-carga),1
+Consumo,Consumo ativo Fora de Ponta,18,520.9609223300971,514.199,622.199,722.398,Dez,Real (pos-carga),1
+Consumo,Consumo ativo de Ponta,18,512.5932857142857,515.639,609.479,617.159,Dez,Real (pos-carga),1
+Demanda,Demanda Reativa,18,669.2068166666667,661.919,807.934,1005.598,Dez,Real (pos-carga),1
+Demanda,Demanda ativa Fora de Ponta,18,2095.81979,2059.196,2495.8509999999997,2889.594,Dez,Real (pos-carga),1
+Demanda,Demanda ativa de Ponta,18,2071.2918999999997,2066.636,2439.451,2468.635,Dez,Real (pos-carga),1
+Consumo,Consumo Reativo,19,169.45835483870968,171.0,244.87699999999998,337.92,Dez,Real (pos-carga),1
+Consumo,Consumo ativo Fora de Ponta,19,537.2289999999999,529.799,713.429,718.199,Dez,Real (pos-carga),1
+Consumo,Consumo ativo de Ponta,19,501.50631818181813,515.639,611.525,621.239,Dez,Real (pos-carga),1
+Demanda,Demanda Reativa,19,672.738775,682.799,820.3179999999999,989.758,Dez,Real (pos-carga),1
+Demanda,Demanda ativa Fora de Ponta,19,2148.915611111111,2119.196,2853.714,2872.794,Dez,Real (pos-carga),1
+Demanda,Demanda ativa de Ponta,19,2051.915892857143,2067.3559999999998,2447.7309999999998,2484.955,Dez,Real (pos-carga),1
+Consumo,Consumo Reativo,20,167.81512903225808,169.92,248.255,336.0,Dez,Real (pos-carga),1
+Consumo,Consumo ativo Fora de Ponta,20,541.4023333333333,522.119,707.789,712.199,Dez,Real (pos-carga),1
+Consumo,Consumo ativo de Ponta,20,492.6440909090909,515.159,616.679,629.639,Dez,Real (pos-carga),1
+Demanda,Demanda Reativa,20,669.098775,678.719,871.894,1013.758,Dez,Real (pos-carga),1
+Demanda,Demanda ativa Fora de Ponta,20,2165.608888888889,2088.476,2831.154,2848.794,Dez,Real (pos-carga),1
+Demanda,Demanda ativa de Ponta,20,2030.0245476190478,2066.876,2466.715,2518.555,Dez,Real (pos-carga),1
+Consumo,Consumo Reativo,21,156.11708870967743,160.2,215.766,331.92,Dez,Real (pos-carga),1
+Consumo,Consumo ativo Fora de Ponta,21,505.58473214285715,501.71900000000005,652.5889999999999,699.719,Dez,Real (pos-carga),1
+Consumo,Consumo ativo de Ponta,21,475.53616176470587,504.959,612.977,621.239,Dez,Real (pos-carga),1
+Demanda,Demanda Reativa,21,604.195064516129,637.919,814.198,975.838,Dez,Real (pos-carga),1
+Demanda,Demanda ativa Fora de Ponta,21,2022.338732142857,2006.8760000000002,2610.35475,2798.874,Dez,Real (pos-carga),1
+Demanda,Demanda ativa de Ponta,21,1921.4504925373135,2021.756,2453.611,2484.955,Dez,Real (pos-carga),1
+Consumo,Consumo Reativo,22,89.49290322580646,87.24000000000001,156.80399999999995,220.44,Dez,Real (pos-carga),1
+Consumo,Consumo ativo Fora de Ponta,22,343.10814516129034,324.599,496.403,607.679,Dez,Real (pos-carga),1
+Demanda,Demanda Reativa,22,346.83397580645163,343.679,550.7269999999999,881.758,Dez,Real (pos-carga),1
+Demanda,Demanda ativa Fora de Ponta,22,1372.433314516129,1298.397,1985.612,2430.715,Dez,Real (pos-carga),1
+Consumo,Consumo Reativo,23,113.67,110.7,191.91599999999997,252.96,Dez,Real (pos-carga),1
+Consumo,Consumo ativo Fora de Ponta,23,318.25090322580644,274.43899999999996,501.041,553.679,Dez,Real (pos-carga),1
+Demanda,Demanda Reativa,23,440.92553225806455,441.599,740.4459999999999,849.598,Dez,Real (pos-carga),1
+Demanda,Demanda ativa Fora de Ponta,23,1273.0038467741936,1097.758,2004.164,2214.715,Dez,Real (pos-carga),1
+Consumo,Consumo Reativo,0,44.496428571428574,34.2,101.40599999999999,145.92,Jan,Real (pos-carga),2
+Consumo,Consumo ativo Fora de Ponta,0,351.67759292035396,355.199,406.5109999999998,448.439,Jan,Real (pos-carga),2
+Demanda,Demanda Reativa,0,179.811525,136.8,412.031,583.679,Jan,Real (pos-carga),2
+Demanda,Demanda ativa Fora de Ponta,0,1405.2268016528926,1418.877,1593.597,1793.756,Jan,Real (pos-carga),2
+Consumo,Consumo Reativo,1,0.0,0.0,0.0,0.0,Jan,Real (pos-carga),2
+Consumo,Consumo ativo Fora de Ponta,1,351.4800714285714,344.039,437.09899999999993,451.919,Jan,Real (pos-carga),2
+Demanda,Demanda Reativa,1,0.0,0.0,0.0,0.0,Jan,Real (pos-carga),2
+Demanda,Demanda ativa Fora de Ponta,1,1402.3209583333335,1373.277,1738.7959999999998,1807.676,Jan,Real (pos-carga),2
+Consumo,Consumo Reativo,2,0.0,0.0,0.0,0.0,Jan,Real (pos-carga),2
+Consumo,Consumo ativo Fora de Ponta,2,336.79186607142856,325.199,414.107,442.679,Jan,Real (pos-carga),2
+Demanda,Demanda Reativa,2,0.0,0.0,0.0,0.0,Jan,Real (pos-carga),2
+Demanda,Demanda ativa Fora de Ponta,2,1341.981,1300.797,1656.045,1770.716,Jan,Real (pos-carga),2
+Consumo,Consumo Reativo,3,0.0,0.0,0.0,0.0,Jan,Real (pos-carga),2
+Consumo,Consumo ativo Fora de Ponta,3,332.34225000000004,311.819,410.669,420.239,Jan,Real (pos-carga),2
+Demanda,Demanda Reativa,3,0.0,0.0,0.0,0.0,Jan,Real (pos-carga),2
+Demanda,Demanda ativa Fora de Ponta,3,1320.2851083333333,1246.077,1641.7169999999999,1680.956,Jan,Real (pos-carga),2
+Consumo,Consumo Reativo,4,0.05357142857142857,0.0,0.0,6.0,Jan,Real (pos-carga),2
+Consumo,Consumo ativo Fora de Ponta,4,333.0183214285715,309.47900000000004,409.919,416.999,Jan,Real (pos-carga),2
+Demanda,Demanda Reativa,4,0.2,0.0,0.0,24.0,Jan,Real (pos-carga),2
+Demanda,Demanda ativa Fora de Ponta,4,1321.1411833333334,1233.597,1639.677,1667.997,Jan,Real (pos-carga),2
+Consumo,Consumo Reativo,5,0.10392857142857144,0.0,0.0,4.08,Jan,Real (pos-carga),2
+Consumo,Consumo ativo Fora de Ponta,5,320.0797946428571,309.959,407.267,423.239,Jan,Real (pos-carga),2
+Demanda,Demanda Reativa,5,0.388,0.0,0.0,16.32,Jan,Real (pos-carga),2
+Demanda,Demanda ativa Fora de Ponta,5,1272.6212249999999,1235.757,1628.685,1692.956,Jan,Real (pos-carga),2
+Consumo,Consumo Reativo,6,40.433571428571426,0.84,91.18799999999995,147.0,Jan,Real (pos-carga),2
+Consumo,Consumo ativo Fora de Ponta,6,314.7065714285714,311.519,408.02899999999994,425.159,Jan,Real (pos-carga),2
+Demanda,Demanda Reativa,6,163.431525,3.36,378.07099999999997,587.999,Jan,Real (pos-carga),2
+Demanda,Demanda ativa Fora de Ponta,6,1253.1892083333332,1243.6770000000001,1627.317,1700.636,Jan,Real (pos-carga),2
+Consumo,Consumo Reativo,7,101.92178571428572,99.47999999999999,152.30999999999997,172.92,Jan,Real (pos-carga),2
+Consumo,Consumo ativo Fora de Ponta,7,331.2986607142857,327.719,432.16099999999994,458.639,Jan,Real (pos-carga),2
+Demanda,Demanda Reativa,7,407.8990166666666,399.839,604.4390000000001,691.679,Jan,Real (pos-carga),2
+Demanda,Demanda ativa Fora de Ponta,7,1318.13705,1303.1970000000001,1724.2279999999998,1834.556,Jan,Real (pos-carga),2
+Consumo,Consumo Reativo,8,132.18321428571429,129.48000000000002,179.30999999999997,193.92,Jan,Real (pos-carga),2
+Consumo,Consumo ativo Fora de Ponta,8,392.9657857142857,392.279,471.74899999999997,515.159,Jan,Real (pos-carga),2
+Demanda,Demanda Reativa,8,525.77095,513.8389999999999,712.43895,775.678,Jan,Real (pos-carga),2
+Demanda,Demanda ativa Fora de Ponta,8,1557.2367833333333,1546.797,1882.196,2060.636,Jan,Real (pos-carga),2
+Consumo,Consumo Reativo,9,123.04392857142857,120.72,190.92,214.92,Jan,Real (pos-carga),2
+Consumo,Consumo ativo Fora de Ponta,9,400.21507142857143,415.43899999999996,498.61099999999993,555.239,Jan,Real (pos-carga),2
+Demanda,Demanda Reativa,9,490.214925,483.839,763.678,859.678,Jan,Real (pos-carga),2
+Demanda,Demanda ativa Fora de Ponta,9,1587.0406416666667,1620.237,1983.3079999999998,2220.955,Jan,Real (pos-carga),2
+Consumo,Consumo Reativo,10,183.03428571428572,184.92,205.92,228.96,Jan,Real (pos-carga),2
+Consumo,Consumo ativo Fora de Ponta,10,498.5657857142857,527.4590000000001,584.135,601.919,Jan,Real (pos-carga),2
+Demanda,Demanda Reativa,10,728.7464249999999,739.678,823.678,915.838,Jan,Real (pos-carga),2
+Demanda,Demanda ativa Fora de Ponta,10,1984.8238583333334,2104.796,2335.771,2407.675,Jan,Real (pos-carga),2
+Consumo,Consumo Reativo,11,186.68142857142857,192.48000000000002,209.40599999999998,234.96,Jan,Real (pos-carga),2
+Consumo,Consumo ativo Fora de Ponta,11,556.7829285714286,571.919,597.641,616.199,Jan,Real (pos-carga),2
+Demanda,Demanda Reativa,11,738.4583166666667,766.798,835.894,939.838,Jan,Real (pos-carga),2
+Demanda,Demanda ativa Fora de Ponta,11,2205.987275,2283.355,2386.147,2464.795,Jan,Real (pos-carga),2
+Consumo,Consumo Reativo,12,189.7017857142857,195.0,210.96,216.96,Jan,Real (pos-carga),2
+Consumo,Consumo ativo Fora de Ponta,12,563.1686428571428,583.319,619.3069999999999,624.719,Jan,Real (pos-carga),2
+Demanda,Demanda Reativa,12,754.2263083333333,779.998,843.838,867.838,Jan,Real (pos-carga),2
+Demanda,Demanda ativa Fora de Ponta,12,2232.4593250000003,2329.435,2476.843,2498.875,Jan,Real (pos-carga),2
+Consumo,Consumo Reativo,13,191.18357142857144,192.96,211.392,216.96,Jan,Real (pos-carga),2
+Consumo,Consumo ativo Fora de Ponta,13,585.9815,596.039,621.827,629.399,Jan,Real (pos-carga),2
+Demanda,Demanda Reativa,13,761.0342416666666,771.838,844.03,867.838,Jan,Real (pos-carga),2
+Demanda,Demanda ativa Fora de Ponta,13,2327.3551666666667,2384.155,2486.923,2517.595,Jan,Real (pos-carga),2
+Consumo,Consumo Reativo,14,193.58892857142857,193.92,209.40599999999998,216.0,Jan,Real (pos-carga),2
+Consumo,Consumo ativo Fora de Ponta,14,597.2465,599.519,619.2829999999999,627.479,Jan,Real (pos-carga),2
+Demanda,Demanda Reativa,14,769.7661666666667,775.678,835.894,863.998,Jan,Real (pos-carga),2
+Demanda,Demanda ativa Fora de Ponta,14,2370.7630333333336,2398.075,2478.715,2509.915,Jan,Real (pos-carga),2
+Consumo,Consumo Reativo,15,194.31321428571428,193.92,212.40599999999998,217.92,Jan,Real (pos-carga),2
+Consumo,Consumo ativo Fora de Ponta,15,595.2236428571429,597.479,619.5469999999999,626.399,Jan,Real (pos-carga),2
+Demanda,Demanda Reativa,15,768.7661333333333,771.838,847.894,871.678,Jan,Real (pos-carga),2
+Demanda,Demanda ativa Fora de Ponta,15,2360.0750416666665,2389.915,2477.803,2505.595,Jan,Real (pos-carga),2
+Consumo,Consumo Reativo,16,192.29142857142855,190.92,212.40599999999998,219.0,Jan,Real (pos-carga),2
+Consumo,Consumo ativo Fora de Ponta,16,592.8793571428571,595.199,618.8629999999999,623.639,Jan,Real (pos-carga),2
+Demanda,Demanda Reativa,16,759.3382166666667,763.678,847.894,875.998,Jan,Real (pos-carga),2
+Demanda,Demanda ativa Fora de Ponta,16,2337.695091666667,2375.755,2472.379,2494.555,Jan,Real (pos-carga),2
+Consumo,Consumo Reativo,17,167.1792857142857,165.0,195.432,205.92,Jan,Real (pos-carga),2
+Consumo,Consumo ativo Fora de Ponta,17,536.7814999999999,529.739,604.895,623.639,Jan,Real (pos-carga),2
+Demanda,Demanda Reativa,17,659.7748583333334,655.679,780.19,823.678,Jan,Real (pos-carga),2
+Demanda,Demanda ativa Fora de Ponta,17,2123.1195666666667,2109.8360000000002,2418.811,2494.555,Jan,Real (pos-carga),2
+Consumo,Consumo Reativo,18,160.86107142857142,162.0,178.92,201.96,Jan,Real (pos-carga),2
+Consumo,Consumo ativo Fora de Ponta,18,501.524652173913,503.699,528.779,603.479,Jan,Real (pos-carga),2
+Consumo,Consumo ativo de Ponta,18,495.767,498.119,516.5150000000001,574.199,Jan,Real (pos-carga),2
+Demanda,Demanda Reativa,18,634.978975,643.679,715.679,807.838,Jan,Real (pos-carga),2
+Demanda,Demanda ativa Fora de Ponta,18,1979.263898989899,2007.836,2113.436,2413.915,Jan,Real (pos-carga),2
+Demanda,Demanda ativa de Ponta,18,1984.8645238095237,1992.956,2053.916,2296.795,Jan,Real (pos-carga),2
+Consumo,Consumo Reativo,19,161.81464285714284,165.0,179.83799999999997,202.92,Jan,Real (pos-carga),2
+Consumo,Consumo ativo Fora de Ponta,19,515.93525,516.719,530.135,533.399,Jan,Real (pos-carga),2
+Consumo,Consumo ativo de Ponta,19,498.65150000000006,500.57899999999995,534.6049999999999,602.999,Jan,Real (pos-carga),2
+Demanda,Demanda Reativa,19,638.3109499999999,659.999,716.08695,811.678,Jan,Real (pos-carga),2
+Demanda,Demanda ativa Fora de Ponta,19,1981.5827777777777,2061.596,2120.156,2133.596,Jan,Real (pos-carga),2
+Demanda,Demanda ativa de Ponta,19,1997.0988095238095,2005.436,2124.788,2411.995,Jan,Real (pos-carga),2
+Consumo,Consumo Reativo,20,159.84642857142856,159.96,180.86399999999998,192.96,Jan,Real (pos-carga),2
+Consumo,Consumo ativo Fora de Ponta,20,506.95025,509.579,528.401,532.919,Jan,Real (pos-carga),2
+Consumo,Consumo ativo de Ponta,20,496.28000000000003,497.999,538.0549999999998,591.479,Jan,Real (pos-carga),2
+Demanda,Demanda Reativa,20,628.8829499999999,639.839,720.38295,771.838,Jan,Real (pos-carga),2
+Demanda,Demanda ativa Fora de Ponta,20,1944.3427777777777,2013.356,2111.3959999999997,2131.676,Jan,Real (pos-carga),2
+Demanda,Demanda ativa de Ponta,20,1985.9559523809523,1992.476,2134.796,2365.915,Jan,Real (pos-carga),2
+Consumo,Consumo Reativo,21,142.10654867256636,147.0,169.92,183.96,Jan,Real (pos-carga),2
+Consumo,Consumo ativo Fora de Ponta,21,455.6943846153846,476.399,513.557,529.199,Jan,Real (pos-carga),2
+Consumo,Consumo ativo de Ponta,21,478.115,481.079,510.62299999999993,581.159,Jan,Real (pos-carga),2
+Demanda,Demanda Reativa,21,561.0594876033058,587.999,679.679,735.838,Jan,Real (pos-carga),2
+Demanda,Demanda ativa Fora de Ponta,21,1782.1100000000001,1903.676,2052.188,2116.796,Jan,Real (pos-carga),2
+Demanda,Demanda ativa de Ponta,21,1917.542634920635,1933.916,2040.524,2324.635,Jan,Real (pos-carga),2
+Consumo,Consumo Reativo,22,72.84,69.96,108.48,132.96,Jan,Real (pos-carga),2
+Consumo,Consumo ativo Fora de Ponta,22,318.4295172413793,295.979,462.719,488.999,Jan,Real (pos-carga),2
+Demanda,Demanda Reativa,22,289.14126612903226,279.839,431.351,531.839,Jan,Real (pos-carga),2
+Demanda,Demanda ativa Fora de Ponta,22,1266.0941370967744,1174.798,1853.18,1955.996,Jan,Real (pos-carga),2
+Consumo,Consumo Reativo,23,77.63689655172413,83.46000000000001,109.19999999999999,135.0,Jan,Real (pos-carga),2
+Consumo,Consumo ativo Fora de Ponta,23,278.35191379310345,240.4795,386.24899999999997,409.439,Jan,Real (pos-carga),2
+Demanda,Demanda Reativa,23,315.5644596774194,337.919,447.551,539.999,Jan,Real (pos-carga),2
+Demanda,Demanda ativa Fora de Ponta,23,1116.6518064516129,974.8779999999999,1542.429,1637.757,Jan,Real (pos-carga),2
+Consumo,Consumo Reativo,0,31.60545973326494,0.0,119.8456912028725,148.65350089766605,Fev,Ajustado (delta),3
+Consumo,Consumo ativo Fora de Ponta,0,363.1041103855056,359.8857125830564,395.84251350012613,446.7813147993084,Fev,Ajustado (delta),3
+Demanda,Demanda Reativa,0,124.04442073158148,0.0,470.3678458749358,583.4323743873318,Fev,Ajustado (delta),3
+Demanda,Demanda ativa Fora de Ponta,0,1455.512681091846,1442.6116744378585,1586.7453832163014,1790.9337391681743,Fev,Ajustado (delta),3
+Consumo,Consumo Reativo,1,0.0,0.0,0.0,0.0,Fev,Ajustado (delta),3
+Consumo,Consumo ativo Fora de Ponta,1,344.2365805729867,343.1823759868289,361.3966632598907,451.3715447036152,Fev,Ajustado (delta),3
+Demanda,Demanda Reativa,1,0.0,0.0,0.0,0.0,Fev,Ajustado (delta),3
+Demanda,Demanda ativa Fora de Ponta,1,1379.8817966682384,1375.6559444734044,1448.6683568812077,1809.333787097337,Fev,Ajustado (delta),3
+Consumo,Consumo Reativo,2,0.0,0.0,0.0,0.0,Fev,Ajustado (delta),3
+Consumo,Consumo ativo Fora de Ponta,2,335.9691575657754,333.42813744017695,349.4875667859392,435.56075281100294,Fev,Ajustado (delta),3
+Demanda,Demanda Reativa,2,0.0,0.0,0.0,0.0,Fev,Ajustado (delta),3
+Demanda,Demanda ativa Fora de Ponta,2,1346.741707036761,1336.555842623933,1400.9304547538795,1745.9569090478087,Fev,Ajustado (delta),3
+Consumo,Consumo Reativo,3,0.0,0.0,0.0,0.0,Fev,Ajustado (delta),3
+Consumo,Consumo ativo Fora de Ponta,3,332.2293497196326,329.3479330807932,341.81805765415993,432.11808038277286,Fev,Ajustado (delta),3
+Demanda,Demanda Reativa,3,0.0,0.0,0.0,0.0,Fev,Ajustado (delta),3
+Demanda,Demanda ativa Fora de Ponta,3,1331.7505490222607,1320.200244464677,1370.1870413389029,1732.1568731009368,Fev,Ajustado (delta),3
+Consumo,Consumo Reativo,4,0.0,0.0,0.0,0.0,Fev,Ajustado (delta),3
+Consumo,Consumo ativo Fora de Ponta,4,331.1056996909742,327.4990904804474,339.0447937536413,431.48054845161914,Fev,Ajustado (delta),3
+Demanda,Demanda Reativa,4,0.0,0.0,0.0,0.0,Fev,Ajustado (delta),3
+Demanda,Demanda ativa Fora de Ponta,4,1327.2463421010345,1312.789114048764,1359.0703457150337,1729.601310888553,Fev,Ajustado (delta),3
+Consumo,Consumo Reativo,5,0.0,0.0,0.0,0.0,Fev,Ajustado (delta),3
+Consumo,Consumo ativo Fora de Ponta,5,331.36982006245216,328.3278819909473,338.08212053759917,435.1782336523108,Fev,Ajustado (delta),3
+Demanda,Demanda Reativa,5,0.0,0.0,0.0,0.0,Fev,Ajustado (delta),3
+Demanda,Demanda ativa Fora de Ponta,5,1328.3051130467932,1316.111344924863,1355.2114467743343,1744.4235717203787,Fev,Ajustado (delta),3
+Consumo,Consumo Reativo,6,78.63925044883304,102.69479353680431,115.44183123877916,167.7307001795332,Fev,Ajustado (delta),3
+Consumo,Consumo ativo Fora de Ponta,6,330.92923996002986,327.62659686667814,340.2369784648987,434.1581825624648,Fev,Ajustado (delta),3
+Demanda,Demanda Reativa,6,308.6415886737663,403.0542188160617,453.0836317763951,658.3063257565383,Fev,Ajustado (delta),3
+Demanda,Demanda ativa Fora de Ponta,6,1326.539122583577,1313.300226491241,1363.8492470521912,1740.3346721805647,Fev,Ajustado (delta),3
+Consumo,Consumo Reativo,7,112.47893690689921,111.98563734290843,130.1771095152603,170.33213644524236,Fev,Ajustado (delta),3
+Consumo,Consumo ativo Fora de Ponta,7,346.37687582894216,343.37363556617504,372.9296158944615,451.2440383173844,Fev,Ajustado (delta),3
+Demanda,Demanda Reativa,7,441.45491047882837,439.51880552184406,510.91646629176586,668.5164100341575,Fev,Ajustado (delta),3
+Demanda,Demanda ativa Fora de Ponta,7,1388.461155573627,1376.4226131371192,1494.8984773032298,1808.8226746548603,Fev,Ajustado (delta),3
+Consumo,Consumo Reativo,8,124.97638322761959,122.76301615798923,145.00529622980247,201.44289276807964,Fev,Ajustado (delta),3
+Consumo,Consumo ativo Fora de Ponta,8,400.2927140695546,399.0939263490102,450.4024961682615,519.7149677232941,Fev,Ajustado (delta),3
+Demanda,Demanda Reativa,8,490.64522591496376,481.81772610055157,569.1139466741945,806.3560327800602,Fev,Ajustado (delta),3
+Demanda,Demanda ativa Fora de Ponta,8,1604.5840536084308,1599.7787504994587,1805.4493325345138,2083.2900562648747,Fev,Ajustado (delta),3
+Consumo,Consumo Reativo,9,142.19592286013093,143.94614003590664,170.76570915619385,214.7445187032417,Fev,Ajustado (delta),3
+Consumo,Consumo ativo Fora de Ponta,9,446.08979367758855,455.5792554492298,511.93707816321864,563.0671390417469,Fev,Ajustado (delta),3
+Demanda,Demanda Reativa,9,558.3836269971426,564.9569837897354,670.2180907470938,859.6012704081764,Fev,Ajustado (delta),3
+Demanda,Demanda ativa Fora de Ponta,9,1788.1622492161564,1826.20049769907,2052.112197273793,2257.068286706969,Fev,Ajustado (delta),3
+Consumo,Consumo Reativo,10,172.45302193477573,178.87971274685816,203.20791620947614,209.8843092269325,Fev,Ajustado (delta),3
+Consumo,Consumo ativo Fora de Ponta,10,515.4505200435893,545.917530093712,579.1329437068207,597.0324480236055,Fev,Ajustado (delta),3
+Demanda,Demanda Reativa,10,679.5313957438968,702.0638298034771,813.4212662345602,840.1462797363647,Fev,Ajustado (delta),3
+Demanda,Demanda ativa Fora de Ponta,10,2065.9782338908562,2188.3236631938466,2321.4673896414515,2387.0930506511813,Fev,Ajustado (delta),3
+Consumo,Consumo Reativo,11,189.76217464385962,191.70107719928185,211.2592369077305,216.0235211970073,Fev,Ajustado (delta),3
+Consumo,Consumo ativo Fora de Ponta,11,559.4498683871913,575.8177776648213,602.209939399807,611.8252805270384,Fev,Ajustado (delta),3
+Demanda,Demanda Reativa,11,751.4951409594497,752.3839465522706,845.6499942027324,864.7210047954952,Fev,Ajustado (delta),3
+Demanda,Demanda ativa Fora de Ponta,11,2241.0876909461663,2308.1784661370557,2407.794034862491,2446.2387198263514,Fev,Ajustado (delta),3
+Consumo,Consumo Reativo,12,190.29892793663436,191.39138240574505,211.77723291770556,219.98842892768064,Fev,Ajustado (delta),3
+Consumo,Consumo ativo Fora de Ponta,12,562.0435735768581,576.8378287546673,604.5456497950859,611.306233772532,Fev,Ajustado (delta),3
+Demanda,Demanda Reativa,12,753.2069631996748,751.1684603287445,847.7234866295966,880.5921813961837,Fev,Ajustado (delta),3
+Demanda,Demanda ativa Fora de Ponta,12,2250.9340695696574,2312.2673656768698,2417.1328247322544,2444.1634331886257,Fev,Ajustado (delta),3
+Consumo,Consumo Reativo,13,188.18938743644858,187.79892280071812,212.23767381546114,218.96522693266817,Fev,Ajustado (delta),3
+Consumo,Consumo ativo Fora de Ponta,13,569.3955907813132,579.3242032861668,607.3290380161267,613.2526591019312,Fev,Ajustado (delta),3
+Demanda,Demanda Reativa,13,742.371508705377,737.068820135842,849.5665910090314,876.4963938863287,Fev,Ajustado (delta),3
+Demanda,Demanda ativa Fora de Ponta,13,2280.292603820929,2322.2340583051664,2428.261549327056,2451.9457580800954,Fev,Ajustado (delta),3
+Consumo,Consumo Reativo,14,192.47701298433827,189.4093357271095,217.21938852867814,226.38344139650857,Fev,Ajustado (delta),3
+Consumo,Consumo ativo Fora de Ponta,14,582.6859630502272,581.3643054658587,610.0994500683046,619.6109818446348,Fev,Ajustado (delta),3
+Demanda,Demanda Reativa,14,761.572067560072,743.3893484981777,869.5079564476384,906.190853332778,Fev,Ajustado (delta),3
+Demanda,Demanda ativa Fora de Ponta,14,2332.899896296903,2330.4118573847945,2439.3383917559145,2477.3680193922296,Fev,Ajustado (delta),3
+Consumo,Consumo Reativo,15,193.30163376279734,188.294434470377,219.99482394014944,226.38344139650857,Fev,Ajustado (delta),3
+Consumo,Consumo ativo Fora de Ponta,15,583.4937724672866,579.9617352173207,605.3177318424141,614.9395610540769,Fev,Ajustado (delta),3
+Demanda,Demanda Reativa,15,764.8375962340688,739.0135980934837,880.6177800681204,906.190853332778,Fev,Ajustado (delta),3
+Demanda,Demanda ativa Fora de Ponta,15,2336.418469646544,2324.78962051755,2420.219813605871,2458.690439652703,Fev,Ajustado (delta),3
+Consumo,Consumo Reativo,16,190.6715827880286,187.0556552962298,217.94202493765567,222.67433416458834,Fev,Ajustado (delta),3
+Consumo,Consumo ativo Fora de Ponta,16,577.4271437117429,576.3915564028598,600.166192803938,611.1764720839053,Fev,Ajustado (delta),3
+Demanda,Demanda Reativa,16,753.5923916272121,734.1516531993796,872.4006063764735,891.3436236095533,Fev,Ajustado (delta),3
+Demanda,Demanda ativa Fora de Ponta,16,2312.9866400379374,2310.478472128201,2399.6225937264476,2443.6446115291947,Fev,Ajustado (delta),3
+Consumo,Consumo Reativo,17,167.44473210184336,163.51885098743267,202.1271591022442,218.96522693266817,Fev,Ajustado (delta),3
+Consumo,Consumo ativo Fora de Ponta,17,504.08062868880825,489.559707379723,593.9441198342922,619.7407435332614,Fev,Ajustado (delta),3
+Demanda,Demanda Reativa,17,658.2016445233666,641.7757131165837,809.0950906772756,876.4963938863287,Fev,Ajustado (delta),3
+Demanda,Demanda ativa Fora de Ponta,17,2020.234290826164,1962.4119636191235,2374.745095156716,2477.886841051661,Fev,Ajustado (delta),3
+Consumo,Consumo Reativo,18,158.84577776352907,159.43087971274684,169.71274685816877,178.0125673249551,Fev,Ajustado (delta),3
+Consumo,Consumo ativo Fora de Ponta,18,477.0215794003666,478.72166455010984,495.68001391879875,504.0316822169125,Fev,Ajustado (delta),3
+Consumo,Consumo ativo de Ponta,18,482.77870607079234,476.6061689180779,556.7658971531972,563.4524283651897,Fev,Ajustado (delta),3
+Demanda,Demanda Reativa,18,623.4348942080205,625.7312949660394,666.0854375871053,698.6604683776042,Fev,Ajustado (delta),3
+Demanda,Demanda ativa Fora de Ponta,18,1912.1525734422432,1918.9674060086,1986.9453608580075,2020.4232258402344,Fev,Ajustado (delta),3
+Demanda,Demanda ativa de Ponta,18,1933.6006514816545,1909.1016170160697,2227.58284606105,2254.335206979067,Fev,Ajustado (delta),3
+Consumo,Consumo Reativo,19,161.27798794562707,161.04129263913822,176.6375224416517,184.70197486535005,Fev,Ajustado (delta),3
+Consumo,Consumo ativo Fora de Ponta,19,484.86189396203406,482.54685613703214,503.75116816720487,507.98438019006556,Fev,Ajustado (delta),3
+Consumo,Consumo ativo de Ponta,19,486.5018179404321,475.1782294498512,561.9527140342723,574.1333206731863,Fev,Ajustado (delta),3
+Demanda,Demanda Reativa,19,632.9808020849271,632.051823328375,693.2637095451485,724.9149708057674,Fev,Ajustado (delta),3
+Demanda,Demanda ativa Fora de Ponta,19,1943.5806645666207,1934.3007792829023,2019.2987784667857,2036.2677115570139,Fev,Ajustado (delta),3
+Demanda,Demanda ativa de Ponta,19,1948.3448337057102,1903.3818388730779,2248.334950974479,2297.068737548329,Fev,Ajustado (delta),3
+Consumo,Consumo Reativo,20,159.19529045909206,157.94434470377018,177.7400359066427,183.21543985637342,Fev,Ajustado (delta),3
+Consumo,Consumo ativo Fora de Ponta,20,477.8809193159008,476.74531556353327,508.8769248936808,511.9370781632186,Fev,Ajustado (delta),3
+Consumo,Consumo ativo de Ponta,20,476.1637525450893,468.16834478764724,565.5520284284739,579.8395508103351,Fev,Ajustado (delta),3
+Demanda,Demanda Reativa,20,624.8066572317142,619.8969610931142,697.5908405009012,719.0806369328424,Fev,Ajustado (delta),3
+Demanda,Demanda ativa Fora de Ponta,20,1915.597258341019,1911.0451631502103,2039.8454986543509,2052.112197273793,Fev,Ajustado (delta),3
+Demanda,Demanda ativa de Ponta,20,1907.1289716620086,1875.3029279892994,2262.73556538549,2319.898979907249,Fev,Ajustado (delta),3
+Consumo,Consumo Reativo,21,144.95596627340345,144.68940754039494,167.56965888689405,178.0125673249551,Fev,Ajustado (delta),3
+Consumo,Consumo ativo Fora de Ponta,21,430.6954529498838,436.07077835592594,481.4885531313169,499.6964650850672,Fev,Ajustado (delta),3
+Consumo,Consumo ativo de Ponta,21,461.9484065770153,459.6656143177517,481.9804138257676,559.9409021269441,Fev,Ajustado (delta),3
+Demanda,Demanda Reativa,21,568.9203370828758,567.874150726198,657.6742729203048,698.6604683776042,Fev,Ajustado (delta),3
+Demanda,Demanda ativa Fora de Ponta,21,1726.4538895606054,1748.0013588177158,1930.0585460103453,2003.045402796025,Fev,Ajustado (delta),3
+Demanda,Demanda ativa de Ponta,21,1850.2745823719315,1841.2442490469389,1930.6287820269663,2240.285827065885,Fev,Ajustado (delta),3
+Consumo,Consumo Reativo,22,86.39157476275967,81.75942549371632,131.57073608617588,151.1310592459605,Fev,Ajustado (delta),3
+Consumo,Consumo ativo Fora de Ponta,22,271.77826842100296,250.80506171587348,394.8224624102801,424.4676972089282,Fev,Ajustado (delta),3
+Demanda,Demanda Reativa,22,339.0677501553861,320.8873501056987,516.3861542976331,593.1562641755405,Fev,Ajustado (delta),3
+Demanda,Demanda ativa Fora de Ponta,22,1089.429259332165,1005.3560447165881,1582.656483676487,1701.4901265523317,Fev,Ajustado (delta),3
+Consumo,Consumo Reativo,23,86.45351372146705,89.62567324955117,140.3536804308797,155.83842010771994,Fev,Ajustado (delta),3
+Consumo,Consumo ativo Fora de Ponta,23,289.5937756762952,280.19422118884137,401.8480642915942,449.4589489101541,Fev,Ajustado (delta),3
+Demanda,Demanda Reativa,23,339.31097401323956,351.7607001832611,550.857343596833,611.6316547731369,Fev,Ajustado (delta),3
+Demanda,Demanda ativa Fora de Ponta,23,1160.8433615250403,1123.1674627074788,1610.8187792569565,1801.667100460186,Fev,Ajustado (delta),3
+Consumo,Consumo Reativo,0,33.56722645751406,0.0,161.72262118491912,219.98842892768064,Mar,Ajustado (delta),4
+Consumo,Consumo ativo Fora de Ponta,0,364.73616519818677,356.2517805754802,478.10963389620224,506.8368227139889,Mar,Ajustado (delta),4
+Demanda,Demanda Reativa,0,132.0077648539141,0.0,634.7258930201322,880.5921813961837,Mar,Ajustado (delta),4
+Demanda,Demanda ativa Fora de Ponta,0,1462.0545308629394,1428.044969827271,1916.5140662847114,2031.6676995747232,Mar,Ajustado (delta),4
+Consumo,Consumo Reativo,1,0.0,0.0,0.0,0.0,Mar,Ajustado (delta),4
+Consumo,Consumo ativo Fora de Ponta,1,342.3906710112489,336.7433034821763,452.92712261563025,460.5520045122288,Mar,Ajustado (delta),4
+Demanda,Demanda Reativa,1,0.0,0.0,0.0,0.0,Mar,Ajustado (delta),4
+Demanda,Demanda ativa Fora de Ponta,1,1372.482264238139,1349.8447661283285,1815.5693588955535,1846.1338829556632,Mar,Ajustado (delta),4
+Consumo,Consumo Reativo,2,0.0,0.0,0.0,0.0,Mar,Ajustado (delta),4
+Consumo,Consumo ativo Fora de Ponta,2,339.8508174907396,326.1602734250246,437.91962095627173,464.3771960991511,Mar,Ajustado (delta),4
+Demanda,Demanda Reativa,2,0.0,0.0,0.0,0.0,Mar,Ajustado (delta),4
+Demanda,Demanda ativa Fora de Ponta,2,1362.3013629425443,1307.4224334027583,1755.4124892336288,1861.4672562299656,Mar,Ajustado (delta),4
+Consumo,Consumo Reativo,3,0.0,0.0,0.0,0.0,Mar,Ajustado (delta),4
+Consumo,Consumo ativo Fora de Ponta,3,347.6152794629639,326.3515330043707,435.4141204668376,447.0363275717699,Mar,Ajustado (delta),4
+Demanda,Demanda Reativa,3,0.0,0.0,0.0,0.0,Mar,Ajustado (delta),4
+Demanda,Demanda ativa Fora de Ponta,3,1393.425628977418,1308.1891020664734,1745.3691297389605,1791.9559640531277,Mar,Ajustado (delta),4
+Consumo,Consumo Reativo,4,0.0,0.0,0.0,0.0,Mar,Ajustado (delta),4
+Consumo,Consumo ativo Fora de Ponta,4,345.36030160174494,324.2476776315634,434.95509747640693,436.9633230595411,Mar,Ajustado (delta),4
+Demanda,Demanda Reativa,4,0.0,0.0,0.0,0.0,Mar,Ajustado (delta),4
+Demanda,Demanda ativa Fora de Ponta,4,1384.3863752942216,1299.755746765607,1743.5291249460442,1751.5791459150532,Mar,Ajustado (delta),4
+Consumo,Consumo Reativo,5,0.0,0.0,0.0,0.0,Mar,Ajustado (delta),4
+Consumo,Consumo ativo Fora de Ponta,5,343.64102194224654,326.09652023190927,434.9232208798493,440.023476329079,Mar,Ajustado (delta),4
+Demanda,Demanda Reativa,5,0.0,0.0,0.0,0.0,Mar,Ajustado (delta),4
+Demanda,Demanda ativa Fora de Ponta,5,1377.494592482619,1307.1668771815198,1743.401346835425,1763.8458445344952,Mar,Ajustado (delta),4
+Consumo,Consumo Reativo,6,84.9712602073319,98.48294434470377,168.07755834829445,174.42010771992818,Mar,Ajustado (delta),4
+Consumo,Consumo ativo Fora de Ponta,6,344.6939950439136,328.9016607289856,439.1118056675292,444.74121261961653,Mar,Ajustado (delta),4
+Demanda,Demanda Reativa,6,333.49340442131205,386.52360617610697,659.6676703268876,684.5608281847017,Mar,Ajustado (delta),4
+Demanda,Demanda ativa Fora de Ponta,6,1381.7153748331111,1318.4113509160084,1760.1913905707863,1782.7570049061349,Mar,Ajustado (delta),4
+Consumo,Consumo Reativo,7,117.72096324024594,110.37522441651706,180.53967684021544,200.80339152119686,Mar,Ajustado (delta),4
+Consumo,Consumo ativo Fora de Ponta,7,346.5099927532364,344.45743984913634,452.0409532313266,475.21523892876434,Mar,Ajustado (delta),4
+Demanda,Demanda Reativa,7,462.1552693410225,433.1982771595084,708.5788359615769,803.7961655864007,Mar,Ajustado (delta),4
+Demanda,Demanda ativa Fora de Ponta,7,1388.9944163446191,1380.767068898172,1812.01712742034,1904.9118138404892,Mar,Ajustado (delta),4
+Consumo,Consumo Reativo,8,108.14149870704601,117.37432675044883,183.14111310592457,197.6058852867829,Mar,Ajustado (delta),4
+Consumo,Consumo ativo Fora de Ponta,8,344.00832259677577,367.2173297913241,479.14881094398265,541.2635469962897,Mar,Ajustado (delta),4
+Demanda,Demanda Reativa,8,424.6798935935819,460.66826581119784,718.7889202391962,790.9968296181036,Mar,Ajustado (delta),4
+Demanda,Demanda ativa Fora de Ponta,8,1378.9660931047692,1472.0006398802716,1920.6796326908966,2169.6680590434453,Mar,Ajustado (delta),4
+Consumo,Consumo Reativo,9,95.25389238174616,88.20107719928185,164.85053859964086,218.96522693266817,Mar,Ajustado (delta),4
+Consumo,Consumo ativo Fora de Ponta,9,320.5459823672879,315.9597625265651,438.0216260652563,615.3288461199568,Mar,Ajustado (delta),4
+Demanda,Demanda Reativa,9,374.23949008247206,346.16946355504115,647.0023038777456,876.4963938863287,Mar,Ajustado (delta),4
+Demanda,Demanda ativa Fora de Ponta,9,1284.866116700429,1266.5345028222068,1755.82137918761,2460.2469046309966,Mar,Ajustado (delta),4
+Consumo,Consumo Reativo,10,148.1680303396833,158.43985637342908,202.13994912718186,211.03541147132154,Mar,Ajustado (delta),4
+Consumo,Consumo ativo Fora de Ponta,10,460.0210416313482,457.8743704013832,594.0962995052689,617.0157480721027,Mar,Ajustado (delta),4
+Demanda,Demanda Reativa,10,583.3114544719806,621.8417390507559,809.146288021149,844.7540406849517,Mar,Ajustado (delta),4
+Demanda,Demanda ativa Fora de Ponta,10,1843.653838228659,1835.4005216636515,2376.2512208058492,2466.9915862036037,Mar,Ajustado (delta),4
+Consumo,Consumo Reativo,11,168.1774815477666,181.60502692998202,205.15199999999984,211.54701246882775,Mar,Ajustado (delta),4
+Consumo,Consumo ativo Fora de Ponta,11,513.2150911488031,563.3221518142084,616.0555115762658,627.7859682281108,Mar,Ajustado (delta),4
+Demanda,Demanda Reativa,11,663.1101613677291,712.7601085705066,821.2032625032849,846.8019344398792,Mar,Ajustado (delta),4
+Demanda,Demanda ativa Fora de Ponta,11,2056.229847979317,2258.0905115919227,2463.1523059238116,2510.053783936403,Mar,Ajustado (delta),4
+Consumo,Consumo Reativo,12,178.524277826601,183.71095152603232,207.04492369077292,218.45362593516194,Mar,Ajustado (delta),4
+Consumo,Consumo ativo Fora de Ponta,12,545.1572948489703,568.549913649669,628.337455404774,640.7621370907714,Mar,Ajustado (delta),4
+Demanda,Demanda Reativa,12,704.5131436074381,721.0254148904841,828.7804693965168,874.4485001314011,Mar,Ajustado (delta),4
+Demanda,Demanda ativa Fora de Ponta,12,2183.6640203109705,2279.0461217334696,2512.2587759889852,2561.935949879534,Mar,Ajustado (delta),4
+Consumo,Consumo Reativo,13,180.48168455735617,182.10053859964094,202.97769576059835,214.7445187032417,Mar,Ajustado (delta),4
+Consumo,Consumo ativo Fora de Ponta,13,561.1806570656667,574.7339733818601,619.5461010003214,630.1216786233898,Mar,Ajustado (delta),4
+Demanda,Demanda Reativa,13,713.1444016047546,714.7048865281484,812.4997140448429,859.6012704081764,Mar,Ajustado (delta),4
+Demanda,Demanda ativa Fora de Ponta,13,2247.1420705062833,2303.8340103760033,2477.1086085625143,2519.392573806166,Mar,Ajustado (delta),4
+Consumo,Consumo Reativo,14,187.98998552989156,188.04667863554755,206.61006284289257,212.57021446384024,Mar,Ajustado (delta),4
+Consumo,Consumo ativo Fora de Ponta,14,579.2674401813523,583.3406544524353,624.8728183184435,641.0216604680246,Mar,Ajustado (delta),4
+Demanda,Demanda Reativa,14,744.8032530991404,738.0412091146628,827.0397597048285,850.8977219497344,Mar,Ajustado (delta),4
+Demanda,Demanda ativa Fora de Ponta,14,2318.937674755924,2338.334100243184,2498.4062376821694,2562.9735931983964,Mar,Ajustado (delta),4
+Consumo,Consumo Reativo,15,188.74117096556105,187.79892280071812,208.3495062344138,222.1627331670821,Mar,Ajustado (delta),4
+Consumo,Consumo ativo Fora de Ponta,15,577.3076271853748,582.0655905901278,626.1509709514157,652.8299741330458,Mar,Ajustado (delta),4
+Demanda,Demanda Reativa,15,748.0665216924893,737.068820135842,834.0025984715821,889.2957298546258,Mar,Ajustado (delta),4
+Demanda,Demanda ativa Fora de Ponta,15,2311.3335962281553,2333.2229758184167,2503.516631027568,2610.186364206646,Mar,Ajustado (delta),4
+Consumo,Consumo Reativo,16,183.78236429341302,184.70197486535005,207.83790523690757,216.27932169576042,Mar,Ajustado (delta),4
+Consumo,Consumo ativo Fora de Ponta,16,569.4197780963448,575.6265180854753,622.2451441237548,647.3799832107283,Mar,Ajustado (delta),4
+Demanda,Demanda Reativa,16,727.0292344083398,724.9149708057674,831.9547047166545,865.744951672959,Mar,Ajustado (delta),4
+Demanda,Demanda ativa Fora de Ponta,16,2280.468255374546,2307.4117974733404,2487.900099078685,2588.3958545105306,Mar,Ajustado (delta),4
+Consumo,Consumo Reativo,17,159.69847768226387,157.94434470377018,196.9408039900248,219.98842892768064,Mar,Ajustado (delta),4
+Consumo,Consumo ativo Fora de Ponta,17,500.9719334637556,497.1463373604523,598.3235768254401,642.5788007315439,Mar,Ajustado (delta),4
+Demanda,Demanda Reativa,17,627.930140632687,619.8969610931142,788.3345677366977,880.5921813961837,Mar,Ajustado (delta),4
+Demanda,Demanda ativa Fora de Ponta,17,2007.7530374892804,1992.82315394649,2392.2553261625235,2569.199453111572,Mar,Ajustado (delta),4
+Consumo,Consumo Reativo,18,148.79835813980424,148.65350089766605,166.24416517055653,175.90664272890484,Mar,Ajustado (delta),4
+Consumo,Consumo ativo Fora de Ponta,18,461.6714355795781,469.9874770933039,499.16093826289807,526.217793421062,Mar,Ajustado (delta),4
+Consumo,Consumo ativo de Ponta,18,486.23621225022816,477.96920204683977,599.0066315274248,608.6633286825997,Mar,Ajustado (delta),4
+Demanda,Demanda Reativa,18,584.0009082660779,583.4323743873318,652.4719918836131,690.3951620576269,Mar,Ajustado (delta),4
+Demanda,Demanda ativa Fora de Ponta,18,1850.6212591598064,1883.9562036989428,2000.8987305376227,2109.356790831189,Mar,Ajustado (delta),4
+Demanda,Demanda ativa de Ponta,18,1947.2318159079327,1914.5614052434707,2396.585178600034,2435.2209733612845,Mar,Ajustado (delta),4
+Consumo,Consumo Reativo,19,147.77936236752186,148.34380610412927,169.5640933572711,174.42010771992818,Mar,Ajustado (delta),4
+Consumo,Consumo ativo Fora de Ponta,19,452.9508851694278,464.9509748371895,500.7165161749131,512.7021164806031,Mar,Ajustado (delta),4
+Consumo,Consumo ativo de Ponta,19,477.87584481619945,466.7404053194206,587.1771775123354,598.4213771543839,Mar,Ajustado (delta),4
+Demanda,Demanda Reativa,19,580.0015746669371,582.2168881638058,665.5020041998127,684.5608281847017,Mar,Ajustado (delta),4
+Demanda,Demanda ativa Fora de Ponta,19,1815.6649020737211,1863.7672622211112,2007.134302335839,2055.1788719286533,Mar,Ajustado (delta),4
+Demanda,Demanda ativa de Ponta,19,1913.8791182982775,1869.5831498463076,2349.2563300175025,2394.24361528117,Mar,Ajustado (delta),4
+Consumo,Consumo Reativo,20,145.65345746221115,145.2468581687612,171.50278276481146,173.9245960502693,Mar,Ajustado (delta),4
+Consumo,Consumo ativo Fora de Ponta,20,449.32564677909465,457.4918512426909,503.41327624369336,507.98438019006556,Mar,Ajustado (delta),4
+Consumo,Consumo ativo de Ponta,20,466.6962739374799,462.2618678963458,569.3634975329028,589.2036207789896,Mar,Ajustado (delta),4
+Demanda,Demanda Reativa,20,571.6578417123357,570.0620259285449,673.1109479590859,682.6160502270599,Mar,Ajustado (delta),4
+Demanda,Demanda ativa Fora de Ponta,20,1801.133142840356,1833.8671843362213,2017.9443304942222,2036.2677115570139,Mar,Ajustado (delta),4
+Demanda,Demanda ativa de Ponta,20,1869.2361794895692,1851.6438456705605,2277.9849964995897,2357.3639930090676,Mar,Ajustado (delta),4
+Consumo,Consumo Reativo,21,132.68523773672322,131.06283662477557,160.42190305206464,167.23518850987432,Mar,Ajustado (delta),4
+Consumo,Consumo ativo Fora de Ponta,21,413.80223878087986,427.1453313197739,474.9474755176797,501.60906087852834,Mar,Ajustado (delta),4
+Consumo,Consumo ativo de Ponta,21,456.7384640449663,457.3289860970171,479.37117897928056,581.5953139294578,Mar,Ajustado (delta),4
+Demanda,Demanda Reativa,21,520.7603363330065,514.3927568910506,629.6208508813229,656.3615477988967,Mar,Ajustado (delta),4
+Demanda,Demanda ativa Fora de Ponta,21,1658.737173343401,1712.2234878443435,1903.8384777112879,2010.7120894331763,Mar,Ajustado (delta),4
+Demanda,Demanda ativa de Ponta,21,1829.410715077187,1831.8846120856795,1920.1771874202266,2326.92366986384,Mar,Ajustado (delta),4
+Consumo,Consumo Reativo,22,80.6105577112411,76.30879712746858,119.59174147217234,138.74326750448833,Mar,Ajustado (delta),4
+Consumo,Consumo ativo Fora de Ponta,22,270.5196912715388,252.65337303960996,396.90081650584136,428.80291434077355,Mar,Ajustado (delta),4
+Demanda,Demanda Reativa,22,316.378476186322,299.49479257163966,469.3711471716445,544.5368152344973,Mar,Ajustado (delta),4
+Demanda,Demanda ativa Fora de Ponta,22,1084.384556278038,1012.7671751325009,1590.9876164888585,1718.8679495965412,Mar,Ajustado (delta),4
+Consumo,Consumo Reativo,23,87.91304515279819,77.91921005385997,168.03420107719924,225.36023940149607,Mar,Ajustado (delta),4
+Consumo,Consumo ativo Fora de Ponta,23,287.4523251385424,266.16851870345954,432.11808038277286,512.5746100943724,Mar,Ajustado (delta),4
+Demanda,Demanda Reativa,23,345.3115622407359,305.8153209339753,659.4975022555938,902.0950658229231,Mar,Ajustado (delta),4
+Demanda,Demanda ativa Fora de Ponta,23,1152.259283932032,1066.9450940350364,1732.1568731009365,2054.6677594861767,Mar,Ajustado (delta),4
+Consumo,Consumo Reativo,0,28.347396768402156,0.0,116.6991921005386,152.24596050269298,Abr,Ajustado (delta),5
+Consumo,Consumo ativo Fora de Ponta,0,362.1478883854335,357.2718316653261,451.3779200229267,458.63940871876764,Abr,Ajustado (delta),5
+Demanda,Demanda Reativa,0,111.25723555203746,0.0,458.01850584391093,597.5320145802343,Abr,Ajustado (delta),5
+Demanda,Demanda ativa Fora de Ponta,0,1451.6795989071074,1432.1338693670853,1809.3593427194608,1838.467196318512,Abr,Ajustado (delta),5
+Consumo,Consumo Reativo,1,0.0,0.0,0.0,0.0,Abr,Ajustado (delta),5
+Consumo,Consumo ativo Fora de Ponta,1,342.73185342214697,334.9582140749459,434.6172055528954,448.05637866161584,Abr,Ajustado (delta),5
+Demanda,Demanda Reativa,1,0.0,0.0,0.0,0.0,Abr,Ajustado (delta),5
+Demanda,Demanda ativa Fora de Ponta,1,1373.8500493372392,1342.689191933654,1742.1746769734807,1796.0448635929417,Abr,Ajustado (delta),5
+Consumo,Consumo Reativo,2,0.0,0.0,0.0,0.0,Abr,Ajustado (delta),5
+Consumo,Consumo ativo Fora de Ponta,2,333.86590936623594,327.5628436735627,422.5678520540901,432.88311870015735,Abr,Ajustado (delta),5
+Demanda,Demanda Reativa,2,0.0,0.0,0.0,0.0,Abr,Ajustado (delta),5
+Demanda,Demanda ativa Fora de Ponta,2,1338.3107684915287,1313.0446702700024,1693.8745511594284,1735.2235477557972,Abr,Ajustado (delta),5
+Consumo,Consumo Reativo,3,0.0,0.0,0.0,0.0,Abr,Ajustado (delta),5
+Consumo,Consumo ativo Fora de Ponta,3,331.51235398706007,326.1602734250246,424.5186997634205,431.8630676103114,Abr,Ajustado (delta),5
+Demanda,Demanda Reativa,3,0.0,0.0,0.0,0.0,Abr,Ajustado (delta),5
+Demanda,Demanda ativa Fora de Ponta,3,1328.8764846574786,1307.4224334027583,1701.6945715293225,1731.1346482159831,Abr,Ajustado (delta),5
+Consumo,Consumo Reativo,4,0.0020646319569120283,0.0,0.0,0.2477558348294434,Abr,Ajustado (delta),5
+Consumo,Consumo ativo Fora de Ponta,4,328.05164471794444,324.5026904040249,424.0214248571206,430.5880037480039,Abr,Ajustado (delta),5
+Demanda,Demanda Reativa,4,0.008103241490173862,0.0,0.0,0.9723889788208635,Abr,Ajustado (delta),5
+Demanda,Demanda ativa Fora de Ponta,4,1315.0040588615486,1300.7779716505606,1699.701233003663,1726.0235237912157,Abr,Ajustado (delta),5
+Consumo,Consumo Reativo,5,0.0,0.0,0.0,0.0,Abr,Ajustado (delta),5
+Consumo,Consumo ativo Fora de Ponta,5,325.62903223417044,326.03276703879385,426.36116704445476,433.7756634037725,Abr,Ajustado (delta),5
+Demanda,Demanda Reativa,5,0.0,0.0,0.0,0.0,Abr,Ajustado (delta),5
+Demanda,Demanda ativa Fora de Ponta,5,1305.2929579484103,1306.9113209602815,1709.0801463231114,1738.8013348531344,Abr,Ajustado (delta),5
+Consumo,Consumo Reativo,6,71.35058348294434,93.40394973070018,117.75834829443447,151.1310592459605,Abr,Ajustado (delta),5
+Consumo,Consumo ativo Fora de Ponta,6,333.7947271552005,332.0255671916388,347.0458194896204,435.30574003854144,Abr,Ajustado (delta),5
+Demanda,Demanda Reativa,6,280.0351535636665,366.5896321102793,462.1754687283702,593.1562641755405,Abr,Ajustado (delta),5
+Demanda,Demanda ativa Fora de Ponta,6,1338.025353010413,1330.9336057566886,1391.1426514804496,1744.9346841628555,Abr,Ajustado (delta),5
+Consumo,Consumo Reativo,7,110.41032315978455,110.12746858168761,129.03743267504487,155.34290843806102,Abr,Ajustado (delta),5
+Consumo,Consumo ativo Fora de Ponta,7,351.02190248819267,349.4939421052507,379.59819989432935,441.4260465776172,Abr,Ajustado (delta),5
+Demanda,Demanda Reativa,7,433.33604070571795,432.22588818068755,506.4434769891899,609.6868768154951,Abr,Ajustado (delta),5
+Demanda,Demanda ativa Fora de Ponta,7,1407.080867765456,1400.9560103760032,1521.629658044764,1769.4680814017395,Abr,Ajustado (delta),5
+Consumo,Consumo Reativo,8,122.52145421903052,122.26750448833033,146.5971274685817,155.83842010771994,Abr,Ajustado (delta),5
+Consumo,Consumo ativo Fora de Ponta,8,401.2880987453975,402.664105163471,448.31139143407734,465.6522599614585,Abr,Ajustado (delta),5
+Demanda,Demanda Reativa,8,480.86964684620125,479.87294814290993,575.3615458631187,611.6316547731369,Abr,Ajustado (delta),5
+Demanda,Demanda ativa Fora de Ponta,8,1608.5740727925736,1614.0898988888077,1797.0670884778951,1866.578380654733,Abr,Ajustado (delta),5
+Consumo,Consumo Reativo,9,108.65641831238779,104.98653500897666,152.29551166965888,157.94434470377018,Abr,Ajustado (delta),5
+Consumo,Consumo ativo Fora de Ponta,9,355.02457588106,344.7762058147132,463.3507696899936,478.9129241294559,Abr,Ajustado (delta),5
+Demanda,Demanda Reativa,9,426.4523455006918,412.04881687015467,597.7264923759985,619.8969610931142,Abr,Ajustado (delta),5
+Demanda,Demanda ativa Fora de Ponta,9,1423.1257432789098,1382.0448500043635,1857.352801068028,1919.734074672315,Abr,Ajustado (delta),5
+Consumo,Consumo Reativo,10,162.47896293467406,169.21723518850985,201.44289276807964,207.83790523690757,Abr,Ajustado (delta),5
+Consumo,Consumo ativo Fora de Ponta,10,494.2732428568357,537.3108490231366,576.6656951332558,598.459826598498,Abr,Ajustado (delta),5
+Demanda,Demanda Reativa,10,639.652569775395,664.1406596294635,806.3560327800602,831.9547047166545,Abr,Ajustado (delta),5
+Demanda,Demanda ativa Fora de Ponta,10,1981.1032408007945,2153.823573326666,2311.577363879526,2392.8000889049263,Abr,Ajustado (delta),5
+Consumo,Consumo Reativo,11,181.4501863653254,185.50718132854576,206.68680299251852,209.37270822942628,Abr,Ajustado (delta),5
+Consumo,Consumo ativo Fora de Ponta,11,543.580495583314,571.6100669192068,598.498755105086,601.9633921914165,Abr,Ajustado (delta),5
+Demanda,Demanda Reativa,11,717.7782781975353,728.0752349869354,827.3469437680676,838.0983859814372,Abr,Ajustado (delta),5
+Demanda,Demanda ativa Fora de Ponta,11,2177.7833770772622,2291.3128203529113,2392.9557354027556,2406.8082737095715,Abr,Ajustado (delta),5
+Consumo,Consumo Reativo,12,186.8967325259561,187.79892280071812,209.3982882793016,214.7445187032417,Abr,Ajustado (delta),5
+Consumo,Consumo ativo Fora de Ponta,12,560.4826047374479,577.4753606858211,604.7532684968884,624.4121643238191,Abr,Ajustado (delta),5
+Demanda,Demanda Reativa,12,740.6166052182575,737.068820135842,838.2007806691836,859.6012704081764,Abr,Ajustado (delta),5
+Demanda,Demanda ativa Fora de Ponta,12,2244.3532904540943,2314.8229278892536,2417.9629393873447,2496.5644207911887,Abr,Ajustado (delta),5
+Consumo,Consumo Reativo,13,188.3161619443312,186.06463195691202,212.10977356608464,218.96522693266817,Abr,Ajustado (delta),5
+Consumo,Consumo ativo Fora de Ponta,13,575.8324670036386,593.2693590534338,613.3824207905577,623.1145474375531,Abr,Ajustado (delta),5
+Demanda,Demanda Reativa,13,745.1977156952356,730.2626037366892,849.0546175702995,876.4963938863287,Abr,Ajustado (delta),5
+Demanda,Demanda ativa Fora de Ponta,13,2304.842213475606,2372.0472225276735,2452.464579739527,2491.3762041968753,Abr,Ajustado (delta),5
+Consumo,Consumo Reativo,14,189.22296585824478,186.31238779174146,213.10739551122177,216.79092269326668,Abr,Ajustado (delta),5
+Consumo,Consumo ativo Fora de Ponta,14,579.7333846057976,580.2167479897821,612.2859345216629,621.9466922399137,Abr,Ajustado (delta),5
+Demanda,Demanda Reativa,14,749.427097012581,731.2344862629169,853.0480103924083,867.7928454278865,Abr,Ajustado (delta),5
+Demanda,Demanda ativa Fora de Ponta,14,2320.895419428535,2325.8118454025034,2448.0805367173325,2486.706809261994,Abr,Ajustado (delta),5
+Consumo,Consumo Reativo,15,183.7166896206521,184.45421903052062,209.3982882793016,214.7445187032417,Abr,Ajustado (delta),5
+Consumo,Consumo ativo Fora de Ponta,15,570.0166870943572,576.5190627890904,603.0469022914485,608.4514766227467,Abr,Ajustado (delta),5
+Demanda,Demanda Reativa,15,725.4212648698569,723.9425818269466,838.2007806691836,859.6012704081764,Abr,Ajustado (delta),5
+Demanda,Demanda ativa Fora de Ponta,15,2282.932290066296,2310.989584570678,2411.140434565823,2432.749356681137,Abr,Ajustado (delta),5
+Consumo,Consumo Reativo,16,180.60336131663655,178.26032315978455,205.20316009975048,213.59341645885272,Abr,Ajustado (delta),5
+Consumo,Consumo ativo Fora de Ponta,16,564.055094371831,572.3751052365913,598.7193499757512,617.4050331379824,Abr,Ajustado (delta),5
+Demanda,Demanda Reativa,16,712.6589116839604,699.632857356425,821.4080518787777,854.9935094595894,Abr,Ajustado (delta),5
+Demanda,Demanda ativa Fora de Ponta,16,2259.956390707584,2294.3794950077718,2393.837732223789,2468.548051181898,Abr,Ajustado (delta),5
+Consumo,Consumo Reativo,17,158.0063615324346,154.53770197486534,197.63786034912704,204.00089775561082,Abr,Ajustado (delta),5
+Consumo,Consumo ativo Fora de Ponta,17,499.3648857322883,478.4028985845329,576.6019419401405,594.6967376283264,Abr,Ajustado (delta),5
+Demanda,Demanda Reativa,17,621.3098528314489,606.5266126343274,791.1248229777865,816.5955015546979,Abr,Ajustado (delta),5
+Demanda,Demanda ativa Fora de Ponta,17,2001.5638454984864,1917.689624902408,2311.3218076582875,2377.754260781418,Abr,Ajustado (delta),5
+Consumo,Consumo Reativo,18,146.9811490125673,150.6355475763016,161.56157989228006,166.1202872531418,Abr,Ajustado (delta),5
+Consumo,Consumo ativo Fora de Ponta,18,454.4444663209964,468.9036728103425,483.4457761599588,489.2409414141462,Abr,Ajustado (delta),5
+Consumo,Consumo ativo de Ponta,18,484.181623417677,474.7238850735972,554.688244128902,558.6240797876021,Abr,Ajustado (delta),5
+Demanda,Demanda Reativa,18,576.8687572211676,591.2114862178987,634.0938401838988,651.9857973942027,Abr,Ajustado (delta),5
+Demanda,Demanda ativa Fora de Ponta,18,1821.6517389367052,1879.6117479378902,1937.9041220023632,1961.1341825129318,Abr,Ajustado (delta),5
+Demanda,Demanda ativa de Ponta,18,1938.9708249925432,1901.5619094639442,2219.2702962790836,2235.017309598442,Abr,Ajustado (delta),5
+Consumo,Consumo Reativo,19,150.22778276481148,151.7504488330341,162.55260323159783,169.21723518850985,Abr,Ajustado (delta),5
+Consumo,Consumo ativo Fora de Ponta,19,458.70316191188306,470.8162686038037,479.0340551963751,482.6106093301475,Abr,Ajustado (delta),5
+Consumo,Consumo ativo de Ponta,19,479.04893774592045,475.24313578931606,557.1609438549999,570.6217944349409,Abr,Ajustado (delta),5
+Demanda,Demanda Reativa,19,589.6110960235894,595.5872366225926,637.9833960991823,664.1406596294635,Abr,Ajustado (delta),5
+Demanda,Demanda ativa Fora de Ponta,19,1838.722859021509,1887.2784345750415,1920.219631492668,1934.5563355041409,Abr,Ajustado (delta),5
+Demanda,Demanda ativa de Ponta,19,1918.62387025082,1903.6418287886684,2229.1634013012826,2283.0193576351467,Abr,Ajustado (delta),5
+Consumo,Consumo Reativo,20,147.12877019748652,149.64452423698384,161.09084380610412,166.1202872531418,Abr,Ajustado (delta),5
+Consumo,Consumo ativo Fora de Ponta,20,450.5331902141481,459.21318745680594,477.83549516580615,483.88567319245493,Abr,Ajustado (delta),5
+Consumo,Consumo ativo de Ponta,20,469.66236883267675,467.4543750535339,490.5999997029638,571.2070488079817,Abr,Ajustado (delta),5
+Demanda,Demanda Reativa,20,577.4481305468385,587.3219303026153,632.2463011241392,651.9857973942027,Abr,Ajustado (delta),5
+Demanda,Demanda ativa Fora de Ponta,20,1805.973382510691,1840.7672023096575,1915.4151745333866,1939.6674599289083,Abr,Ajustado (delta),5
+Demanda,Demanda ativa de Ponta,20,1881.1549509208514,1872.4430389178035,1965.0237142586045,2285.3609209540105,Abr,Ajustado (delta),5
+Consumo,Consumo Reativo,21,134.07410233393176,137.25673249551164,153.73249551166964,155.83842010771994,Abr,Ajustado (delta),5
+Consumo,Consumo ativo Fora de Ponta,21,420.6038673231481,433.52065063131107,462.9618752119898,474.3226942251491,Abr,Ajustado (delta),5
+Consumo,Consumo ativo de Ponta,21,459.28746296961356,455.641421270931,476.15182454182394,559.2093341606432,Abr,Ajustado (delta),5
+Demanda,Demanda Reativa,21,526.2113346044691,538.7024813615722,603.3663484531595,611.6316547731369,Abr,Ajustado (delta),5
+Demanda,Demanda ativa Fora de Ponta,21,1686.0016233378392,1737.779109968181,1855.7939081184736,1901.334026743152,Abr,Ajustado (delta),5
+Demanda,Demanda ativa de Ponta,21,1839.6052525361897,1825.1248742803255,1907.2816876069357,2237.3588729173057,Abr,Ajustado (delta),5
+Consumo,Consumo Reativo,22,79.8238330341113,77.91921005385997,120.80574506283662,128.9569120287253,Abr,Ajustado (delta),5
+Consumo,Consumo ativo Fora de Ponta,22,268.84990716901086,251.12382768145034,392.72498235678444,410.56950110977715,Abr,Ajustado (delta),5
+Demanda,Demanda Reativa,22,313.29082287583384,305.8153209339753,474.13585316786686,506.12745057107315,Abr,Ajustado (delta),5
+Demanda,Demanda ativa Fora de Ponta,22,1077.691055668512,1006.63382582278,1574.2486839977448,1645.778870322366,Abr,Ajustado (delta),5
+Consumo,Consumo Reativo,23,79.46458707360861,76.55655296229803,130.66642728904847,157.94434470377018,Abr,Ajustado (delta),5
+Consumo,Consumo ativo Fora de Ponta,23,276.5140769708667,243.0271721557981,392.57197469330754,464.75971525784337,Abr,Ajustado (delta),5
+Demanda,Demanda Reativa,23,311.8809517061856,300.4671815504605,512.8369345249371,619.8969610931142,Abr,Ajustado (delta),5
+Demanda,Demanda ativa Fora de Ponta,23,1108.4131549847586,974.1781857255064,1573.6353490667732,1863.0005935573959,Abr,Ajustado (delta),5
+Consumo,Consumo Reativo,0,27.64775293913245,0.0,112.16526032315977,167.23518850987432,Mai,Ajustado (delta),6
+Consumo,Consumo ativo Fora de Ponta,0,361.62555778872104,356.2517805754802,447.1638339580004,501.9915800372206,Mai,Ajustado (delta),6
+Demanda,Demanda Reativa,0,108.51128281098832,0.0,440.22378753148917,656.3615477988967,Mai,Ajustado (delta),6
+Demanda,Demanda ativa Fora de Ponta,0,1449.58585180399,1428.044969827271,1792.4672362182416,2012.2454267606067,Mai,Ajustado (delta),6
+Consumo,Consumo Reativo,1,0.0,0.0,0.0,0.0,Mai,Ajustado (delta),6
+Consumo,Consumo ativo Fora de Ponta,1,344.4492136306698,341.14227380713703,444.24393771331665,457.3643448564602,Mai,Ajustado (delta),6
+Demanda,Demanda Reativa,1,0.0,0.0,0.0,0.0,Mai,Ajustado (delta),6
+Demanda,Demanda ativa Fora de Ponta,1,1380.7341282508373,1367.4781453937762,1780.7636663804756,1833.3560718937445,Mai,Ajustado (delta),6
+Consumo,Consumo Reativo,2,0.0,0.0,0.0,0.0,Mai,Ajustado (delta),6
+Consumo,Consumo ativo Fora de Ponta,2,332.3381634933658,326.54279258371685,428.89216881113504,440.15098271530974,Mai,Ajustado (delta),6
+Demanda,Demanda Reativa,2,0.0,0.0,0.0,0.0,Mai,Ajustado (delta),6
+Demanda,Demanda ativa Fora de Ponta,2,1332.1868359476748,1308.9557707301885,1719.225728306275,1764.356956976972,Mai,Ajustado (delta),6
+Consumo,Consumo Reativo,3,0.0,0.0,0.0,0.0,Mai,Ajustado (delta),6
+Consumo,Consumo ativo Fora de Ponta,3,328.5561595533926,323.482639314179,425.4112444670357,428.42039518208134,Mai,Ajustado (delta),6
+Demanda,Demanda Reativa,3,0.0,0.0,0.0,0.0,Mai,Ajustado (delta),6
+Demanda,Demanda ativa Fora de Ponta,3,1317.026667276275,1296.6890721107466,1705.2723586266598,1717.334612269111,Mai,Ajustado (delta),6
+Consumo,Consumo Reativo,4,0.0,0.0,0.0,0.0,Mai,Ajustado (delta),6
+Consumo,Consumo ativo Fora de Ponta,4,327.306802623793,322.33508183810227,424.2955635875167,427.91036963715834,Mai,Ajustado (delta),6
+Demanda,Demanda Reativa,4,0.0,0.0,0.0,0.0,Mai,Ajustado (delta),6
+Demanda,Demanda ativa Fora de Ponta,4,1312.0186670000576,1292.089060128456,1700.800124754988,1715.290162499204,Mai,Ajustado (delta),6
+Consumo,Consumo Reativo,5,0.0,0.0,0.0,0.0,Mai,Ajustado (delta),6
+Consumo,Consumo ativo Fora de Ponta,5,330.0841796335449,324.7577031764864,421.936695442248,432.88311870015735,Mai,Ajustado (delta),6
+Demanda,Demanda Reativa,5,0.0,0.0,0.0,0.0,Mai,Ajustado (delta),6
+Demanda,Demanda ativa Fora de Ponta,5,1323.151704139015,1301.800196535514,1691.3445445691682,1735.2235477557972,Mai,Ajustado (delta),6
+Consumo,Consumo Reativo,6,72.89915735217467,93.89946140035906,110.7964093357271,163.02333931777378,Mai,Ajustado (delta),6
+Consumo,Consumo ativo Fora de Ponta,6,334.27132483299323,329.3479330807932,423.6962835722322,437.9833741493871,Mai,Ajustado (delta),6
+Demanda,Demanda Reativa,6,286.11295907501494,368.53441006792104,434.8513384235039,639.8309351589419,Mai,Ajustado (delta),6
+Demanda,Demanda ativa Fora de Ponta,6,1339.9358656159234,1320.200244464677,1698.3978962753474,1755.668045454867,Mai,Ajustado (delta),6
+Consumo,Consumo Reativo,7,110.78282272543001,108.8886894075404,164.39219030520644,173.4290843806104,Mai,Ajustado (delta),6
+Consumo,Consumo ativo Fora de Ponta,7,350.636375332741,347.26258034621276,443.3003904552091,463.48465139553593,Mai,Ajustado (delta),6
+Demanda,Demanda Reativa,7,434.798022035191,427.36394328658326,645.2033842669271,680.6712722694183,Mai,Ajustado (delta),6
+Demanda,Demanda ativa Fora de Ponta,7,1405.5354387473294,1392.0115426326602,1776.9814343061475,1857.8894691326284,Mai,Ajustado (delta),6
+Consumo,Consumo Reativo,8,121.4373226385591,121.524236983842,143.1347396768402,182.71992818671453,Mai,Ajustado (delta),6
+Consumo,Consumo ativo Fora de Ponta,8,394.01423644594666,392.97361980993446,448.6939105927696,488.9859286416847,Mai,Ajustado (delta),6
+Demanda,Demanda Reativa,8,476.6146608791997,476.95578120644734,561.7724098840971,717.1358589752007,Mai,Ajustado (delta),6
+Demanda,Demanda ativa Fora de Ponta,8,1579.4166473549178,1575.2453532605746,1798.6005855279636,1960.1119576279782,Mai,Ajustado (delta),6
+Consumo,Consumo Reativo,9,114.47973320882076,111.49012567324955,160.87405745062833,209.37270822942628,Mai,Ajustado (delta),6
+Consumo,Consumo ativo Fora de Ponta,9,366.0985812178354,346.24252925636677,470.14686007609225,511.04453345960343,Mai,Ajustado (delta),6
+Demanda,Demanda Reativa,9,449.5670407560337,437.57402756420237,631.3954607676709,838.0983859814372,Mai,Ajustado (delta),6
+Demanda,Demanda ativa Fora de Ponta,9,1467.5161262573777,1387.9226430928463,1884.5950942520383,2048.534410176456,Mai,Ajustado (delta),6
+Consumo,Consumo Reativo,10,169.08399539288106,178.26032315978455,201.95449376558588,206.17520199501232,Mai,Ajustado (delta),6
+Consumo,Consumo ativo Fora de Ponta,10,499.3361698483936,534.2506957535988,572.6301180090528,593.918167496567,Mai,Ajustado (delta),6
+Demanda,Demanda Reativa,10,665.4008126013997,699.632857356425,808.4039265349877,825.29905001314,Mai,Ajustado (delta),6
+Demanda,Demanda ativa Fora de Ponta,10,2001.5033167370307,2141.556874707224,2295.4017198927254,2374.6413308248298,Mai,Ajustado (delta),6
+Consumo,Consumo Reativo,11,186.8931031126648,190.89587073608615,207.1984039900248,210.39591022443875,Mai,Ajustado (delta),6
+Consumo,Consumo ativo Fora de Ponta,11,546.5145197909076,568.4224072634381,596.2538778918458,605.4669577843348,Mai,Ajustado (delta),6
+Demanda,Demanda Reativa,11,740.0217364208971,749.2236823711028,829.3948375229951,842.1941734912922,Mai,Ajustado (delta),6
+Demanda,Demanda ativa Fora de Ponta,11,2189.7795846260497,2278.5350092909925,2383.9801206945936,2420.816458514217,Mai,Ajustado (delta),6
+Consumo,Consumo Reativo,12,188.3568742509279,189.65709156193896,209.8843092269325,216.79092269326668,Mai,Ajustado (delta),6
+Consumo,Consumo ativo Fora de Ponta,12,557.3884074360648,575.8177776648214,603.5010682016417,612.4740889701715,Mai,Ajustado (delta),6
+Demanda,Demanda Reativa,12,745.345384159959,744.3617374769985,840.1462797363647,867.7928454278865,Mai,Ajustado (delta),6
+Demanda,Demanda ativa Fora de Ponta,12,2232.575588903081,2308.1784661370557,2412.9563103738324,2448.8328281235076,Mai,Ajustado (delta),6
+Consumo,Consumo Reativo,13,189.01903489639824,188.294434470377,209.73082892768062,214.7445187032417,Mai,Ajustado (delta),6
+Consumo,Consumo ativo Fora de Ponta,13,572.8593076671843,578.495411775667,609.2300467545064,626.099066275965,Mai,Ajustado (delta),6
+Demanda,Demanda Reativa,13,746.7824197956846,739.0135980934837,839.5319116098864,859.6012704081764,Mai,Ajustado (delta),6
+Demanda,Demanda ativa Fora de Ponta,13,2293.393117194127,2318.9118274290677,2435.8622866377245,2503.3091023637953,Mai,Ajustado (delta),6
+Consumo,Consumo Reativo,14,192.08675424197938,188.91382405745063,215.69098054862826,219.47682793017438,Mai,Ajustado (delta),6
+Consumo,Consumo ativo Fora de Ponta,14,582.4651493253866,591.7122187899146,608.9315948706651,625.450257832832,Mai,Ajustado (delta),6
+Demanda,Demanda Reativa,14,760.3059390812039,741.444570540536,863.3898738547924,878.5442876412562,Mai,Ajustado (delta),6
+Demanda,Demanda ativa Fora de Ponta,14,2331.59193507378,2365.821362614498,2434.668996821033,2500.7149940666386,Mai,Ajustado (delta),6
+Consumo,Consumo Reativo,15,189.49277945692896,186.5601436265709,215.25611970074797,217.94202493765567,Mai,Ajustado (delta),6
+Consumo,Consumo ativo Fora de Ponta,15,578.5639853123018,579.1329437068207,608.438500453884,618.4431266469953,Mai,Ajustado (delta),6
+Demanda,Demanda Reativa,15,749.35957018542,732.2068752417377,861.6491641631039,872.4006063764735,Mai,Ajustado (delta),6
+Demanda,Demanda ativa Fora de Ponta,15,2316.314621483617,2321.4673896414515,2432.697474515194,2472.698624457348,Mai,Ajustado (delta),6
+Consumo,Consumo Reativo,16,182.46010006402304,178.75583482944342,209.37270822942628,221.13953117206964,Mai,Ajustado (delta),6
+Consumo,Consumo ativo Fora de Ponta,16,567.9672301454567,567.9123817185152,602.5473197902361,609.2300467545064,Mai,Ajustado (delta),6
+Demanda,Demanda Reativa,16,720.1532488439077,701.5776353140668,838.0983859814372,885.1999423447708,Mai,Ajustado (delta),6
+Demanda,Demanda ativa Fora de Ponta,16,2275.5706444307243,2276.4905595210857,2409.142971177012,2435.8622866377245,Mai,Ajustado (delta),6
+Consumo,Consumo Reativo,17,161.70417093364347,160.7315978456014,190.32603231597844,217.43042394014947,Mai,Ajustado (delta),6
+Consumo,Consumo ativo Fora de Ponta,17,503.7740984215839,492.93862661483774,578.6356688005208,603.3907707663092,Mai,Ajustado (delta),6
+Demanda,Demanda Reativa,17,635.4314749945496,630.836337104849,746.9871877198149,870.3527126215461,Mai,Ajustado (delta),6
+Demanda,Demanda ativa Fora de Ponta,17,2019.0941638867216,1975.9564433447572,2319.474051115792,2412.5153119633155,Mai,Ajustado (delta),6
+Consumo,Consumo Reativo,18,153.33488735738692,153.23698384201077,171.08159784560144,175.41113105924595,Mai,Ajustado (delta),6
+Consumo,Consumo ativo Fora de Ponta,18,463.46408584936967,467.94737491361195,493.5889091846146,502.24659280968206,Mai,Ajustado (delta),6
+Consumo,Consumo ativo de Ponta,18,482.21415591815753,471.2189427424953,561.067516795048,563.8913691449703,Mai,Ajustado (delta),6
+Demanda,Demanda Reativa,18,601.805820979084,601.4215704955178,671.4578866950905,688.4503840999851,Mai,Ajustado (delta),6
+Demanda,Demanda ativa Fora de Ponta,18,1857.8071003398152,1875.7784046193146,1978.5631168013888,2013.26765164556,Mai,Ajustado (delta),6
+Demanda,Demanda ativa de Ponta,18,1931.2279830825448,1887.5224540220547,2244.793336454698,2256.0913794682147,Mai,Ajustado (delta),6
+Consumo,Consumo Reativo,19,155.0961516186946,155.59066427289048,174.27145421903052,180.11849192100536,Mai,Ajustado (delta),6
+Consumo,Consumo ativo Fora de Ponta,19,464.2528773725761,473.0476303628417,496.66818841208703,499.31394592637497,Mai,Ajustado (delta),6
+Consumo,Consumo ativo de Ponta,19,480.1650827654833,469.7910032742685,554.5858246136199,566.9639546034351,Mai,Ajustado (delta),6
+Demanda,Demanda Reativa,19,608.7184087599759,610.6592657943161,683.9773947974091,706.9257746975815,Mai,Ajustado (delta),6
+Demanda,Demanda ativa Fora de Ponta,19,1860.9690280803097,1896.2229023183845,1990.9064822872024,2001.5120654685948,Mai,Ajustado (delta),6
+Demanda,Demanda ativa de Ponta,19,1923.0154806233636,1881.802675879063,2218.8605226982827,2268.384586892249,Mai,Ajustado (delta),6
+Consumo,Consumo Reativo,20,151.52966641570623,151.68850987432674,167.65637342908437,178.50807899461398,Mai,Ajustado (delta),6
+Consumo,Consumo ativo Fora de Ponta,20,456.89257122740645,469.8599707070731,487.99775414839644,497.2738437466831,Mai,Ajustado (delta),6
+Consumo,Consumo ativo de Ponta,20,468.347882274645,463.3003693277834,552.5154872689876,564.1839963314908,Mai,Ajustado (delta),6
+Demanda,Demanda Reativa,20,594.7207125729176,595.3441393778874,658.0146090628921,700.6052463352459,Mai,Ajustado (delta),6
+Demanda,Demanda ativa Fora de Ponta,20,1831.4651688200981,1883.4450912564657,1956.1508361987833,1993.3342663889669,Mai,Ajustado (delta),6
+Demanda,Demanda ativa de Ponta,20,1875.836401456832,1855.8036843200089,2210.5772424578026,2257.262161127647,Mai,Ajustado (delta),6
+Consumo,Consumo Reativo,21,137.19779058319338,140.84919210053857,159.35655296229803,173.4290843806104,Mai,Ajustado (delta),6
+Consumo,Consumo ativo Fora de Ponta,21,419.44445056722395,428.67540795454283,465.90727273392,484.5232051236087,Mai,Ajustado (delta),6
+Consumo,Consumo ativo de Ponta,21,446.2723322699177,448.63153660872706,476.9696444190811,481.34433169901206,Mai,Ajustado (delta),6
+Demanda,Demanda Reativa,21,538.471146886772,552.8021215544746,625.4395782723932,680.6712722694183,Mai,Ajustado (delta),6
+Demanda,Demanda ativa Fora de Ponta,21,1681.3540569577308,1718.3568371540646,1867.6006055396865,1942.2230221412922,Mai,Ajustado (delta),6
+Demanda,Demanda ativa de Ponta,21,1787.596507455391,1797.0470466878621,1910.5575605433764,1928.080880854179,Mai,Ajustado (delta),6
+Consumo,Consumo Reativo,22,87.35391208663926,83.86535008976661,122.11885098743267,146.05206463195688,Mai,Ajustado (delta),6
+Consumo,Consumo ativo Fora de Ponta,22,276.08777862014045,261.0682632542298,391.6603040317578,407.63685422647,Mai,Ajustado (delta),6
+Demanda,Demanda Reativa,22,342.84465129264544,329.15265642567607,479.2895147556174,573.2222901097127,Mai,Ajustado (delta),6
+Demanda,Demanda ativa Fora de Ponta,22,1106.70447254208,1046.5005963359663,1569.9808951030643,1634.0232841454008,Mai,Ajustado (delta),6
+Consumo,Consumo Reativo,23,77.83729078589215,77.91921005385997,126.88195691202871,168.2262118491921,Mai,Ajustado (delta),6
+Consumo,Consumo ativo Fora de Ponta,23,271.3762462693631,248.95568783891838,395.0519739054956,477.76536665337926,Mai,Ajustado (delta),6
+Demanda,Demanda Reativa,23,305.49415647261526,305.8153209339753,497.9836928734485,660.2511037141801,Mai,Ajustado (delta),6
+Demanda,Demanda ativa Fora de Ponta,23,1087.818129290043,997.9449143006755,1583.5764860729455,1915.1340626900244,Mai,Ajustado (delta),6
+Consumo,Consumo Reativo,0,24.8024236983842,0.0,112.74129263913822,167.7307001795332,Jun,Ajustado (delta),7
+Consumo,Consumo ativo Fora de Ponta,0,341.9700913105198,355.6142486443265,401.03839873902905,480.69801353668635,Jun,Ajustado (delta),7
+Demanda,Demanda Reativa,0,97.3440121177917,0.0,442.48459190724765,658.3063257565383,Jun,Ajustado (delta),7
+Demanda,Demanda ativa Fora de Ponta,0,1370.796312216079,1425.4894076148873,1607.573215247229,1926.8896488669895,Jun,Ajustado (delta),7
+Consumo,Consumo Reativo,1,0.0,0.0,0.0,0.0,Jun,Ajustado (delta),7
+Consumo,Consumo ativo Fora de Ponta,1,314.0472995522562,330.36798417063915,361.43491517575995,445.63375732323175,Jun,Ajustado (delta),7
+Demanda,Demanda Reativa,1,0.0,0.0,0.0,0.0,Jun,Ajustado (delta),7
+Demanda,Demanda ativa Fora de Ponta,1,1258.8670708127436,1324.289144004491,1448.8216906139508,1786.334792003472,Jun,Ajustado (delta),7
+Consumo,Consumo Reativo,2,0.0,0.0,0.0,0.0,Jun,Ajustado (delta),7
+Consumo,Consumo ativo Fora de Ponta,2,308.6431450278997,324.5026904040249,416.54317530468745,422.81011418792855,Jun,Ajustado (delta),7
+Demanda,Demanda Reativa,2,0.0,0.0,0.0,0.0,Jun,Ajustado (delta),7
+Demanda,Demanda ativa Fora de Ponta,2,1237.2044927802767,1300.7779716505606,1669.7244882524017,1694.8456648001338,Jun,Ajustado (delta),7
+Consumo,Consumo Reativo,3,0.0,0.0,0.0,0.0,Jun,Ajustado (delta),7
+Consumo,Consumo ativo Fora de Ponta,3,310.66410354043666,322.20757545187155,417.5823523524681,423.32013973285154,Jun,Ajustado (delta),7
+Demanda,Demanda Reativa,3,0.0,0.0,0.0,0.0,Jun,Ajustado (delta),7
+Demanda,Demanda ativa Fora de Ponta,3,1245.3057048548521,1291.577947685979,1673.8900546585874,1696.8901145700409,Jun,Ajustado (delta),7
+Consumo,Consumo Reativo,4,0.0,0.0,0.0,0.0,Jun,Ajustado (delta),7
+Consumo,Consumo ativo Fora de Ponta,4,321.1482541659886,321.6337967138332,420.13248007708296,427.1453313197739,Jun,Ajustado (delta),7
+Demanda,Demanda Reativa,4,0.0,0.0,0.0,0.0,Jun,Ajustado (delta),7
+Demanda,Demanda ativa Fora de Ponta,4,1287.3318544496638,1289.2779416948338,1684.1123035081223,1712.2234878443435,Jun,Ajustado (delta),7
+Consumo,Consumo Reativo,5,0.00929084380610413,0.0,0.0,1.1149012567324956,Jun,Ajustado (delta),7
+Consumo,Consumo ativo Fora de Ponta,5,324.31784156243094,325.1402223351787,421.3820426621442,427.1453313197739,Jun,Ajustado (delta),7
+Demanda,Demanda Reativa,5,0.036464586705782384,0.0,0.0,4.375750404693886,Jun,Ajustado (delta),7
+Demanda,Demanda ativa Fora de Ponta,5,1300.0371514338062,1303.3335338629445,1689.1212054443943,1712.2234878443435,Jun,Ajustado (delta),7
+Consumo,Consumo Reativo,6,74.80471274685816,99.59784560143626,113.49694793536804,163.51885098743267,Jun,Ajustado (delta),7
+Consumo,Consumo ativo Fora de Ponta,6,322.58587981613005,325.65024788010163,354.8747116041881,433.52065063131107,Jun,Ajustado (delta),7
+Demanda,Demanda Reativa,6,293.5918681358508,390.8993565808009,445.4503782926513,641.7757131165837,Jun,Ajustado (delta),7
+Demanda,Demanda ativa Fora de Ponta,6,1293.0944342750713,1305.3779836328513,1422.524955448522,1737.779109968181,Jun,Ajustado (delta),7
+Consumo,Consumo Reativo,7,113.02871022735845,112.48114901256731,128.11454219030517,172.8096947935368,Jun,Ajustado (delta),7
+Consumo,Consumo ativo Fora de Ponta,7,345.53696713216743,344.26618026979025,377.5835989918836,461.06203005715173,Jun,Ajustado (delta),7
+Demanda,Demanda Reativa,7,443.61265334784775,441.4635834794858,502.82132804308225,678.2402998223661,Jun,Ajustado (delta),7
+Demanda,Demanda ativa Fora de Ponta,7,1385.0944070453857,1380.0004002344567,1513.5540814536312,1848.17833272557,Jun,Ajustado (delta),7
+Consumo,Consumo Reativo,8,123.58061041292639,124.3734290843806,139.36265709156194,161.04129263913822,Jun,Ajustado (delta),7
+Consumo,Consumo ativo Fora de Ponta,8,388.3164490528565,389.14842822301216,445.6911351970356,462.2095875332285,Jun,Ajustado (delta),7
+Demanda,Demanda Reativa,8,485.0266097306605,488.13825446288723,546.9677876815495,632.051823328375,Jun,Ajustado (delta),7
+Demanda,Demanda ativa Fora de Ponta,8,1556.576944678672,1559.9119799862722,1786.564739361707,1852.778344707861,Jun,Ajustado (delta),7
+Consumo,Consumo Reativo,9,109.19219030520645,111.42818671454219,143.45062836624777,152.24596050269298,Jun,Ajustado (delta),7
+Consumo,Consumo ativo Fora de Ponta,9,354.2712345036902,347.6450995049049,464.3580701412165,490.26099250399216,Jun,Ajustado (delta),7
+Demanda,Demanda Reativa,9,428.55512822651536,437.3309303194971,563.0122058320937,597.5320145802343,Jun,Ajustado (delta),7
+Demanda,Demanda ativa Fora de Ponta,9,1420.1059472183829,1393.5448799600904,1861.390589363594,1965.2230820527457,Jun,Ajustado (delta),7
+Consumo,Consumo Reativo,10,170.9576284665356,181.10951526032315,207.23037905236893,214.2329177057355,Jun,Ajustado (delta),7
+Consumo,Consumo ativo Fora de Ponta,10,500.40492698396974,538.9684320441363,574.3387035845448,594.6967376283264,Jun,Ajustado (delta),7
+Demanda,Demanda Reativa,10,673.1273443836915,710.815330612865,829.522830882678,857.553376653249,Jun,Ajustado (delta),7
+Demanda,Demanda ativa Fora de Ponta,10,2005.7840613987858,2160.468035078864,2302.2495618043254,2377.754260781418,Jun,Ajustado (delta),7
+Consumo,Consumo Reativo,11,189.04246229130936,195.1077199281867,211.08657157107217,217.43042394014947,Jun,Ajustado (delta),7
+Consumo,Consumo ativo Fora de Ponta,11,545.0719471220549,570.2712498637841,599.5822652051182,611.4359954611585,Jun,Ajustado (delta),7
+Demanda,Demanda Reativa,11,748.43418228097,765.7542950110576,844.9588300604445,870.3527126215461,Jun,Ajustado (delta),7
+Demanda,Demanda ativa Fora de Ponta,11,2184.0136967199987,2285.946139706906,2397.2878962590066,2444.6822548480573,Jun,Ajustado (delta),7
+Consumo,Consumo Reativo,12,192.57949411122095,196.0987432675045,213.59341645885272,217.43042394014947,Jun,Ajustado (delta),7
+Consumo,Consumo ativo Fora de Ponta,12,558.4019418168508,575.3077521198984,610.3979019521458,618.4431266469953,Jun,Ajustado (delta),7
+Demanda,Demanda Reativa,12,763.8428539260883,769.643850926341,854.9935094595894,870.3527126215461,Jun,Ajustado (delta),7
+Demanda,Demanda ativa Fora de Ponta,12,2236.3618416414893,2306.134016367149,2440.5316815726064,2472.698624457348,Jun,Ajustado (delta),7
+Consumo,Consumo Reativo,13,194.1859691498363,192.50628366247753,217.9931850374063,223.1859351620946,Jun,Ajustado (delta),7
+Consumo,Consumo ativo Fora de Ponta,13,575.9776268883785,580.4080075691281,617.4309854757078,628.1752532939906,Jun,Ajustado (delta),7
+Demanda,Demanda Reativa,13,767.7635416899437,755.5442107334385,872.6053957519663,893.3915173644809,Jun,Ajustado (delta),7
+Demanda,Demanda ativa Fora de Ponta,13,2305.875905957408,2326.5785140662183,2468.651815513784,2511.6102489146965,Jun,Ajustado (delta),7
+Consumo,Consumo Reativo,14,195.98352997040604,192.50628366247753,217.5071640897754,222.67433416458834,Jun,Ajustado (delta),7
+Consumo,Consumo ativo Fora de Ponta,14,586.1396432759967,591.9717421671678,608.2179055832188,627.6562065394843,Jun,Ajustado (delta),7
+Demanda,Demanda Reativa,14,775.7681247452073,755.5442107334385,870.6598966847852,891.3436236095533,Jun,Ajustado (delta),7
+Demanda,Demanda ativa Fora de Ponta,14,2346.327815514312,2366.8590059333605,2431.815477694161,2509.5349622769713,Jun,Ajustado (delta),7
+Consumo,Consumo Reativo,15,191.97599069024025,190.40035906642728,213.62539152119686,221.6511321695759,Jun,Ajustado (delta),7
+Consumo,Consumo ativo Fora de Ponta,15,581.2077653613449,577.985386230744,604.5067212884978,609.2300467545064,Jun,Ajustado (delta),7
+Demanda,Demanda Reativa,15,758.1184824431228,747.2789044134612,855.1215028192723,887.2478360996982,Jun,Ajustado (delta),7
+Demanda,Demanda ativa Fora de Ponta,15,2327.2787142374204,2316.8673776591604,2416.977178234425,2435.8622866377245,Jun,Ajustado (delta),7
+Consumo,Consumo Reativo,16,188.5289750104093,186.80789946140035,215.2816997506233,219.47682793017438,Jun,Ajustado (delta),7
+Consumo,Consumo ativo Fora de Ponta,16,574.2945390844367,572.1200924641298,602.7744027453327,609.2300467545064,Jun,Ajustado (delta),7
+Demanda,Demanda Reativa,16,743.3817127812482,733.1792642205586,861.7515588508503,878.5442876412562,Jun,Ajustado (delta),7
+Demanda,Demanda ativa Fora de Ponta,16,2300.3850924386616,2293.357270122818,2410.0509090810165,2435.8622866377245,Jun,Ajustado (delta),7
+Consumo,Consumo Reativo,17,161.12914157425107,157.94434470377018,188.4492818671454,211.54701246882775,Jun,Ajustado (delta),7
+Consumo,Consumo ativo Fora de Ponta,17,498.34712753321145,480.2517411848787,572.6556192862989,601.7038688141632,Jun,Ajustado (delta),7
+Demanda,Demanda Reativa,17,633.0686700041168,619.8969610931142,739.6213412052467,846.8019344398792,Jun,Ajustado (delta),7
+Demanda,Demanda ativa Fora de Ponta,17,1997.4828280299757,1925.1007553183208,2295.503942381221,2405.770630390709,Jun,Ajustado (delta),7
+Consumo,Consumo Reativo,18,149.6961400359066,150.6355475763016,161.06606822262117,167.7307001795332,Jun,Ajustado (delta),7
+Consumo,Consumo ativo Fora de Ponta,18,466.05501822907627,465.3972471889971,488.00412946770797,504.6692141480662,Jun,Ajustado (delta),7
+Consumo,Consumo ativo de Ponta,18,481.1271662594108,473.1661329264408,562.7793858361927,586.4236625070453,Jun,Ajustado (delta),7
+Demanda,Demanda Reativa,18,587.5245113398697,591.2114862178987,632.1490622262571,658.3063257565383,Jun,Ajustado (delta),7
+Demanda,Demanda ativa Fora de Ponta,18,1868.1929145487527,1865.5561557697797,1956.1763918209072,2022.9787880526183,Jun,Ajustado (delta),7
+Demanda,Demanda ativa de Ponta,18,1926.8859507650495,1895.322151489771,2251.642409162374,2346.2415672444654,Jun,Ajustado (delta),7
+Consumo,Consumo Reativo,19,151.29829443447036,152.24596050269298,162.6331238779174,173.4290843806104,Jun,Ajustado (delta),7
+Consumo,Consumo ativo Fora de Ponta,19,467.230151491064,466.1622855063815,487.13071072202735,489.75096695906916,Jun,Ajustado (delta),7
+Consumo,Consumo ativo de Ponta,19,479.8101737506557,471.60838077928435,565.2740326012795,581.5953139294578,Jun,Ajustado (delta),7
+Demanda,Demanda Reativa,19,593.8126267362445,597.5320145802343,638.299422517299,680.6712722694183,Jun,Ajustado (delta),7
+Demanda,Demanda ativa Fora de Ponta,19,1872.903397130383,1868.6228304246401,1952.6752715899413,1963.1786322828386,Jun,Ajustado (delta),7
+Demanda,Demanda ativa de Ponta,19,1921.6370518989575,1889.0823935155981,2261.62332280903,2326.92366986384,Jun,Ajustado (delta),7
+Consumo,Consumo Reativo,20,146.92333931777378,145.80430879712745,162.52782764811488,165.62477558348294,Jun,Ajustado (delta),7
+Consumo,Consumo ativo Fora de Ponta,20,456.8320056939468,457.3643448564602,482.4065991121783,488.7309158692232,Jun,Ajustado (delta),7
+Consumo,Consumo ativo de Ponta,20,468.0329452072962,463.1705566488537,557.7754609466929,565.0618778910522,Jun,Ajustado (delta),7
+Demanda,Demanda Reativa,20,576.6418580185662,572.2499011308919,637.8861572013002,650.041019436561,Jun,Ajustado (delta),7
+Demanda,Demanda ativa Fora de Ponta,20,1831.22255013256,1833.3560718937445,1933.738555596178,1959.0897327430248,Jun,Ajustado (delta),7
+Demanda,Demanda ativa de Ponta,20,1874.5645634691932,1855.2837044888279,2231.6220427860894,2260.7745061059422,Jun,Ajustado (delta),7
+Consumo,Consumo Reativo,21,133.0056552962298,135.39856373429083,154.22800718132854,161.53680430879712,Jun,Ajustado (delta),7
+Consumo,Consumo ativo Fora de Ponta,21,417.66470022690874,428.42039518208134,465.71601315457394,480.18798799176335,Jun,Ajustado (delta),7
+Consumo,Consumo ativo de Ponta,21,452.60455006777084,446.1650957090627,474.3344470368081,556.575689481959,Jun,Ajustado (delta),7
+Demanda,Demanda Reativa,21,522.0179071333042,531.4095640204157,605.3111264108013,633.9966012860167,Jun,Ajustado (delta),7
+Demanda,Demanda ativa Fora de Ponta,21,1674.2199262740226,1717.334612269111,1866.8339368759716,1924.8451990970825,Jun,Ajustado (delta),7
+Demanda,Demanda ativa de Ponta,21,1812.85238341034,1787.1674298954217,1900.0019699704008,2226.821837982419,Jun,Ajustado (delta),7
+Consumo,Consumo Reativo,22,76.86728007181327,76.30879712746858,116.27800718132852,130.5673249551167,Jun,Ajustado (delta),7
+Consumo,Consumo ativo Fora de Ponta,22,265.0544759268192,247.9999212187971,380.1337267164985,412.2270841307768,Jun,Ajustado (delta),7
+Demanda,Demanda Reativa,22,301.68699794365796,299.49479257163966,456.3654445799155,512.4479789334088,Jun,Ajustado (delta),7
+Demanda,Demanda ativa Fora de Ponta,22,1062.4769508376007,994.1115709820997,1523.7763303031659,1652.4233320745639,Jun,Ajustado (delta),7
+Consumo,Consumo Reativo,23,72.8464093357271,73.21184919210053,125.44497307001795,184.70197486535005,Jun,Ajustado (delta),7
+Consumo,Consumo ativo Fora de Ponta,23,271.5615164190209,254.3752405303343,394.25505899155337,504.1591886031432,Jun,Ajustado (delta),7
+Demanda,Demanda Reativa,23,285.90604487293956,287.33993033637887,492.34383679628746,724.9149708057674,Jun,Ajustado (delta),7
+Demanda,Demanda ativa Fora de Ponta,23,1088.5607845996901,1019.667193105937,1580.382033307466,2020.9343382827112,Jun,Ajustado (delta),7
+Consumo,Consumo Reativo,0,27.226672190765548,0.0,98.08653500897665,112.9766606822262,Jul,Ajustado (delta),8
+Consumo,Consumo ativo Fora de Ponta,0,360.01482619264294,363.3921382044019,384.2139310758824,401.64405407362506,Jul,Ajustado (delta),8
+Demanda,Demanda Reativa,0,106.85858829574826,0.0,384.96778380999353,443.40836143712755,Jul,Ajustado (delta),8
+Demanda,Demanda ativa Fora de Ponta,0,1443.1292384221947,1456.667266605969,1540.1319284624221,1610.0009993489937,Jul,Ajustado (delta),8
+Consumo,Consumo Reativo,1,0.0,0.0,0.0,0.0,Jul,Ajustado (delta),8
+Consumo,Consumo ativo Fora de Ponta,1,347.3516149779773,348.21887824294333,368.7474064260931,436.70831028707966,Jul,Ajustado (delta),8
+Demanda,Demanda Reativa,1,0.0,0.0,0.0,0.0,Jul,Ajustado (delta),8
+Demanda,Demanda ativa Fora de Ponta,1,1392.3684860113547,1395.844885951236,1478.1339891899925,1750.5569210300996,Jul,Ajustado (delta),8
+Consumo,Consumo Reativo,2,0.2238130440686149,0.0,0.0,10.653500897666069,Jul,Ajustado (delta),8
+Consumo,Consumo ativo Fora de Ponta,2,330.42527199756006,332.2805799641003,356.474916751384,439.2584380116945,Jul,Ajustado (delta),8
+Demanda,Demanda Reativa,2,0.8784186153213684,0.0,0.0,41.812726089297136,Jul,Ajustado (delta),8
+Demanda,Demanda ativa Fora de Ponta,2,1324.518964126048,1331.955830641642,1428.9394166016054,1760.7791698796345,Jul,Ajustado (delta),8
+Consumo,Consumo Reativo,3,0.3065978456014362,0.0,0.0,11.272890484739676,Jul,Ajustado (delta),8
+Consumo,Consumo ativo Fora de Ponta,3,316.58882945041074,323.2276265417175,337.285205623657,399.9864710526254,Jul,Ajustado (delta),8
+Demanda,Demanda Reativa,3,1.2033313612908187,0.0,0.0,44.24369853634929,Jul,Ajustado (delta),8
+Demanda,Demanda ativa Fora de Ponta,3,1269.0553076138062,1295.666847225793,1352.0169940088547,1603.356537596796,Jul,Ajustado (delta),8
+Consumo,Consumo Reativo,4,0.21988330341113108,0.0,0.0,9.910233393177737,Jul,Ajustado (delta),8
+Consumo,Consumo ativo Fora de Ponta,4,315.50927538032374,322.462588224333,336.80068135598015,350.0039676501737,Jul,Ajustado (delta),8
+Demanda,Demanda Reativa,4,0.8629952187035165,0.0,0.0,38.895559152834544,Jul,Ajustado (delta),8
+Demanda,Demanda ativa Fora de Ponta,4,1264.7279244280894,1292.6001725709325,1350.0747667274427,1403.0004601459102,Jul,Ajustado (delta),8
+Consumo,Consumo Reativo,5,0.0,0.0,0.0,0.0,Jul,Ajustado (delta),8
+Consumo,Consumo ativo Fora de Ponta,5,322.48277673548625,323.9926648591019,337.9163622354992,345.7962569045592,Jul,Ajustado (delta),8
+Demanda,Demanda Reativa,5,0.0,0.0,0.0,0.0,Jul,Ajustado (delta),8
+Demanda,Demanda ativa Fora de Ponta,5,1292.681373785535,1298.7335218806534,1354.5470005991144,1386.1337495441776,Jul,Ajustado (delta),8
+Consumo,Consumo Reativo,6,58.36817773788151,78.91023339317773,107.33402154398563,112.9766606822262,Jul,Ajustado (delta),8
+Consumo,Consumo ativo Fora de Ponta,6,324.0319881827999,325.65024788010163,339.44643887026814,343.11862279371354,Jul,Ajustado (delta),8
+Demanda,Demanda Reativa,6,229.08202171871255,309.70487684925877,421.2622024444823,443.40836143712755,Jul,Ajustado (delta),8
+Demanda,Demanda ativa Fora de Ponta,6,1298.8913810881475,1305.3779836328513,1360.6803499088355,1375.4003882521658,Jul,Ajustado (delta),8
+Consumo,Consumo Reativo,7,92.41922526853908,91.2980251346499,120.92962298025132,125.85996409335726,Jul,Ajustado (delta),8
+Consumo,Consumo ativo Fora de Ponta,7,331.2141187107916,340.5047418759833,367.5998489500164,374.99521935139956,Jul,Ajustado (delta),8
+Demanda,Demanda Reativa,7,362.7248237005214,358.32432579030194,474.6220476572772,493.97258833581236,Jul,Ajustado (delta),8
+Demanda,Demanda ativa Fora de Ponta,7,1327.6808948356895,1364.9225831813924,1473.5339772077016,1503.178498871353,Jul,Ajustado (delta),8
+Consumo,Consumo Reativo,8,107.30390639509687,109.13644524236983,138.0,157.3249551166966,Jul,Ajustado (delta),8
+Consumo,Consumo ativo Fora de Ponta,8,376.3670121963648,380.6055003455523,442.5098508605785,461.06203005715173,Jul,Ajustado (delta),8
+Demanda,Demanda Reativa,8,421.14400688757394,428.33633226540417,541.6196482980347,617.4659886460621,Jul,Ajustado (delta),8
+Demanda,Demanda ativa Fora de Ponta,8,1508.6774831027292,1525.6674463403301,1773.8122709583945,1848.17833272557,Jul,Ajustado (delta),8
+Consumo,Consumo Reativo,9,86.13680121339688,81.75942549371632,122.88689407540394,178.50807899461398,Jul,Ajustado (delta),8
+Consumo,Consumo ativo Fora de Ponta,9,325.9196417607802,315.25847740229597,454.01730221790314,503.01163112706655,Jul,Ajustado (delta),8
+Demanda,Demanda Reativa,9,338.0677414226467,320.8873501056987,482.303920589962,700.6052463352459,Jul,Ajustado (delta),8
+Demanda,Demanda ativa Fora de Ponta,9,1306.4579932309043,1263.7233843885847,1819.9393702787297,2016.3343263004206,Jul,Ajustado (delta),8
+Consumo,Consumo Reativo,10,161.99773844099585,168.9694793536804,202.46609476309212,209.8843092269325,Jul,Ajustado (delta),8
+Consumo,Consumo ativo Fora de Ponta,10,505.88302944426124,534.951980877868,575.4352585061291,595.7348311373394,Jul,Ajustado (delta),8
+Demanda,Demanda Reativa,10,638.3247879515278,663.1682706506426,810.4518202899153,840.1462797363647,Jul,Ajustado (delta),8
+Demanda,Demanda ativa Fora de Ponta,10,2027.6347865603714,2144.367993140846,2306.6451288096255,2381.904834056869,Jul,Ajustado (delta),8
+Consumo,Consumo Reativo,11,168.10815645177894,177.51705565529622,207.8634852867829,214.2329177057355,Jul,Ajustado (delta),8
+Consumo,Consumo ativo Fora de Ponta,11,532.9759438519153,565.2347476076695,598.4857789362234,605.9860045388413,Jul,Ajustado (delta),8
+Demanda,Demanda Reativa,11,665.1181718383494,696.7156904199625,832.0570994044009,857.553376653249,Jul,Ajustado (delta),8
+Demanda,Demanda ativa Fora de Ponta,11,2135.2764049071216,2265.7571982290738,2392.9038532368127,2422.891745151942,Jul,Ajustado (delta),8
+Consumo,Consumo Reativo,12,176.29387856749503,178.50807899461398,205.20316009975048,208.86110723192004,Jul,Ajustado (delta),8
+Consumo,Consumo ativo Fora de Ponta,12,558.7925985432954,576.072790437283,606.7126699951502,616.3669396289696,Jul,Ajustado (delta),8
+Demanda,Demanda Reativa,12,698.2671539813095,700.6052463352459,821.4080518787777,836.0504922265096,Jul,Ajustado (delta),8
+Demanda,Demanda ativa Fora de Ponta,12,2237.0261554282306,2309.200691022009,2425.7971464447573,2464.397477906447,Jul,Ajustado (delta),8
+Consumo,Consumo Reativo,13,177.02068710629166,176.52603231597845,200.34934563591005,206.68680299251852,Jul,Ajustado (delta),8
+Consumo,Consumo ativo Fora de Ponta,13,568.0179782720272,583.1015303186618,612.5324817300534,624.9312110783255,Jul,Ajustado (delta),8
+Demanda,Demanda Reativa,13,700.2171761350916,692.8261345046791,801.9786598789025,827.3469437680676,Jul,Ajustado (delta),8
+Demanda,Demanda ativa Fora de Ponta,13,2273.834777534402,2334.3556961684153,2449.0662978702517,2498.639707428914,Jul,Ajustado (delta),8
+Consumo,Consumo Reativo,14,181.77151799943582,179.6229802513465,198.270966583541,202.46609476309212,Jul,Ajustado (delta),8
+Consumo,Consumo ativo Fora de Ponta,14,581.3964789128544,576.072790437283,605.5513028819421,620.6490753536475,Jul,Ajustado (delta),8
+Demanda,Demanda Reativa,14,719.4506780819913,704.9809967399399,793.6590914995095,810.4518202899153,Jul,Ajustado (delta),8
+Demanda,Demanda ativa Fora de Ponta,14,2327.623417890018,2309.200691022009,2421.1536925928476,2481.5185926676804,Jul,Ajustado (delta),8
+Consumo,Consumo Reativo,15,177.01588846107344,177.76481149012568,197.11986433915197,205.15199999999984,Jul,Ajustado (delta),8
+Consumo,Consumo ativo Fora de Ponta,15,567.4514962479124,572.1200924641298,600.7695846560517,613.641944167811,Jul,Ajustado (delta),8
+Demanda,Demanda Reativa,15,700.0197949833956,697.6880793987833,789.0513305509224,821.2032625032849,Jul,Ajustado (delta),8
+Demanda,Demanda ativa Fora de Ponta,15,2273.0130674177776,2293.357270122818,2402.035114442803,2453.5022230583895,Jul,Ajustado (delta),8
+Consumo,Consumo Reativo,16,175.93943214584718,175.41113105924595,196.0710822942642,204.00089775561082,Jul,Ajustado (delta),8
+Consumo,Consumo ativo Fora de Ponta,16,567.9259955760028,568.9324328083611,598.0510772793243,608.7109999999999,Jul,Ajustado (delta),8
+Demanda,Demanda Reativa,16,694.1671698697852,688.4503840999851,784.8531483533209,816.5955015546979,Jul,Ajustado (delta),8
+Demanda,Demanda ativa Fora de Ponta,16,2275.5257527033405,2280.5794590609,2391.165800677717,2433.787,Jul,Ajustado (delta),8
+Consumo,Consumo Reativo,17,144.22486535008974,142.14991023339317,170.82764811490122,179.00359066427288,Jul,Ajustado (delta),8
+Consumo,Consumo ativo Fora de Ponta,17,487.60549447632195,469.3499451621501,561.3139262310742,593.0098356761807,Jul,Ajustado (delta),8
+Demanda,Demanda Reativa,17,566.0509213909089,557.9071636932842,670.4611879917991,702.5500242928877,Jul,Ajustado (delta),8
+Demanda,Demanda ativa Fora de Ponta,17,1954.5277742962721,1881.400641486559,2250.040490622914,2371.0095792088105,Jul,Ajustado (delta),8
+Consumo,Consumo Reativo,18,140.17508976660682,140.10592459605027,152.74147217235188,155.83842010771994,Jul,Ajustado (delta),8
+Consumo,Consumo ativo Fora de Ponta,18,468.0526182800246,470.1149834795346,482.7636169936244,485.54325621345464,Jul,Ajustado (delta),8
+Consumo,Consumo ativo de Ponta,18,483.63670840067704,476.41144989968336,559.1800714419911,576.0353973855692,Jul,Ajustado (delta),8
+Demanda,Demanda Reativa,18,550.1564132079329,549.884954618012,599.4767925378761,611.6316547731369,Jul,Ajustado (delta),8
+Demanda,Demanda ativa Fora de Ponta,18,1876.2003090104886,1884.4673161414194,1935.169670435113,1946.311921681106,Jul,Ajustado (delta),8
+Demanda,Demanda ativa de Ponta,18,1936.9420803546677,1908.321647269298,2237.2417947513622,2304.6788183346357,Jul,Ajustado (delta),8
+Consumo,Consumo Reativo,19,140.1193447037702,138.74326750448833,153.7572710951526,173.4290843806104,Jul,Ajustado (delta),8
+Consumo,Consumo ativo Fora de Ponta,19,470.6409473227364,464.56845567849723,543.5204100325739,577.4753606858211,Jul,Ajustado (delta),8
+Consumo,Consumo ativo de Ponta,19,480.70912005025997,471.3487554214249,558.1266135705174,573.5480663001454,Jul,Ajustado (delta),8
+Demanda,Demanda Reativa,19,549.9376256876982,544.5368152344973,603.4635873510416,680.6712722694183,Jul,Ajustado (delta),8
+Demanda,Demanda ativa Fora de Ponta,19,1886.575754793285,1862.233924893681,2178.7142701073685,2314.8229278892536,Jul,Ajustado (delta),8
+Demanda,Demanda ativa de Ponta,19,1925.2098122018701,1888.042433853236,2233.0269807774075,2294.727174229465,Jul,Ajustado (delta),8
+Consumo,Consumo Reativo,20,135.77439673797278,135.39856373429083,150.38159784560142,174.91561938958705,Jul,Ajustado (delta),8
+Consumo,Consumo ativo Fora de Ponta,20,470.4789969070613,460.2969917397673,584.4773241811852,597.4217330894853,Jul,Ajustado (delta),8
+Consumo,Consumo ativo de Ponta,20,470.648194322465,464.01433906189675,553.356790430234,569.3049720955987,Jul,Ajustado (delta),8
+Demanda,Demanda Reativa,20,532.8846286577794,531.4095640204157,590.2147875146073,686.5056061423434,Jul,Ajustado (delta),8
+Demanda,Demanda ativa Fora de Ponta,20,1885.5448540203106,1845.1116580707098,2340.1498223433255,2388.6495156294754,Jul,Ajustado (delta),8
+Demanda,Demanda ativa de Ponta,20,1885.0238606678174,1858.663573391505,2213.943239728669,2277.7508401677032,Jul,Ajustado (delta),8
+Consumo,Consumo Reativo,21,120.06184767063262,122.76301615798923,144.98052064631952,168.2262118491921,Jul,Ajustado (delta),8
+Consumo,Consumo ativo Fora de Ponta,21,426.4457272757495,430.8430165204654,463.1021322368437,591.4526954126613,Jul,Ajustado (delta),8
+Consumo,Consumo ativo de Ponta,21,438.1329700056725,448.1122858930082,467.0454651149053,480.30583026757444,Jul,Ajustado (delta),8
+Demanda,Demanda Reativa,21,471.21623122391884,481.81772610055157,569.0167077763124,660.2511037141801,Jul,Ajustado (delta),8
+Demanda,Demanda ativa Fora de Ponta,21,1709.347497936381,1727.045748676169,1856.3561318051982,2364.783719295635,Jul,Ajustado (delta),8
+Demanda,Demanda ativa de Ponta,21,1754.9933393125566,1794.967127363138,1870.805102449583,1923.9210422047304,Jul,Ajustado (delta),8
+Consumo,Consumo Reativo,22,61.19362657091562,59.58527827648115,96.07971274685816,118.17953321364452,Jul,Ajustado (delta),8
+Consumo,Consumo ativo Fora de Ponta,22,263.342791237773,243.2821849282596,366.6116744567281,481.845571012763,Jul,Ajustado (delta),8
+Demanda,Demanda Reativa,22,240.17156936518862,233.85954940641767,377.09143308154466,463.82852999236565,Jul,Ajustado (delta),8
+Demanda,Demanda ativa Fora de Ponta,22,1055.6152308034307,975.20041061046,1469.5728557785067,1931.4896608492802,Jul,Ajustado (delta),8
+Consumo,Consumo Reativo,23,75.24654398563735,82.00718132854577,106.96238779174145,118.6750448833034,Jul,Ajustado (delta),8
+Consumo,Consumo ativo Fora de Ponta,23,302.5283726201708,322.14382225875613,393.2095066244613,408.5293989300852,Jul,Ajustado (delta),8
+Demanda,Demanda Reativa,23,295.3259533738715,321.85973908451956,419.803618976251,465.7733079500074,Jul,Ajustado (delta),8
+Demanda,Demanda ativa Fora de Ponta,23,1212.6926403506,1291.3229238735348,1576.1909112791566,1637.601071242738,Jul,Ajustado (delta),8
+Consumo,Consumo Reativo,0,41.67754552449345,39.14542190305206,120.16157989227993,169.21723518850985,Ago,Ajustado (delta),9
+Consumo,Consumo ativo Fora de Ponta,0,377.01407046671966,368.61990003986233,471.67693671086124,493.44865215976074,Ago,Ajustado (delta),9
+Demanda,Demanda Reativa,0,163.57507143620842,153.63745865369646,471.607641822932,664.1406596294635,Ago,Ajustado (delta),9
+Demanda,Demanda ativa Fora de Ponta,0,1511.2710491619023,1477.6228767475156,1890.7284435617596,1978.0008931146644,Ago,Ajustado (delta),9
+Consumo,Consumo Reativo,1,0.0,0.0,0.0,0.0,Ago,Ajustado (delta),9
+Consumo,Consumo ativo Fora de Ponta,1,364.2254835144099,354.5941975544805,459.13030830575593,469.6049579346116,Ago,Ajustado (delta),9
+Demanda,Demanda Reativa,1,0.0,0.0,0.0,0.0,Ago,Ajustado (delta),9
+Demanda,Demanda ativa Fora de Ponta,1,1460.0076500866717,1421.400508075073,1840.4349792220473,1882.4228663715123,Ago,Ajustado (delta),9
+Consumo,Consumo Reativo,2,0.0,0.0,0.0,0.0,Ago,Ajustado (delta),9
+Consumo,Consumo ativo Fora de Ponta,2,348.96873722863364,338.6558992756375,444.97072411483185,454.1766852006916,Ago,Ajustado (delta),9
+Demanda,Demanda Reativa,2,0.0,0.0,0.0,0.0,Ago,Ajustado (delta),9
+Demanda,Demanda ativa Fora de Ponta,2,1398.850802621553,1357.5114527654796,1783.6770073025928,1820.578260831826,Ago,Ajustado (delta),9
+Consumo,Consumo Reativo,3,0.0,0.0,0.0,0.0,Ago,Ajustado (delta),9
+Consumo,Consumo ativo Fora de Ponta,3,336.49891624190076,327.6903500597935,429.6954590443887,434.540701721157,Ago,Ajustado (delta),9
+Demanda,Demanda Reativa,3,0.0,0.0,0.0,0.0,Ago,Ajustado (delta),9
+Demanda,Demanda ativa Fora de Ponta,3,1348.8654381805113,1313.5557827124792,1722.4457366938784,1741.8680095079949,Ago,Ajustado (delta),9
+Consumo,Consumo Reativo,4,0.0,0.0,0.0,0.0,Ago,Ajustado (delta),9
+Consumo,Consumo ativo Fora de Ponta,4,335.5486900778478,327.1803245148705,428.59890412280436,430.8430165204654,Ago,Ajustado (delta),9
+Demanda,Demanda Reativa,4,0.0,0.0,0.0,0.0,Ago,Ajustado (delta),9
+Demanda,Demanda ativa Fora de Ponta,4,1345.0564589024725,1311.5113329425722,1718.0501696885785,1727.045748676169,Ago,Ajustado (delta),9
+Consumo,Consumo Reativo,5,0.0,0.0,0.0,0.0,Ago,Ajustado (delta),9
+Consumo,Consumo ativo Fora de Ponta,5,335.31341043658875,326.6702989699476,430.0843535223925,431.8630676103114,Ago,Ajustado (delta),9
+Demanda,Demanda Reativa,5,0.0,0.0,0.0,0.0,Ago,Ajustado (delta),9
+Demanda,Demanda ativa Fora de Ponta,5,1344.1133093998644,1309.4668831726653,1724.0046296434325,1731.1346482159831,Ago,Ajustado (delta),9
+Consumo,Consumo Reativo,6,38.86522185175686,25.76660682226212,90.68482944344701,132.54937163375223,Ago,Ajustado (delta),9
+Consumo,Consumo ativo Fora de Ponta,6,333.1245508062943,328.26412879783186,426.35479172514323,430.3329909755425,Ago,Ajustado (delta),9
+Demanda,Demanda Reativa,6,152.53725068708414,101.12845379736981,355.91766306772024,520.2270907639758,Ago,Ajustado (delta),9
+Demanda,Demanda ativa Fora de Ponta,6,1335.3390857066818,1315.8557887036245,1709.0545907009875,1725.0012989062623,Ago,Ajustado (delta),9
+Consumo,Consumo Reativo,7,82.29480591840525,81.016157989228,113.37307001795332,137.75224416517054,Ago,Ajustado (delta),9
+Consumo,Consumo ativo Fora de Ponta,7,334.2732502623252,335.7232523923304,410.1232287579695,444.1036806884628,Ago,Ajustado (delta),9
+Demanda,Demanda Reativa,7,322.98869759144367,317.97018316923607,444.96418380324087,540.6472593192138,Ago,Ajustado (delta),9
+Demanda,Demanda ativa Fora de Ponta,7,1339.9436216897234,1345.7558665885144,1643.9899767736974,1780.201442693751,Ago,Ajustado (delta),9
+Consumo,Consumo Reativo,8,104.2545291333442,102.19928186714542,133.74479353680428,178.0125673249551,Ago,Ajustado (delta),9
+Consumo,Consumo ativo Fora de Ponta,8,378.89575562109457,375.25023212386105,449.03180251628106,539.2234448165979,Ago,Ajustado (delta),9
+Demanda,Demanda Reativa,8,409.17586094301555,401.10944085842,524.9188675867863,698.6604683776042,Ago,Ajustado (delta),9
+Demanda,Demanda ativa Fora de Ponta,8,1518.8139294349915,1504.2007237563066,1799.954873777889,2161.490259963817,Ago,Ajustado (delta),9
+Consumo,Consumo Reativo,9,90.48155704259833,89.00628366247756,124.19999999999999,137.25673249551167,Ago,Ajustado (delta),9
+Consumo,Consumo ativo Fora de Ponta,9,349.86054711460093,339.67595036548346,456.4973014300911,543.9411811071353,Ago,Ajustado (delta),9
+Demanda,Demanda Reativa,9,355.1199426821003,349.32972773620895,487.45758217771265,538.7024813615722,Ago,Ajustado (delta),9
+Demanda,Demanda ativa Fora de Ponta,9,1402.4257974537204,1361.6003523052937,1829.8805072849025,2180.401420335457,Ago,Ajustado (delta),9
+Consumo,Consumo Reativo,10,156.16017496164923,165.62477558348294,178.50807899461398,189.6760698254363,Ago,Ajustado (delta),9
+Consumo,Consumo ativo Fora de Ponta,10,491.25351380590195,537.6296149887136,563.9915603419198,568.4224072634381,Ago,Ajustado (delta),9
+Demanda,Demanda Reativa,10,613.5608916168395,650.041019436561,700.6052463352459,759.2555430280573,Ago,Ajustado (delta),9
+Demanda,Demanda ativa Fora de Ponta,10,1969.202002875948,2155.101354432858,2260.7738519149257,2278.5350092909925,Ago,Ajustado (delta),9
+Consumo,Consumo Reativo,11,163.97211790012477,174.17235188509875,192.29162992518687,197.09428428927666,Ago,Ajustado (delta),9
+Consumo,Consumo ativo Fora de Ponta,11,528.0204877130674,561.0270368620551,589.0650803419319,594.6967376283264,Ago,Ajustado (delta),9
+Demanda,Demanda Reativa,11,649.093792055883,683.5884392058808,769.7247065527594,788.9489358631761,Ago,Ajustado (delta),9
+Demanda,Demanda ativa Fora de Ponta,11,2116.1012937294663,2248.8904876273414,2355.2374007620992,2377.754260781418,Ago,Ajustado (delta),9
+Consumo,Consumo Reativo,12,172.58206667075262,177.02154398563732,194.25489875311706,197.6058852867829,Ago,Ajustado (delta),9
+Consumo,Consumo ativo Fora de Ponta,12,550.1391774993975,575.3077521198984,599.8936932578221,609.8788551976394,Ago,Ajustado (delta),9
+Demanda,Demanda Reativa,12,683.639877622071,694.7709124623207,777.5831255233281,790.9968296181036,Ago,Ajustado (delta),9
+Demanda,Demanda ativa Fora de Ponta,12,2202.6111195128096,2306.134016367149,2398.533068241642,2438.4563949348812,Ago,Ajustado (delta),9
+Consumo,Consumo Reativo,13,172.1249019960997,174.42010771992818,192.79683591022427,196.0710822942642,Ago,Ajustado (delta),9
+Consumo,Consumo ativo Fora de Ponta,13,568.0599476848446,588.4681765742495,610.2227236724999,618.4431266469953,Ago,Ajustado (delta),9
+Demanda,Demanda Reativa,13,679.7899281173554,684.5608281847017,771.7466283217847,784.8531483533209,Ago,Ajustado (delta),9
+Demanda,Demanda ativa Fora de Ponta,13,2273.944469111368,2352.850821128715,2439.8312723323743,2472.698624457348,Ago,Ajustado (delta),9
+Consumo,Consumo Reativo,14,176.71145207384203,175.41113105924595,195.55948129675795,197.09428428927666,Ago,Ajustado (delta),9
+Consumo,Consumo ativo Fora de Ponta,14,579.7214579901297,577.4753606858211,610.067009646148,617.9240798924889,Ago,Ajustado (delta),9
+Demanda,Demanda Reativa,14,699.0662448750215,688.4503840999851,782.8052545983934,788.9489358631761,Ago,Ajustado (delta),9
+Demanda,Demanda ativa Fora de Ponta,14,2320.8211583862408,2314.8229278892536,2439.208686341057,2470.623337819623,Ago,Ajustado (delta),9
+Consumo,Consumo Reativo,15,175.65249309913207,175.6588868940754,192.79683591022427,201.44289276807964,Ago,Ajustado (delta),9
+Consumo,Consumo ativo Fora de Ponta,15,572.7570150641235,569.9524838982071,601.7038688141632,604.4288642753219,Ago,Ajustado (delta),9
+Demanda,Demanda Reativa,15,695.7415125186333,689.4227730788059,771.7466283217847,806.3560327800602,Ago,Ajustado (delta),9
+Demanda,Demanda ativa Fora de Ponta,15,2293.7994038123006,2284.668358600714,2405.770630390709,2416.6658852387664,Ago,Ajustado (delta),9
+Consumo,Consumo Reativo,16,175.81403435755308,175.90664272890484,197.99598104738138,204.00089775561082,Ago,Ajustado (delta),9
+Consumo,Consumo ativo Fora de Ponta,16,567.7711798348081,567.0835902080154,603.8319605076396,613.1228974133045,Ago,Ajustado (delta),9
+Demanda,Demanda Reativa,16,696.0806842366537,690.3951620576269,792.5583486062359,816.5955015546979,Ago,Ajustado (delta),9
+Demanda,Demanda ativa Fora de Ponta,16,2274.3903095767832,2273.168328644987,2414.2793056053824,2451.4269364206643,Ago,Ajustado (delta),9
+Consumo,Consumo Reativo,17,143.75806877139033,140.8491921005386,163.44452423698382,186.99016458852853,Ago,Ajustado (delta),9
+Consumo,Consumo ativo Fora de Ponta,17,502.8001992018033,494.02243089779904,590.0837095976508,605.9860045388413,Ago,Ajustado (delta),9
+Demanda,Demanda Reativa,17,564.3927544391996,552.8021215544746,641.4839964229374,748.5041008146877,Ago,Ajustado (delta),9
+Demanda,Demanda ativa Fora de Ponta,17,2015.0470916686502,1980.3008991058098,2359.3101507886345,2422.891745151942,Ago,Ajustado (delta),9
+Consumo,Consumo Reativo,18,138.30674531931263,138.74326750448833,147.95978456014362,152.74147217235188,Ago,Ajustado (delta),9
+Consumo,Consumo ativo Fora de Ponta,18,468.08196498796656,467.43734936868896,486.23179069910066,494.5962096358374,Ago,Ajustado (delta),9
+Consumo,Consumo ativo de Ponta,18,490.486267954389,474.85369775252695,553.5177353828202,556.575689481959,Ago,Ajustado (delta),9
+Demanda,Demanda Reativa,18,542.8235584622892,544.5368152344973,580.7096852466334,599.4767925378761,Ago,Ajustado (delta),9
+Demanda,Demanda ativa Fora de Ponta,18,1876.3179417757508,1873.7339548494076,1949.0719288704804,1982.600905096955,Ago,Ajustado (delta),9
+Demanda,Demanda ativa de Ponta,18,1964.0556416566278,1902.0818892951252,2214.5871696413565,2226.821837982419,Ago,Ajustado (delta),9
+Consumo,Consumo Reativo,19,136.4190818158502,136.76122082585277,145.884829443447,151.7504488330341,Ago,Ajustado (delta),9
+Consumo,Consumo ativo Fora de Ponta,19,475.1560395351572,475.47025170122583,485.18623833200854,488.2208903243002,Ago,Ajustado (delta),9
+Consumo,Consumo ativo de Ponta,19,481.94620502367974,471.3487554214249,553.6128392184394,565.0618778910522,Ago,Ajustado (delta),9
+Demanda,Demanda Reativa,19,535.4148805284159,536.7577034039303,572.5659275490086,595.5872366225926,Ago,Ajustado (delta),9
+Demanda,Demanda ativa Fora de Ponta,19,1904.6745116350537,1905.9340387254429,1944.880806842171,1957.0452829731175,Ago,Ajustado (delta),9
+Demanda,Demanda ativa de Ponta,19,1930.1217162345615,1888.042433853236,2214.967673680672,2260.7745061059422,Ago,Ajustado (delta),9
+Consumo,Consumo Reativo,20,131.36073352141574,131.06283662477557,143.37630161579892,146.05206463195688,Ago,Ajustado (delta),9
+Consumo,Consumo ativo Fora de Ponta,20,473.903744670391,474.0676814526876,486.89482390750044,489.2409414141462,Ago,Ajustado (delta),9
+Consumo,Consumo ativo de Ponta,20,473.1177370399222,466.4158736220963,545.4558563941818,560.8187836865056,Ago,Ajustado (delta),9
+Demanda,Demanda Reativa,20,515.5619388774899,514.3927568910506,562.7204891384474,573.2222901097127,Ago,Ajustado (delta),9
+Demanda,Demanda ativa Fora de Ponta,20,1899.6546572892998,1900.3118018581986,1951.7297135713595,1961.1341825129318,Ago,Ajustado (delta),9
+Demanda,Demanda ativa de Ponta,20,1894.8982193149664,1868.283200268355,2182.3321349240096,2243.798172044181,Ago,Ajustado (delta),9
+Consumo,Consumo Reativo,21,118.32405745062836,121.524236983842,136.59398563734288,140.8491921005386,Ago,Ajustado (delta),9
+Consumo,Consumo ativo Fora de Ponta,21,429.5483362910456,441.4260465776172,473.67241165537234,480.69801353668635,Ago,Ajustado (delta),9
+Consumo,Consumo ativo de Ponta,21,455.5621769487361,449.92966339802405,480.7212308401495,547.3579331065647,Ago,Ajustado (delta),9
+Demanda,Demanda Reativa,21,464.3957568966778,476.95578120644734,536.1013408432262,552.8021215544746,Ago,Ajustado (delta),9
+Demanda,Demanda ativa Fora de Ponta,21,1721.855500113672,1769.4680814017395,1898.7273532865206,1926.8896488669895,Ago,Ajustado (delta),9
+Demanda,Demanda ativa de Ponta,21,1824.75107933868,1802.246844999673,1925.5849776645098,2189.9422157103163,Ago,Ajustado (delta),9
+Consumo,Consumo Reativo,22,49.03058476532444,48.68402154398564,83.82818671454214,91.7935368043088,Ago,Ajustado (delta),9
+Consumo,Consumo ativo Fora de Ponta,22,297.1484215402006,271.9700592769584,430.47324800039627,440.91602103269423,Ago,Ajustado (delta),9
+Demanda,Demanda Reativa,22,192.4342474924744,191.07443433829968,329.0067980788528,360.26910374794363,Ago,Ajustado (delta),9
+Demanda,Demanda ativa Fora de Ponta,22,1191.1267832490878,1090.2007101677286,1725.5635225929864,1767.4236316318322,Ago,Ajustado (delta),9
+Consumo,Consumo Reativo,23,62.205886124647336,67.57540394973068,106.16956912028722,156.3339317773788,Ago,Ajustado (delta),9
+Consumo,Consumo ativo Fora de Ponta,23,279.61186612839583,260.81378175837756,392.1129517028769,468.58490684476567,Ago,Ajustado (delta),9
+Demanda,Demanda Reativa,23,244.14429926633906,265.21808106820424,416.6919742440242,613.5764327307786,Ago,Ajustado (delta),9
+Demanda,Demanda ativa Fora de Ponta,23,1120.830669803931,1045.478371451013,1571.7953442738565,1878.3339668316985,Ago,Ajustado (delta),9
+Consumo,Consumo Reativo,0,32.26606822262118,1.672351885098743,118.93518850987431,140.8491921005386,Set,Ajustado (delta),10
+Consumo,Consumo ativo Fora de Ponta,0,321.90712082009503,353.2553804990577,471.8745716095189,516.3998016812947,Set,Ajustado (delta),10
+Demanda,Demanda Reativa,0,126.63718790038746,6.563625607040828,466.79431637776923,552.8021215544746,Set,Ajustado (delta),10
+Demanda,Demanda ativa Fora de Ponta,0,1290.3729646089205,1416.0338274290675,1891.5206678475986,2070.0011327604793,Set,Ajustado (delta),10
+Consumo,Consumo Reativo,1,1.367818671454219,0.0,12.288689407540394,19.20107719928187,Set,Ajustado (delta),10
+Consumo,Consumo ativo Fora de Ponta,1,316.5582279177153,344.2024270766749,462.2350888104746,475.98027724614883,Set,Ajustado (delta),10
+Demanda,Demanda Reativa,1,5.368397487240185,0.0,48.23049334951483,75.36014585861693,Set,Ajustado (delta),10
+Demanda,Demanda ativa Fora de Ponta,1,1268.9318065205007,1379.7448440132182,1852.8805671963562,1907.97848849535,Set,Ajustado (delta),10
+Consumo,Consumo Reativo,2,1.4235637342908438,0.0,11.663105924596048,16.847396768402152,Set,Ajustado (delta),10
+Consumo,Consumo ativo Fora de Ponta,2,299.5680373709093,334.1294225644461,438.9651733233638,453.6666596557686,Set,Ajustado (delta),10
+Demanda,Demanda Reativa,2,5.587185007474878,0.0,45.77521117799214,66.12245055981872,Set,Ajustado (delta),10
+Demanda,Demanda ativa Fora de Ponta,2,1200.826375258791,1339.3669610575553,1759.6036112619379,1818.5338110619186,Set,Ajustado (delta),10
+Consumo,Consumo Reativo,3,1.1231597845601435,0.0,11.322441651705562,14.617594254937163,Set,Ajustado (delta),10
+Consumo,Consumo ativo Fora de Ponta,3,292.560481185091,327.244077707986,437.96424819145244,446.27128925438547,Set,Ajustado (delta),10
+Demanda,Demanda Reativa,3,4.408163370654582,0.0,44.43817633211346,57.37094975043095,Set,Ajustado (delta),10
+Demanda,Demanda ativa Fora de Ponta,3,1172.7365405152188,1311.766889163811,1755.5913785884957,1788.890354215856,Set,Ajustado (delta),10
+Consumo,Consumo Reativo,4,1.1438061041292638,0.0,11.681687612208256,15.11310592459605,Set,Ajustado (delta),10
+Consumo,Consumo ativo Fora de Ponta,4,297.7775997791453,327.75410325290886,435.72013579379137,447.2913403442314,Set,Ajustado (delta),10
+Demanda,Demanda Reativa,4,4.48919578555632,0.0,45.8481403514037,59.31572770807268,Set,Ajustado (delta),10
+Demanda,Demanda ativa Fora de Ponta,4,1193.6495135858263,1313.8113389337177,1746.5957996009047,1792.9781889380813,Set,Ajustado (delta),10
+Consumo,Consumo Reativo,5,0.8341113105924596,0.0,4.955116696588869,13.626570915619387,Set,Ajustado (delta),10
+Consumo,Consumo ativo Fora de Ponta,5,299.68275770007637,329.3479330807932,435.6181306848068,444.1036806884628,Set,Ajustado (delta),10
+Demanda,Demanda Reativa,5,3.2737095620302408,0.0,19.447779576417272,53.48139383514749,Set,Ajustado (delta),10
+Demanda,Demanda ativa Fora de Ponta,5,1201.2863409631002,1320.200244464677,1746.1869096469231,1780.201442693751,Set,Ajustado (delta),10
+Consumo,Consumo Reativo,6,35.27423698384201,0.6193895870736086,126.97486535008976,146.5475763016158,Set,Ajustado (delta),10
+Consumo,Consumo ativo Fora de Ponta,6,309.4869096841715,333.61939701952315,435.6691332392991,452.6466085659227,Set,Ajustado (delta),10
+Demanda,Demanda Reativa,6,138.44350102017557,2.4309724470521585,498.34833874050634,575.1670680673545,Set,Ajustado (delta),10
+Demanda,Demanda ativa Fora de Ponta,6,1240.5865309109292,1337.322511287648,1746.391354623914,1814.4449115221048,Set,Ajustado (delta),10
+Consumo,Consumo Reativo,7,80.45767504488329,84.60861759425492,147.5633752244165,157.94434470377018,Set,Ajustado (delta),10
+Consumo,Consumo ativo Fora de Ponta,7,321.70627169795114,348.98391656032777,463.76516544524355,481.33554546784006,Set,Ajustado (delta),10
+Demanda,Demanda Reativa,7,315.7784673680579,332.0698233621386,579.15386288052,619.8969610931142,Set,Ajustado (delta),10
+Demanda,Demanda ativa Fora de Ponta,7,1289.5679891324592,1398.9115606060964,1859.0139165060773,1929.4452110793734,Set,Ajustado (delta),10
+Consumo,Consumo Reativo,8,111.2415450619412,111.18043087971274,184.23123877917413,215.7677206982542,Set,Ajustado (delta),10
+Consumo,Consumo ativo Fora de Ponta,8,381.4907931234506,407.7006074195854,532.3891025146299,580.1529947966667,Set,Ajustado (delta),10
+Demanda,Demanda Reativa,8,437.00678809836774,436.35854134067625,723.0674317460079,863.6970579180315,Set,Ajustado (delta),10
+Demanda,Demanda ativa Fora de Ponta,8,1529.2155072799885,1634.278840366639,2134.0946330470633,2325.556289181265,Set,Ajustado (delta),10
+Consumo,Consumo Reativo,9,100.81597845601436,94.39497307001794,168.77127468581688,187.30341113105922,Set,Ajustado (delta),10
+Consumo,Consumo ativo Fora de Ponta,9,364.8712831215597,339.420937593022,536.8645766713291,597.1113441653556,Set,Ajustado (delta),10
+Demanda,Demanda Reativa,9,395.6803703505221,370.47918802556273,662.390359467586,735.1240421782004,Set,Ajustado (delta),10
+Demanda,Demanda ativa Fora de Ponta,9,1462.5963484082972,1360.57812742034,2152.0346797779976,2393.5342440306727,Set,Ajustado (delta),10
+Consumo,Consumo Reativo,10,166.59123487804274,170.02244165170555,219.63670324189508,271.14746284289254,Set,Ajustado (delta),10
+Consumo,Consumo ativo Fora de Ponta,10,510.26712250459093,545.598764128135,683.4083160579052,795.8262736521594,Set,Ajustado (delta),10
+Demanda,Demanda Reativa,10,656.0273083469572,667.3009238106314,879.184254439671,1085.3815568889383,Set,Ajustado (delta),10
+Demanda,Demanda ativa Fora de Ponta,10,2044.7657968906253,2187.0458820876547,2732.446688251635,3181.9267520214944,Set,Ajustado (delta),10
+Consumo,Consumo Reativo,11,178.86005759682925,180.61400359066425,231.78083192019932,265.90355261845366,Set,Ajustado (delta),10
+Consumo,Consumo ativo Fora de Ponta,11,567.775293089045,575.8177776648214,710.496068558709,777.4011952145867,Set,Ajustado (delta),10
+Demanda,Demanda Reativa,11,706.3254867840226,708.8705526552233,927.7961324472637,1064.390645900931,Set,Ajustado (delta),10
+Demanda,Demanda ativa Fora de Ponta,11,2274.4403423093604,2308.1784661370557,2840.7507096579207,3108.254076382248,Set,Ajustado (delta),10
+Consumo,Consumo Reativo,12,185.71100229856236,183.71095152603232,231.2436508728178,254.64939650872796,Set,Ajustado (delta),10
+Consumo,Consumo ativo Fora de Ponta,12,594.1628175025959,589.1421950259341,716.9322483145887,726.6643749615841,Set,Ajustado (delta),10
+Demanda,Demanda Reativa,12,732.7969457887973,721.0254148904841,925.6458440045898,1019.336983292525,Set,Ajustado (delta),10
+Demanda,Demanda ativa Fora de Ponta,12,2380.0524945840525,2361.589716375876,2866.4831830872567,2905.3948075446056,Set,Ajustado (delta),10
+Consumo,Consumo Reativo,13,186.8558246867197,182.16247755834826,233.44353516209458,276.0076723192018,Set,Ajustado (delta),10
+Consumo,Consumo ativo Fora de Ponta,13,604.2892441342099,588.5684162878957,733.1524593929144,803.3524515925026,Set,Ajustado (delta),10
+Demanda,Demanda Reativa,13,737.6927628858898,714.9479837728536,934.4517871507783,1104.8365475607502,Set,Ajustado (delta),10
+Demanda,Demanda ativa Fora de Ponta,13,2420.57778114677,2359.289710384731,2931.335890516171,3212.0184082685105,Set,Ajustado (delta),10
+Consumo,Consumo Reativo,14,192.23371257851775,185.81687612208256,231.755251870324,238.15026433915193,Set,Ajustado (delta),10
+Consumo,Consumo ativo Fora de Ponta,14,615.6616275888125,593.4136589646641,720.3384926410371,738.4726886266051,Set,Ajustado (delta),10
+Demanda,Demanda Reativa,14,759.9063085510518,729.2907212104615,927.6937377595174,953.2924096961117,Set,Ajustado (delta),10
+Demanda,Demanda ativa Fora de Ponta,14,2465.6286200616887,2378.7119831988466,2880.102251647329,2952.6075785528546,Set,Ajustado (delta),10
+Consumo,Consumo Reativo,15,194.5744099596236,186.80789946140035,234.4923172069824,282.4026847880297,Set,Ajustado (delta),10
+Consumo,Consumo ativo Fora de Ponta,15,616.3000424320209,592.9036334197411,714.7782042833869,728.7405619796098,Set,Ajustado (delta),10
+Demanda,Demanda Reativa,15,770.0353121944861,733.1792642205586,938.6499693483796,1130.4352194973444,Set,Ajustado (delta),10
+Demanda,Demanda ativa Fora de Ponta,15,2468.2643622014484,2376.66753342894,2857.870743540697,2913.6959540955063,Set,Ajustado (delta),10
+Consumo,Consumo Reativo,16,196.27236409070076,189.65709156193896,240.56118403990004,279.716779551122,Set,Ajustado (delta),10
+Consumo,Consumo ativo Fora de Ponta,16,620.2833262887841,590.7360248538183,719.0668280924963,813.0845782394979,Set,Ajustado (delta),10
+Demanda,Demanda Reativa,16,777.5940424248779,744.3617374769985,962.9431090162077,1119.683777283975,Set,Ajustado (delta),10
+Demanda,Demanda ativa Fora de Ponta,16,2484.2367408276555,2367.9786219068355,2875.017799384902,3250.9300327258593,Set,Ajustado (delta),10
+Consumo,Consumo Reativo,17,159.72847212399878,152.74147217235188,220.0204039900248,245.56847880299233,Set,Ajustado (delta),10
+Consumo,Consumo ativo Fora de Ponta,17,543.8651974594367,534.441955332945,694.5483570264993,759.1047971182354,Set,Ajustado (delta),10
+Demanda,Demanda Reativa,17,628.4769894455567,599.4767925378761,880.7201747558667,982.9868691425611,Set,Ajustado (delta),10
+Demanda,Demanda ativa Fora de Ponta,17,2178.883190179952,2142.323543370939,2776.9875277138126,3035.1002224024332,Set,Ajustado (delta),10
+Consumo,Consumo Reativo,18,151.97681763365372,144.68940754039494,228.6408807980048,238.66186533665817,Set,Ajustado (delta),10
+Consumo,Consumo ativo Fora de Ponta,18,504.0623199860757,483.37564764753193,715.7643931169492,723.4203327459189,Set,Ajustado (delta),10
+Consumo,Consumo ativo de Ponta,18,497.88536733176926,481.34433169901206,581.8659940769894,820.5254117234082,Set,Ajustado (delta),10
+Demanda,Demanda Reativa,18,598.2457669167826,567.874150726198,915.227184526396,955.3403034510392,Set,Ajustado (delta),10
+Demanda,Demanda ativa Fora de Ponta,18,2019.7510868046586,1937.623010159001,2861.813788152375,2892.4242660588225,Set,Ajustado (delta),10
+Demanda,Demanda ativa de Ponta,18,1994.0123599879676,1928.080880854179,2328.0065209423924,3282.864455661469,Set,Ajustado (delta),10
+Consumo,Consumo Reativo,19,150.4362937324552,142.14991023339317,224.98293366583525,238.66186533665817,Set,Ajustado (delta),10
+Consumo,Consumo ativo Fora de Ponta,19,550.6491631799763,503.84042263756635,721.1105746883653,723.4203327459189,Set,Ajustado (delta),10
+Consumo,Consumo ativo de Ponta,19,500.6791819819926,478.0990147257695,672.1707438372011,818.0380806379843,Set,Ajustado (delta),10
+Demanda,Demanda Reativa,19,592.1962074027508,557.9071636932842,900.5847441786639,955.3403034510392,Set,Ajustado (delta),10
+Demanda,Demanda ativa Fora de Ponta,19,2205.4496926254033,2019.6565571765195,2883.189240520945,2892.4242660588225,Set,Ajustado (delta),10
+Demanda,Demanda ativa de Ponta,19,2005.1856712662345,1915.081385074652,2689.3086434352476,3272.9128115562985,Set,Ajustado (delta),10
+Consumo,Consumo Reativo,20,145.82144728215366,138.24775583482943,217.61587930174545,240.32456857855342,Set,Ajustado (delta),10
+Consumo,Consumo ativo Fora de Ponta,20,538.5571427999804,489.8147201521846,712.1505300886982,724.4584262549317,Set,Ajustado (delta),10
+Consumo,Consumo ativo de Ponta,20,498.6610896446477,477.0605132943319,658.6367364606301,821.69592046949,Set,Ajustado (delta),10
+Demanda,Demanda Reativa,20,573.9213780986262,542.5920372768555,871.0950741077072,961.9959581545538,Set,Ajustado (delta),10
+Demanda,Demanda ativa Fora de Ponta,20,2157.010911114521,1963.4341885040772,2847.365199420364,2896.574839334273,Set,Ajustado (delta),10
+Demanda,Demanda ativa de Ponta,20,1997.071463231673,1910.9215464252036,2635.160418534005,3287.5475822991966,Set,Ajustado (delta),10
+Consumo,Consumo Reativo,21,126.67765712290188,125.11669658886893,156.95951526032312,228.55774563591004,Set,Ajustado (delta),10
+Consumo,Consumo ativo Fora de Ponta,21,453.8367131015644,452.6466085659227,608.774379540225,719.0084353326143,Set,Ajustado (delta),10
+Consumo,Consumo ativo de Ponta,21,472.7985267970313,455.3817959130716,558.6369321728102,809.5518922288911,Set,Ajustado (delta),10
+Demanda,Demanda Reativa,21,497.751374927919,491.0554213993498,616.0317149023012,914.8944017912203,Set,Ajustado (delta),10
+Demanda,Demanda ativa Fora de Ponta,21,1818.814531179107,1814.4449115221048,2437.526561237414,2874.784329638158,Set,Ajustado (delta),10
+Demanda,Demanda ativa de Ponta,21,1893.642453732969,1824.0849146179632,2235.7664647554247,3238.9601434327756,Set,Ajustado (delta),10
+Consumo,Consumo Reativo,22,54.94192100538599,53.39138240574506,97.02118491921004,136.76122082585277,Set,Ajustado (delta),10
+Consumo,Consumo ativo Fora de Ponta,22,306.80601555674025,284.14691916199445,447.39972077252753,658.5394884326164,Set,Ajustado (delta),10
+Demanda,Demanda Reativa,22,215.63498789644837,209.54982493589608,380.7865112010639,536.7577034039303,Set,Ajustado (delta),10
+Demanda,Demanda ativa Fora de Ponta,22,1229.7831101874583,1139.0119484242582,1793.4126345141865,2633.0145172216235,Set,Ajustado (delta),10
+Consumo,Consumo Reativo,23,46.218850987432674,50.04667863554757,98.39003590664264,149.64452423698384,Set,Ajustado (delta),10
+Consumo,Consumo ativo Fora de Ponta,23,252.7268397400653,223.136175903802,387.26133370679713,497.2738437466831,Set,Ajustado (delta),10
+Demanda,Demanda Reativa,23,181.39882636397,196.42257372181444,386.15896030904884,587.3219303026153,Set,Ajustado (delta),10
+Demanda,Demanda ativa Fora de Ponta,23,1013.0610470399654,894.4446446991337,1552.3475158376164,1993.3342663889669,Set,Ajustado (delta),10
+Consumo,Consumo Reativo,0,52.52730833716634,63.42549371633751,137.75224416517054,168.2262118491921,Out,Ajustado (delta),11
+Consumo,Consumo ativo Fora de Ponta,0,398.1062918417838,383.66565361509015,489.4895788672961,510.0244823697575,Out,Ajustado (delta),11
+Demanda,Demanda Reativa,0,206.15800728069965,248.93056567295477,540.6472593192138,660.2511037141801,Out,Ajustado (delta),11
+Demanda,Demanda ativa Fora de Ponta,0,1595.8194881370373,1537.9341449597719,1962.1308517757611,2044.4455106366418,Out,Ajustado (delta),11
+Consumo,Consumo Reativo,1,0.0,0.0,0.0,0.0,Out,Ajustado (delta),11
+Consumo,Consumo ativo Fora de Ponta,1,394.88932551525494,370.787508605785,471.65781075292665,487.7108647793773,Out,Ajustado (delta),11
+Demanda,Demanda Reativa,1,0.0,0.0,0.0,0.0,Out,Ajustado (delta),11
+Demanda,Demanda ativa Fora de Ponta,1,1582.9242723144132,1486.3117882696204,1890.6517766953882,1955.0008332032107,Out,Ajustado (delta),11
+Consumo,Consumo Reativo,2,0.0,0.0,0.0,0.0,Out,Ajustado (delta),11
+Consumo,Consumo ativo Fora de Ponta,2,386.39881470058464,368.61990003986233,459.02192787745986,471.7725665005343,Out,Ajustado (delta),11
+Demanda,Demanda Reativa,2,0.0,0.0,0.0,0.0,Out,Ajustado (delta),11
+Demanda,Demanda ativa Fora de Ponta,2,1548.8899500809155,1477.6228767475156,1840.0005336459424,1891.1117778936173,Out,Ajustado (delta),11
+Consumo,Consumo Reativo,3,0.0,0.0,0.0,0.0,Out,Ajustado (delta),11
+Consumo,Consumo ativo Fora de Ponta,3,373.73146653948356,355.35923587186494,446.92157182416224,456.8543193115372,Out,Ajustado (delta),11
+Demanda,Demanda Reativa,3,0.0,0.0,0.0,0.0,Out,Ajustado (delta),11
+Demanda,Demanda ativa Fora de Ponta,3,1498.1127580026757,1424.4671827299337,1791.4961225775369,1831.3116221238374,Out,Ajustado (delta),11
+Consumo,Consumo Reativo,4,0.0,0.0,0.0,0.0,Out,Ajustado (delta),11
+Consumo,Consumo ativo Fora de Ponta,4,376.1119285082269,372.12632566120783,448.15838377060044,455.8342682216913,Out,Ajustado (delta),11
+Demanda,Demanda Reativa,4,0.0,0.0,0.0,0.0,Out,Ajustado (delta),11
+Demanda,Demanda ativa Fora de Ponta,4,1507.6548803792766,1491.6784689156261,1796.453753546923,1827.2227225840236,Out,Ajustado (delta),11
+Consumo,Consumo Reativo,5,0.01398621648230729,0.0,0.0,1.734290843806104,Out,Ajustado (delta),11
+Consumo,Consumo ativo Fora de Ponta,5,378.62400997243424,382.6456025252442,447.7248620574159,462.2095875332285,Out,Ajustado (delta),11
+Demanda,Demanda Reativa,5,0.05489292622375843,0.0,0.0,6.806722851746045,Out,Ajustado (delta),11
+Demanda,Demanda ativa Fora de Ponta,5,1517.7246284582145,1533.845245419958,1794.7159712425023,1852.778344707861,Out,Ajustado (delta),11
+Consumo,Consumo Reativo,6,50.54119128974344,10.963195691202873,137.25673249551167,152.74147217235188,Out,Ajustado (delta),11
+Consumo,Consumo ativo Fora de Ponta,6,374.89447388211767,370.27748306086204,449.3059412466772,464.2496897129204,Out,Ajustado (delta),11
+Demanda,Demanda Reativa,6,198.3629733151026,43.02821231282322,538.7024813615722,599.4767925378761,Out,Ajustado (delta),11
+Demanda,Demanda ativa Fora de Ponta,6,1502.7746324519626,1484.2673384997133,1801.053765529214,1860.9561437874888,Out,Ajustado (delta),11
+Consumo,Consumo Reativo,7,121.88588058145595,131.80610412926393,163.9710053859964,173.9245960502693,Out,Ajustado (delta),11
+Consumo,Consumo ativo Fora de Ponta,7,395.88263345310554,406.3617903641626,469.4328243132001,487.7108647793773,Out,Ajustado (delta),11
+Demanda,Demanda Reativa,7,478.37517177884206,517.3099238275131,643.5503230029318,682.6160502270599,Out,Ajustado (delta),11
+Demanda,Demanda ativa Fora de Ponta,7,1586.9059044677667,1628.9121597206333,1881.7328645741686,1955.0008332032107,Out,Ajustado (delta),11
+Consumo,Consumo Reativo,8,156.64370290379915,158.6876122082585,210.7423708180176,232.77845386533647,Out,Ajustado (delta),11
+Consumo,Consumo ativo Fora de Ponta,8,461.4908216947181,465.5247535752278,557.3612282579212,615.2172510101213,Out,Ajustado (delta),11
+Demanda,Demanda Reativa,8,615.7526328724396,622.8141280295768,841.1988236624073,931.7895252693723,Out,Ajustado (delta),11
+Demanda,Demanda ativa Fora de Ponta,8,1849.8975751818173,1866.0672682122563,2234.1960049061345,2466.112210862371,Out,Ajustado (delta),11
+Consumo,Consumo Reativo,9,124.71466020967155,126.10771992818671,192.50628366247753,225.36023940149607,Out,Ajustado (delta),11
+Consumo,Consumo ativo Fora de Ponta,9,413.3356013450479,421.15253116692884,579.9808611752552,612.0295913543526,Out,Ajustado (delta),11
+Demanda,Demanda Reativa,9,490.15885284074994,494.9449773146332,755.5442107334385,902.0950658229231,Out,Ajustado (delta),11
+Demanda,Demanda ativa Fora de Ponta,9,1656.8664466200855,1688.2012030479361,2324.8662873839216,2453.3343998004525,Out,Ajustado (delta),11
+Consumo,Consumo Reativo,10,179.4035783561886,189.4093357271095,213.0050753117205,228.04614463840383,Out,Ajustado (delta),11
+Consumo,Consumo ativo Fora de Ponta,10,518.1153466726091,567.529862559823,610.5760185513221,640.8918987793979,Out,Ajustado (delta),11
+Demanda,Demanda Reativa,10,705.8946794110975,743.3893484981777,852.6384316414228,912.8465080362926,Out,Ajustado (delta),11
+Demanda,Demanda ativa Fora de Ponta,10,2076.8247414436128,2274.957222193655,2447.5077179562177,2562.4547715389654,Out,Ajustado (delta),11
+Consumo,Consumo Reativo,11,185.75763500988649,198.20466786355473,214.7445187032417,230.73204987531153,Out,Ajustado (delta),11
+Consumo,Consumo ativo Fora de Ponta,11,565.7437594109801,602.4666123870469,626.1254223521614,650.75378711502,Out,Ajustado (delta),11
+Demanda,Demanda Reativa,11,731.6525589949191,777.9091572463184,859.6012704081764,923.5979502496623,Out,Ajustado (delta),11
+Demanda,Demanda ativa Fora de Ponta,11,2267.4764774259766,2415.000966614696,2509.837880316257,2601.885217655745,Out,Ajustado (delta),11
+Consumo,Consumo Reativo,12,196.35784895524546,201.3016157989228,222.67433416458834,236.61546134663323,Out,Ajustado (delta),11
+Consumo,Consumo ativo Fora de Ponta,12,598.0005323340655,616.9385872242362,653.7512821222945,692.0180040982804,Out,Ajustado (delta),11
+Demanda,Demanda Reativa,12,776.4244757265,790.0640194815792,891.3436236095533,947.1487284313291,Out,Ajustado (delta),11
+Demanda,Demanda ativa Fora de Ponta,12,2395.3224239523083,2473.0122288358075,2613.8699979886082,2766.870505354902,Out,Ajustado (delta),11
+Consumo,Consumo Reativo,13,197.76936021878464,198.45242369838417,226.850277306733,254.64939650872796,Out,Ajustado (delta),11
+Consumo,Consumo ativo Fora de Ponta,13,613.5514606591303,624.7802299774271,671.1393483982597,752.6167126869051,Out,Ajustado (delta),11
+Demanda,Demanda Reativa,13,781.3511009968688,778.8815462251392,908.0595563841495,1019.336983292525,Out,Ajustado (delta),11
+Demanda,Demanda ativa Fora de Ponta,13,2456.5981345435307,2504.445644048127,2683.3921003524038,3009.159139430868,Out,Ajustado (delta),11
+Consumo,Consumo Reativo,14,204.36749580095045,202.0448833034111,228.76238603491254,255.16099750623422,Out,Ajustado (delta),11
+Consumo,Consumo ativo Fora de Ponta,14,628.8583012653237,638.4913075398058,670.0363740449335,763.3869328429133,Out,Ajustado (delta),11
+Demanda,Demanda Reativa,14,809.3160710523831,792.9811864180417,915.7135592931912,1021.3848770474526,Out,Ajustado (delta),11
+Demanda,Demanda ativa Fora de Ponta,14,2517.359234213187,2552.8565708394854,2678.9821162472376,3052.2213371636662,Out,Ajustado (delta),11
+Consumo,Consumo Reativo,15,202.92429900692753,201.3016157989228,231.63374663341625,241.3477705735659,Out,Ajustado (delta),11
+Consumo,Consumo ativo Fora de Ponta,15,628.197340675595,624.7802299774271,666.175963808292,748.2048152736005,Out,Ajustado (delta),11
+Demanda,Demanda Reativa,15,802.3747044126117,790.0640194815792,927.2073629927219,966.0917456644089,Out,Ajustado (delta),11
+Demanda,Demanda ativa Fora de Ponta,15,2515.2552437189765,2504.445644048127,2663.5471718791564,2991.519203010203,Out,Ajustado (delta),11
+Consumo,Consumo Reativo,16,206.87891298823178,201.54937163375223,231.57619152119682,456.09228927680766,Out,Ajustado (delta),11
+Consumo,Consumo ativo Fora de Ponta,16,622.9789646059139,618.4049106658899,667.038879037659,738.4726886266051,Out,Ajustado (delta),11
+Demanda,Demanda Reativa,16,812.2603569801452,791.0364084604,924.9290811903651,949.1966221862566,Out,Ajustado (delta),11
+Demanda,Demanda ativa Fora de Ponta,16,2494.881497083735,2478.8900219242896,2666.997335914374,2952.6075785528546,Out,Ajustado (delta),11
+Consumo,Consumo Reativo,17,173.62902211489285,167.97845601436265,204.15700179533212,433.58184538653336,Out,Ajustado (delta),11
+Consumo,Consumo ativo Fora de Ponta,17,559.8630355652244,567.4023561735922,655.0618751774233,735.22864641094,Out,Ajustado (delta),11
+Demanda,Demanda Reativa,17,675.4156925818061,659.2787147353592,801.2708024624895,878.5442876412562,Out,Ajustado (delta),11
+Demanda,Demanda ativa Fora de Ponta,17,2243.4654951499665,2274.446109751179,2619.110096748864,2939.637037067072,Out,Ajustado (delta),11
+Consumo,Consumo Reativo,18,164.21401319397975,164.13824057450628,193.0327648114901,230.73204987531153,Out,Ajustado (delta),11
+Consumo,Consumo ativo Fora de Ponta,18,517.2839674840582,515.8260229432562,565.2283722883578,673.9811293791823,Out,Ajustado (delta),11
+Consumo,Consumo ativo de Ponta,18,534.5960507021714,513.2782507157189,734.0321310676251,758.6347617743322,Out,Ajustado (delta),11
+Demanda,Demanda Reativa,18,645.2059559501544,644.2066855636359,757.6105373134328,923.5979502496623,Out,Ajustado (delta),11
+Demanda,Demanda ativa Fora de Ponta,18,2073.2839455435014,2067.7011267693338,2265.7316426069497,2694.7542946939493,Out,Ajustado (delta),11
+Demanda,Demanda ativa de Ponta,18,2140.8938916253546,2055.995919324724,2936.8118862391357,3035.2453542558665,Out,Ajustado (delta),11
+Consumo,Consumo Reativo,19,163.1793291124999,162.032315978456,203.63052064631955,229.06934663341627,Out,Ajustado (delta),11
+Consumo,Consumo ativo Fora de Ponta,19,523.8908018723508,523.7951720826778,546.357427126208,550.9540323498263,Out,Ajustado (delta),11
+Consumo,Consumo ativo de Ponta,19,529.2319307329495,512.1748429448164,727.5943329641751,773.2661211003549,Out,Ajustado (delta),11
+Demanda,Demanda Reativa,19,641.2698613500489,635.9413792436585,799.2044758824951,916.9422955461478,Out,Ajustado (delta),11
+Demanda,Demanda ativa Fora de Ponta,19,2100.0289887559884,2099.6456544241305,2190.0870011203915,2208.512604671678,Out,Ajustado (delta),11
+Demanda,Demanda ativa de Ponta,19,2119.5662859687254,2051.576090759685,2911.054689731636,3093.784437227458,Out,Ajustado (delta),11
+Consumo,Consumo Reativo,20,158.68835438651877,158.6876122082585,190.50565529622978,221.13953117206964,Out,Ajustado (delta),11
+Consumo,Consumo ativo Fora de Ponta,20,521.1454299938201,523.2851465377548,546.1087896730579,550.3165004186726,Out,Ajustado (delta),11
+Consumo,Consumo ativo de Ponta,20,523.8100029313803,509.12424498996836,722.8830352611958,763.1704831653992,Out,Ajustado (delta),11
+Demanda,Demanda Reativa,20,623.5037704947908,622.8141280295768,747.6921697294598,885.1999423447708,Out,Ajustado (delta),11
+Demanda,Demanda ativa Fora de Ponta,20,2089.024098978911,2097.6012046542237,2189.0903318575615,2205.9570424592944,Out,Ajustado (delta),11
+Demanda,Demanda ativa de Ponta,20,2097.881501981784,2039.3565647269297,2892.205105014783,3053.39246997706,Out,Ajustado (delta),11
+Consumo,Consumo Reativo,21,143.77682646542848,143.2028725314183,179.36903052064628,215.7677206982542,Out,Ajustado (delta),11
+Consumo,Consumo ativo Fora de Ponta,21,472.208480316045,475.21523892876434,530.2597458645765,645.8228429472091,Out,Ajustado (delta),11
+Consumo,Consumo ativo de Ponta,21,507.6088667874506,493.2870981605447,699.5240700972006,745.3202247876516,Out,Ajustado (delta),11
+Demanda,Demanda Reativa,21,564.6982390312803,562.0398168532729,703.9842980366483,863.6970579180315,Out,Ajustado (delta),11
+Demanda,Demanda ativa Fora de Ponta,21,1892.7388794372912,1904.9118138404892,2125.559055257702,2582.1699945973546,Out,Ajustado (delta),11
+Demanda,Demanda ativa de Ponta,21,2032.951460628694,1975.9190253228383,2798.7474590506376,2981.9747887517183,Out,Ajustado (delta),11
+Consumo,Consumo Reativo,22,77.7154108994035,75.56552962298025,112.48114901256731,153.73249551166964,Out,Ajustado (delta),11
+Consumo,Consumo ativo Fora de Ponta,22,333.8417277115354,311.0507666566814,478.01400410652917,617.3848595760439,Out,Ajustado (delta),11
+Demanda,Demanda Reativa,22,305.01571397531586,296.5776256351771,441.4635834794858,603.3663484531595,Out,Ajustado (delta),11
+Demanda,Demanda ativa Fora de Ponta,22,1338.2131968514682,1246.8566737868523,1916.130731952854,2474.801122384476,Out,Ajustado (delta),11
+Consumo,Consumo Reativo,23,82.26892337985753,82.25493716337522,140.70053859964094,169.21723518850985,Out,Ajustado (delta),11
+Consumo,Consumo ativo Fora de Ponta,23,287.76901741154745,263.42713139949853,445.7038858356586,506.8368227139889,Out,Ajustado (delta),11
+Demanda,Demanda Reativa,23,322.88730689022157,322.8321280633404,552.2186881671821,664.1406596294635,Out,Ajustado (delta),11
+Demanda,Demanda ativa Fora de Ponta,23,1153.5288642253447,1055.9561765217863,1786.6149987518838,2031.6676995747232,Out,Ajustado (delta),11

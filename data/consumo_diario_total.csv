@@ -1,0 +1,606 @@
+Medicao,Dia,Consumo_kWh,Mes,Tipo,MesOrdem
+Consumo ativo Fora de Ponta,2025-11-01,44804.187,Nov,Real (pos-carga),0
+Consumo ativo Fora de Ponta,2025-11-02,44826.508,Nov,Real (pos-carga),0
+Consumo ativo Fora de Ponta,2025-11-03,35238.293,Nov,Real (pos-carga),0
+Consumo ativo de Ponta,2025-11-03,5888.748,Nov,Real (pos-carga),0
+Consumo ativo Fora de Ponta,2025-11-04,37405.118,Nov,Real (pos-carga),0
+Consumo ativo de Ponta,2025-11-04,5764.668,Nov,Real (pos-carga),0
+Consumo ativo Fora de Ponta,2025-11-05,40803.398,Nov,Real (pos-carga),0
+Consumo ativo de Ponta,2025-11-05,5856.348,Nov,Real (pos-carga),0
+Consumo ativo Fora de Ponta,2025-11-06,39793.36,Nov,Real (pos-carga),0
+Consumo ativo de Ponta,2025-11-06,6309.947,Nov,Real (pos-carga),0
+Consumo ativo Fora de Ponta,2025-11-07,38625.158,Nov,Real (pos-carga),0
+Consumo ativo de Ponta,2025-11-07,5958.828,Nov,Real (pos-carga),0
+Consumo ativo Fora de Ponta,2025-11-08,44532.747,Nov,Real (pos-carga),0
+Consumo ativo Fora de Ponta,2025-11-09,42240.266,Nov,Real (pos-carga),0
+Consumo ativo Fora de Ponta,2025-11-10,36132.278,Nov,Real (pos-carga),0
+Consumo ativo de Ponta,2025-11-10,5574.228,Nov,Real (pos-carga),0
+Consumo ativo Fora de Ponta,2025-11-11,36115.839,Nov,Real (pos-carga),0
+Consumo ativo de Ponta,2025-11-11,5553.948,Nov,Real (pos-carga),0
+Consumo ativo Fora de Ponta,2025-11-12,35995.001000000004,Nov,Real (pos-carga),0
+Consumo ativo de Ponta,2025-11-12,5261.869,Nov,Real (pos-carga),0
+Consumo ativo Fora de Ponta,2025-11-13,36339.76,Nov,Real (pos-carga),0
+Consumo ativo de Ponta,2025-11-13,5759.508,Nov,Real (pos-carga),0
+Consumo ativo Fora de Ponta,2025-11-14,36942.759,Nov,Real (pos-carga),0
+Consumo ativo de Ponta,2025-11-14,7147.068,Nov,Real (pos-carga),0
+Consumo ativo Fora de Ponta,2025-11-15,43821.266,Nov,Real (pos-carga),0
+Consumo ativo Fora de Ponta,2025-11-16,38835.168,Nov,Real (pos-carga),0
+Consumo ativo Fora de Ponta,2025-11-17,40861.479,Nov,Real (pos-carga),0
+Consumo ativo de Ponta,2025-11-17,5995.908,Nov,Real (pos-carga),0
+Consumo ativo Fora de Ponta,2025-11-18,38734.597,Nov,Real (pos-carga),0
+Consumo ativo de Ponta,2025-11-18,6030.108,Nov,Real (pos-carga),0
+Consumo ativo Fora de Ponta,2025-11-19,36937.609,Nov,Real (pos-carga),0
+Consumo ativo de Ponta,2025-11-19,7952.387,Nov,Real (pos-carga),0
+Consumo ativo Fora de Ponta,2025-11-20,38682.159,Nov,Real (pos-carga),0
+Consumo ativo de Ponta,2025-11-20,8332.183,Nov,Real (pos-carga),0
+Consumo ativo Fora de Ponta,2025-11-21,38592.649,Nov,Real (pos-carga),0
+Consumo ativo de Ponta,2025-11-21,5682.709,Nov,Real (pos-carga),0
+Consumo ativo Fora de Ponta,2025-11-22,45997.351,Nov,Real (pos-carga),0
+Consumo ativo Fora de Ponta,2025-11-23,36415.006,Nov,Real (pos-carga),0
+Consumo ativo Fora de Ponta,2025-11-24,36781.836,Nov,Real (pos-carga),0
+Consumo ativo de Ponta,2025-11-24,5910.828,Nov,Real (pos-carga),0
+Consumo ativo Fora de Ponta,2025-11-25,41059.238,Nov,Real (pos-carga),0
+Consumo ativo de Ponta,2025-11-25,5859.228,Nov,Real (pos-carga),0
+Consumo ativo Fora de Ponta,2025-11-26,38316.157,Nov,Real (pos-carga),0
+Consumo ativo de Ponta,2025-11-26,5532.229,Nov,Real (pos-carga),0
+Consumo ativo Fora de Ponta,2025-11-27,42061.358,Nov,Real (pos-carga),0
+Consumo ativo de Ponta,2025-11-27,6280.668,Nov,Real (pos-carga),0
+Consumo ativo Fora de Ponta,2025-11-28,41156.316,Nov,Real (pos-carga),0
+Consumo ativo de Ponta,2025-11-28,6254.748,Nov,Real (pos-carga),0
+Consumo ativo Fora de Ponta,2025-11-29,48784.346,Nov,Real (pos-carga),0
+Consumo ativo Fora de Ponta,2025-11-30,41836.825,Nov,Real (pos-carga),0
+Consumo ativo Fora de Ponta,2025-12-01,386.039,Nov,Real (pos-carga),0
+Consumo ativo Fora de Ponta,2025-12-01,37066.358,Dez,Real (pos-carga),1
+Consumo ativo de Ponta,2025-12-01,5930.508,Dez,Real (pos-carga),1
+Consumo ativo Fora de Ponta,2025-12-02,36393.878,Dez,Real (pos-carga),1
+Consumo ativo de Ponta,2025-12-02,5813.508,Dez,Real (pos-carga),1
+Consumo ativo Fora de Ponta,2025-12-03,40104.158,Dez,Real (pos-carga),1
+Consumo ativo de Ponta,2025-12-03,5911.668,Dez,Real (pos-carga),1
+Consumo ativo Fora de Ponta,2025-12-04,37494.036,Dez,Real (pos-carga),1
+Consumo ativo de Ponta,2025-12-04,6232.908,Dez,Real (pos-carga),1
+Consumo ativo Fora de Ponta,2025-12-05,41015.436,Dez,Real (pos-carga),1
+Consumo ativo de Ponta,2025-12-05,6429.708,Dez,Real (pos-carga),1
+Consumo ativo Fora de Ponta,2025-12-06,45421.945,Dez,Real (pos-carga),1
+Consumo ativo Fora de Ponta,2025-12-07,45196.587,Dez,Real (pos-carga),1
+Consumo ativo Fora de Ponta,2025-12-08,37370.559,Dez,Real (pos-carga),1
+Consumo ativo de Ponta,2025-12-08,6168.228,Dez,Real (pos-carga),1
+Consumo ativo Fora de Ponta,2025-12-09,40519.956,Dez,Real (pos-carga),1
+Consumo ativo de Ponta,2025-12-09,6192.468,Dez,Real (pos-carga),1
+Consumo ativo Fora de Ponta,2025-12-10,37290.159,Dez,Real (pos-carga),1
+Consumo ativo de Ponta,2025-12-10,6241.7880000000005,Dez,Real (pos-carga),1
+Consumo ativo Fora de Ponta,2025-12-11,39874.596,Dez,Real (pos-carga),1
+Consumo ativo de Ponta,2025-12-11,6049.908,Dez,Real (pos-carga),1
+Consumo ativo Fora de Ponta,2025-12-12,38229.397,Dez,Real (pos-carga),1
+Consumo ativo de Ponta,2025-12-12,6889.547,Dez,Real (pos-carga),1
+Consumo ativo Fora de Ponta,2025-12-13,48042.385,Dez,Real (pos-carga),1
+Consumo ativo Fora de Ponta,2025-12-14,47052.284,Dez,Real (pos-carga),1
+Consumo ativo Fora de Ponta,2025-12-15,41140.838,Dez,Real (pos-carga),1
+Consumo ativo de Ponta,2025-12-15,6167.028,Dez,Real (pos-carga),1
+Consumo ativo Fora de Ponta,2025-12-16,43825.356,Dez,Real (pos-carga),1
+Consumo ativo de Ponta,2025-12-16,6047.508,Dez,Real (pos-carga),1
+Consumo ativo Fora de Ponta,2025-12-17,59956.916,Dez,Real (pos-carga),1
+Consumo ativo de Ponta,2025-12-17,6206.148,Dez,Real (pos-carga),1
+Consumo ativo Fora de Ponta,2025-12-18,55944.364,Dez,Real (pos-carga),1
+Consumo ativo de Ponta,2025-12-18,7446.708,Dez,Real (pos-carga),1
+Consumo ativo Fora de Ponta,2025-12-19,41924.195999999996,Dez,Real (pos-carga),1
+Consumo ativo de Ponta,2025-12-19,6487.188,Dez,Real (pos-carga),1
+Consumo ativo Fora de Ponta,2025-12-20,51304.944,Dez,Real (pos-carga),1
+Consumo ativo Fora de Ponta,2025-12-21,48159.745,Dez,Real (pos-carga),1
+Consumo ativo Fora de Ponta,2025-12-22,37936.835,Dez,Real (pos-carga),1
+Consumo ativo de Ponta,2025-12-22,5329.669,Dez,Real (pos-carga),1
+Consumo ativo Fora de Ponta,2025-12-23,40775.677,Dez,Real (pos-carga),1
+Consumo ativo de Ponta,2025-12-23,6158.868,Dez,Real (pos-carga),1
+Consumo ativo Fora de Ponta,2025-12-24,34761.523,Dez,Real (pos-carga),1
+Consumo ativo de Ponta,2025-12-24,2632.197,Dez,Real (pos-carga),1
+Consumo ativo Fora de Ponta,2025-12-25,28776.27,Dez,Real (pos-carga),1
+Consumo ativo Fora de Ponta,2025-12-26,34565.076,Dez,Real (pos-carga),1
+Consumo ativo de Ponta,2025-12-26,5924.868,Dez,Real (pos-carga),1
+Consumo ativo Fora de Ponta,2025-12-27,42020.316,Dez,Real (pos-carga),1
+Consumo ativo Fora de Ponta,2025-12-28,42942.748,Dez,Real (pos-carga),1
+Consumo ativo Fora de Ponta,2025-12-29,32131.847999999998,Dez,Real (pos-carga),1
+Consumo ativo de Ponta,2025-12-29,6358.068,Dez,Real (pos-carga),1
+Consumo ativo Fora de Ponta,2025-12-30,33855.289,Dez,Real (pos-carga),1
+Consumo ativo de Ponta,2025-12-30,7343.388,Dez,Real (pos-carga),1
+Consumo ativo Fora de Ponta,2025-12-31,37948.003,Dez,Real (pos-carga),1
+Consumo ativo de Ponta,2025-12-31,2624.277,Dez,Real (pos-carga),1
+Consumo ativo Fora de Ponta,2026-01-01,341.999,Dez,Real (pos-carga),1
+Consumo ativo Fora de Ponta,2026-01-03,2520.234,Jan,Real (pos-carga),2
+Consumo ativo Fora de Ponta,2026-01-04,39061.708,Jan,Real (pos-carga),2
+Consumo ativo Fora de Ponta,2026-01-05,37165.239,Jan,Real (pos-carga),2
+Consumo ativo de Ponta,2026-01-05,5934.348,Jan,Real (pos-carga),2
+Consumo ativo Fora de Ponta,2026-01-06,35496.295,Jan,Real (pos-carga),2
+Consumo ativo de Ponta,2026-01-06,6059.268,Jan,Real (pos-carga),2
+Consumo ativo Fora de Ponta,2026-01-07,36210.519,Jan,Real (pos-carga),2
+Consumo ativo de Ponta,2026-01-07,6071.268,Jan,Real (pos-carga),2
+Consumo ativo Fora de Ponta,2026-01-08,38496.879,Jan,Real (pos-carga),2
+Consumo ativo de Ponta,2026-01-08,6091.908,Jan,Real (pos-carga),2
+Consumo ativo Fora de Ponta,2026-01-09,36013.241,Jan,Real (pos-carga),2
+Consumo ativo de Ponta,2026-01-09,6209.628,Jan,Real (pos-carga),2
+Consumo ativo Fora de Ponta,2026-01-10,43158.386,Jan,Real (pos-carga),2
+Consumo ativo Fora de Ponta,2026-01-11,42145.707,Jan,Real (pos-carga),2
+Consumo ativo Fora de Ponta,2026-01-12,36458.078,Jan,Real (pos-carga),2
+Consumo ativo de Ponta,2026-01-12,5906.268,Jan,Real (pos-carga),2
+Consumo ativo Fora de Ponta,2026-01-13,37106.078,Jan,Real (pos-carga),2
+Consumo ativo de Ponta,2026-01-13,5969.148,Jan,Real (pos-carga),2
+Consumo ativo Fora de Ponta,2026-01-14,36536.918,Jan,Real (pos-carga),2
+Consumo ativo de Ponta,2026-01-14,5889.948,Jan,Real (pos-carga),2
+Consumo ativo Fora de Ponta,2026-01-15,36178.719,Jan,Real (pos-carga),2
+Consumo ativo de Ponta,2026-01-15,5996.988,Jan,Real (pos-carga),2
+Consumo ativo Fora de Ponta,2026-01-16,37589.918,Jan,Real (pos-carga),2
+Consumo ativo de Ponta,2026-01-16,6036.708,Jan,Real (pos-carga),2
+Consumo ativo Fora de Ponta,2026-01-17,45947.067,Jan,Real (pos-carga),2
+Consumo ativo Fora de Ponta,2026-01-18,40930.588,Jan,Real (pos-carga),2
+Consumo ativo Fora de Ponta,2026-01-19,33829.486,Jan,Real (pos-carga),2
+Consumo ativo de Ponta,2026-01-19,5870.268,Jan,Real (pos-carga),2
+Consumo ativo Fora de Ponta,2026-01-20,36742.358,Jan,Real (pos-carga),2
+Consumo ativo de Ponta,2026-01-20,5842.068,Jan,Real (pos-carga),2
+Consumo ativo Fora de Ponta,2026-01-21,36747.879,Jan,Real (pos-carga),2
+Consumo ativo de Ponta,2026-01-21,5716.188,Jan,Real (pos-carga),2
+Consumo ativo Fora de Ponta,2026-01-22,35840.559,Jan,Real (pos-carga),2
+Consumo ativo de Ponta,2026-01-22,6920.388,Jan,Real (pos-carga),2
+Consumo ativo Fora de Ponta,2026-01-23,38622.638,Jan,Real (pos-carga),2
+Consumo ativo de Ponta,2026-01-23,6024.948,Jan,Real (pos-carga),2
+Consumo ativo Fora de Ponta,2026-01-24,43358.064,Jan,Real (pos-carga),2
+Consumo ativo Fora de Ponta,2026-01-25,40798.227,Jan,Real (pos-carga),2
+Consumo ativo Fora de Ponta,2026-01-26,37187.438,Jan,Real (pos-carga),2
+Consumo ativo de Ponta,2026-01-26,5709.948,Jan,Real (pos-carga),2
+Consumo ativo Fora de Ponta,2026-01-27,35340.88,Jan,Real (pos-carga),2
+Consumo ativo de Ponta,2026-01-27,5237.028,Jan,Real (pos-carga),2
+Consumo ativo Fora de Ponta,2026-01-28,34788.159999999996,Jan,Real (pos-carga),2
+Consumo ativo de Ponta,2026-01-28,5326.068,Jan,Real (pos-carga),2
+Consumo ativo Fora de Ponta,2026-01-29,35302.72,Jan,Real (pos-carga),2
+Consumo ativo de Ponta,2026-01-29,5466.948,Jan,Real (pos-carga),2
+Consumo ativo Fora de Ponta,2026-01-30,35188.359,Jan,Real (pos-carga),2
+Consumo ativo de Ponta,2026-01-30,5917.428,Jan,Real (pos-carga),2
+Consumo ativo Fora de Ponta,2026-01-31,42198.268,Jan,Real (pos-carga),2
+Consumo ativo Fora de Ponta,2026-02-01,201.48,Jan,Real (pos-carga),2
+Consumo ativo Fora de Ponta,2025-02-01,42552.614975441094,Fev,Ajustado (delta),3
+Consumo ativo Fora de Ponta,2025-02-02,39639.73802553672,Fev,Ajustado (delta),3
+Consumo ativo Fora de Ponta,2025-02-03,35176.84811137433,Fev,Ajustado (delta),3
+Consumo ativo de Ponta,2025-02-03,5680.719661374814,Fev,Ajustado (delta),3
+Consumo ativo Fora de Ponta,2025-02-04,36741.83154231294,Fev,Ajustado (delta),3
+Consumo ativo de Ponta,2025-02-04,5676.565655649063,Fev,Ajustado (delta),3
+Consumo ativo Fora de Ponta,2025-02-05,36007.471004042156,Fev,Ajustado (delta),3
+Consumo ativo de Ponta,2025-02-05,6208.407119451729,Fev,Ajustado (delta),3
+Consumo ativo Fora de Ponta,2025-02-06,38656.71185925235,Fev,Ajustado (delta),3
+Consumo ativo de Ponta,2025-02-06,5805.988896541976,Fev,Ajustado (delta),3
+Consumo ativo Fora de Ponta,2025-02-07,37275.43186459838,Fev,Ajustado (delta),3
+Consumo ativo de Ponta,2025-02-07,6715.702569523518,Fev,Ajustado (delta),3
+Consumo ativo Fora de Ponta,2025-02-08,43452.09568561876,Fev,Ajustado (delta),3
+Consumo ativo Fora de Ponta,2025-02-09,39511.75874444972,Fev,Ajustado (delta),3
+Consumo ativo Fora de Ponta,2025-02-10,36957.97916779233,Fev,Ajustado (delta),3
+Consumo ativo de Ponta,2025-02-10,5649.304993073825,Fev,Ajustado (delta),3
+Consumo ativo Fora de Ponta,2025-02-11,35772.36284940082,Fev,Ajustado (delta),3
+Consumo ativo de Ponta,2025-02-11,5799.858511828947,Fev,Ajustado (delta),3
+Consumo ativo Fora de Ponta,2025-02-12,35487.8759931951,Fev,Ajustado (delta),3
+Consumo ativo de Ponta,2025-02-12,5510.145801261185,Fev,Ajustado (delta),3
+Consumo ativo Fora de Ponta,2025-02-13,37026.1884593811,Fev,Ajustado (delta),3
+Consumo ativo de Ponta,2025-02-13,6074.680059099064,Fev,Ajustado (delta),3
+Consumo ativo Fora de Ponta,2025-02-14,37153.95692895875,Fev,Ajustado (delta),3
+Consumo ativo de Ponta,2025-02-14,6473.433362057696,Fev,Ajustado (delta),3
+Consumo ativo Fora de Ponta,2025-02-15,43264.9671367368,Fev,Ajustado (delta),3
+Consumo ativo Fora de Ponta,2025-02-16,39540.76343535368,Fev,Ajustado (delta),3
+Consumo ativo Fora de Ponta,2025-02-17,35306.81692474744,Fev,Ajustado (delta),3
+Consumo ativo de Ponta,2025-02-17,5528.189763632413,Fev,Ajustado (delta),3
+Consumo ativo Fora de Ponta,2025-02-18,36041.59384611869,Fev,Ajustado (delta),3
+Consumo ativo de Ponta,2025-02-18,5683.056289595548,Fev,Ajustado (delta),3
+Consumo ativo Fora de Ponta,2025-02-19,36083.91349708614,Fev,Ajustado (delta),3
+Consumo ativo de Ponta,2025-02-19,5542.079720277891,Fev,Ajustado (delta),3
+Consumo ativo Fora de Ponta,2025-02-20,36103.290946893765,Fev,Ajustado (delta),3
+Consumo ativo de Ponta,2025-02-20,5563.498812301292,Fev,Ajustado (delta),3
+Consumo ativo Fora de Ponta,2025-02-21,35461.353602305884,Fev,Ajustado (delta),3
+Consumo ativo de Ponta,2025-02-21,5669.16633295007,Fev,Ajustado (delta),3
+Consumo ativo Fora de Ponta,2025-02-22,42530.856150370455,Fev,Ajustado (delta),3
+Consumo ativo Fora de Ponta,2025-02-23,39363.48328243507,Fev,Ajustado (delta),3
+Consumo ativo Fora de Ponta,2025-02-24,36117.37802751571,Fev,Ajustado (delta),3
+Consumo ativo de Ponta,2025-02-24,5574.013639294598,Fev,Ajustado (delta),3
+Consumo ativo Fora de Ponta,2025-02-25,35738.172278260216,Fev,Ajustado (delta),3
+Consumo ativo de Ponta,2025-02-25,5500.020412304668,Fev,Ajustado (delta),3
+Consumo ativo Fora de Ponta,2025-02-26,35614.361265782776,Fev,Ajustado (delta),3
+Consumo ativo de Ponta,2025-02-26,5631.261030702596,Fev,Ajustado (delta),3
+Consumo ativo Fora de Ponta,2025-02-27,36269.00164515748,Fev,Ajustado (delta),3
+Consumo ativo de Ponta,2025-02-27,5681.238912090532,Fev,Ajustado (delta),3
+Consumo ativo Fora de Ponta,2025-02-28,36239.39757108589,Fev,Ajustado (delta),3
+Consumo ativo de Ponta,2025-02-28,5671.892399207593,Fev,Ajustado (delta),3
+Consumo ativo Fora de Ponta,2025-03-01,40632.61735802754,Mar,Ajustado (delta),4
+Consumo ativo Fora de Ponta,2025-03-02,37503.86671525077,Mar,Ajustado (delta),4
+Consumo ativo Fora de Ponta,2025-03-03,27950.855559688556,Mar,Ajustado (delta),4
+Consumo ativo de Ponta,2025-03-03,4207.345755522691,Mar,Ajustado (delta),4
+Consumo ativo Fora de Ponta,2025-03-04,30280.521554850824,Mar,Ajustado (delta),4
+Consumo ativo Fora de Ponta,2025-03-05,30692.1120253349,Mar,Ajustado (delta),4
+Consumo ativo de Ponta,2025-03-05,5561.291996759487,Mar,Ajustado (delta),4
+Consumo ativo Fora de Ponta,2025-03-06,34717.228457369696,Mar,Ajustado (delta),4
+Consumo ativo de Ponta,2025-03-06,5518.973063428404,Mar,Ajustado (delta),4
+Consumo ativo Fora de Ponta,2025-03-07,32519.278684290228,Mar,Ajustado (delta),4
+Consumo ativo de Ponta,2025-03-07,5462.764173451843,Mar,Ajustado (delta),4
+Consumo ativo Fora de Ponta,2025-03-08,40438.58632565469,Mar,Ajustado (delta),4
+Consumo ativo Fora de Ponta,2025-03-09,38762.88531310064,Mar,Ajustado (delta),4
+Consumo ativo Fora de Ponta,2025-03-10,33978.84003726068,Mar,Ajustado (delta),4
+Consumo ativo de Ponta,2025-03-10,4935.985404127435,Mar,Ajustado (delta),4
+Consumo ativo Fora de Ponta,2025-03-11,34264.48597279608,Mar,Ajustado (delta),4
+Consumo ativo de Ponta,2025-03-11,5478.731132960196,Mar,Ajustado (delta),4
+Consumo ativo Fora de Ponta,2025-03-12,32022.27047884819,Mar,Ajustado (delta),4
+Consumo ativo de Ponta,2025-03-12,5504.823481425066,Mar,Ajustado (delta),4
+Consumo ativo Fora de Ponta,2025-03-13,37398.11354477315,Mar,Ajustado (delta),4
+Consumo ativo de Ponta,2025-03-13,5718.884588980146,Mar,Ajustado (delta),4
+Consumo ativo Fora de Ponta,2025-03-14,36816.61778820927,Mar,Ajustado (delta),4
+Consumo ativo de Ponta,2025-03-14,5952.4620533071975,Mar,Ajustado (delta),4
+Consumo ativo Fora de Ponta,2025-03-15,41615.97146270536,Mar,Ajustado (delta),4
+Consumo ativo Fora de Ponta,2025-03-16,39384.39098334876,Mar,Ajustado (delta),4
+Consumo ativo Fora de Ponta,2025-03-17,34380.48621644074,Mar,Ajustado (delta),4
+Consumo ativo de Ponta,2025-03-17,5083.0631693547875,Mar,Ajustado (delta),4
+Consumo ativo Fora de Ponta,2025-03-18,33250.55686621019,Mar,Ajustado (delta),4
+Consumo ativo de Ponta,2025-03-18,6036.6649452277325,Mar,Ajustado (delta),4
+Consumo ativo Fora de Ponta,2025-03-19,34198.88471144446,Mar,Ajustado (delta),4
+Consumo ativo de Ponta,2025-03-19,5695.25868141494,Mar,Ajustado (delta),4
+Consumo ativo Fora de Ponta,2025-03-20,35290.36155023277,Mar,Ajustado (delta),4
+Consumo ativo de Ponta,2025-03-20,5527.540700237764,Mar,Ajustado (delta),4
+Consumo ativo Fora de Ponta,2025-03-21,34223.57464574282,Mar,Ajustado (delta),4
+Consumo ativo de Ponta,2025-03-21,6389.880196784979,Mar,Ajustado (delta),4
+Consumo ativo Fora de Ponta,2025-03-22,42820.149121937764,Mar,Ajustado (delta),4
+Consumo ativo Fora de Ponta,2025-03-23,42633.07584611942,Mar,Ajustado (delta),4
+Consumo ativo Fora de Ponta,2025-03-24,36455.922009514325,Mar,Ajustado (delta),4
+Consumo ativo de Ponta,2025-03-24,5665.661390618968,Mar,Ajustado (delta),4
+Consumo ativo Fora de Ponta,2025-03-25,39488.182349638555,Mar,Ajustado (delta),4
+Consumo ativo de Ponta,2025-03-25,6133.82993887966,Mar,Ajustado (delta),4
+Consumo ativo Fora de Ponta,2025-03-26,39758.822687002794,Mar,Ajustado (delta),4
+Consumo ativo de Ponta,2025-03-26,6403.8640950142735,Mar,Ajustado (delta),4
+Consumo ativo Fora de Ponta,2025-03-27,40690.15674357761,Mar,Ajustado (delta),4
+Consumo ativo de Ponta,2025-03-27,7093.999937862772,Mar,Ajustado (delta),4
+Consumo ativo Fora de Ponta,2025-03-28,38506.33608393119,Mar,Ajustado (delta),4
+Consumo ativo de Ponta,2025-03-28,6427.3113617882955,Mar,Ajustado (delta),4
+Consumo ativo Fora de Ponta,2025-03-29,44154.351476796895,Mar,Ajustado (delta),4
+Consumo ativo Fora de Ponta,2025-03-30,41806.52392752123,Mar,Ajustado (delta),4
+Consumo ativo Fora de Ponta,2025-03-31,35103.533424838446,Mar,Ajustado (delta),4
+Consumo ativo de Ponta,2025-03-31,5415.1229202846425,Mar,Ajustado (delta),4
+Consumo ativo Fora de Ponta,2025-04-01,35996.69300216577,Abr,Ajustado (delta),5
+Consumo ativo de Ponta,2025-04-01,5701.7036256437605,Abr,Ajustado (delta),5
+Consumo ativo Fora de Ponta,2025-04-02,35325.51673215267,Abr,Ajustado (delta),5
+Consumo ativo de Ponta,2025-04-02,5460.816983267898,Abr,Ajustado (delta),5
+Consumo ativo Fora de Ponta,2025-04-03,36014.4245945658,Abr,Ajustado (delta),5
+Consumo ativo de Ponta,2025-04-03,5753.702423244436,Abr,Ajustado (delta),5
+Consumo ativo Fora de Ponta,2025-04-04,35889.94654488511,Abr,Ajustado (delta),5
+Consumo ativo de Ponta,2025-04-04,6240.034403860011,Abr,Ajustado (delta),5
+Consumo ativo Fora de Ponta,2025-04-05,41951.80370390389,Abr,Ajustado (delta),5
+Consumo ativo Fora de Ponta,2025-04-06,39466.92932958442,Abr,Ajustado (delta),5
+Consumo ativo Fora de Ponta,2025-04-07,35767.08508252794,Abr,Ajustado (delta),5
+Consumo ativo de Ponta,2025-04-07,5619.318264241064,Abr,Ajustado (delta),5
+Consumo ativo Fora de Ponta,2025-04-08,35960.34601496968,Abr,Ajustado (delta),5
+Consumo ativo de Ponta,2025-04-08,5628.794589802932,Abr,Ajustado (delta),5
+Consumo ativo Fora de Ponta,2025-04-09,35559.95560436088,Abr,Ajustado (delta),5
+Consumo ativo de Ponta,2025-04-09,6032.640752180912,Abr,Ajustado (delta),5
+Consumo ativo Fora de Ponta,2025-04-10,36128.42577700367,Abr,Ajustado (delta),5
+Consumo ativo de Ponta,2025-04-10,5712.913205749379,Abr,Ajustado (delta),5
+Consumo ativo Fora de Ponta,2025-04-11,36044.201796674584,Abr,Ajustado (delta),5
+Consumo ativo de Ponta,2025-04-11,6680.112031432578,Abr,Ajustado (delta),5
+Consumo ativo Fora de Ponta,2025-04-12,41639.17021806791,Abr,Ajustado (delta),5
+Consumo ativo Fora de Ponta,2025-04-13,39800.857526930005,Abr,Ajustado (delta),5
+Consumo ativo Fora de Ponta,2025-04-14,34697.517454626875,Abr,Ajustado (delta),5
+Consumo ativo de Ponta,2025-04-14,5685.263105137353,Abr,Ajustado (delta),5
+Consumo ativo Fora de Ponta,2025-04-15,35388.38915875116,Abr,Ajustado (delta),5
+Consumo ativo de Ponta,2025-04-15,5665.012327224319,Abr,Ajustado (delta),5
+Consumo ativo Fora de Ponta,2025-04-16,36161.974897914995,Abr,Ajustado (delta),5
+Consumo ativo de Ponta,2025-04-16,5979.063803745668,Abr,Ajustado (delta),5
+Consumo ativo Fora de Ponta,2025-04-17,36565.13892715763,Abr,Ajustado (delta),5
+Consumo ativo de Ponta,2025-04-17,5754.827818518956,Abr,Ajustado (delta),5
+Consumo ativo Fora de Ponta,2025-04-18,36534.69811138341,Abr,Ajustado (delta),5
+Consumo ativo Fora de Ponta,2025-04-19,41115.31134850934,Abr,Ajustado (delta),5
+Consumo ativo Fora de Ponta,2025-04-20,37653.049187140736,Abr,Ajustado (delta),5
+Consumo ativo Fora de Ponta,2025-04-21,39895.3764953946,Abr,Ajustado (delta),5
+Consumo ativo Fora de Ponta,2025-04-22,35672.8348447881,Abr,Ajustado (delta),5
+Consumo ativo de Ponta,2025-04-22,5419.276926010392,Abr,Ajustado (delta),5
+Consumo ativo Fora de Ponta,2025-04-23,34934.13329548068,Abr,Ajustado (delta),5
+Consumo ativo de Ponta,2025-04-23,4981.938010696225,Abr,Ajustado (delta),5
+Consumo ativo Fora de Ponta,2025-04-24,33300.00134973429,Abr,Ajustado (delta),5
+Consumo ativo de Ponta,2025-04-24,5579.595584488575,Abr,Ajustado (delta),5
+Consumo ativo Fora de Ponta,2025-04-25,38517.98369071166,Abr,Ajustado (delta),5
+Consumo ativo de Ponta,2025-04-25,5737.837240103882,Abr,Ajustado (delta),5
+Consumo ativo Fora de Ponta,2025-04-26,41871.45632560014,Abr,Ajustado (delta),5
+Consumo ativo Fora de Ponta,2025-04-27,39334.77094970269,Abr,Ajustado (delta),5
+Consumo ativo Fora de Ponta,2025-04-28,34912.3111031963,Abr,Ajustado (delta),5
+Consumo ativo de Ponta,2025-04-28,5629.9629039133,Abr,Ajustado (delta),5
+Consumo ativo Fora de Ponta,2025-04-29,35429.24176926095,Abr,Ajustado (delta),5
+Consumo ativo de Ponta,2025-04-29,5580.634085920013,Abr,Ajustado (delta),5
+Consumo ativo Fora de Ponta,2025-04-30,35478.8599931344,Abr,Ajustado (delta),5
+Consumo ativo de Ponta,2025-04-30,5749.390568528625,Abr,Ajustado (delta),5
+Consumo ativo Fora de Ponta,2025-05-01,35172.28387408216,Mai,Ajustado (delta),6
+Consumo ativo Fora de Ponta,2025-05-02,34838.86617881086,Mai,Ajustado (delta),6
+Consumo ativo de Ponta,2025-05-02,5672.411649923312,Mai,Ajustado (delta),6
+Consumo ativo Fora de Ponta,2025-05-03,41312.330980498446,Mai,Ajustado (delta),6
+Consumo ativo Fora de Ponta,2025-05-04,38691.61975578734,Mai,Ajustado (delta),6
+Consumo ativo Fora de Ponta,2025-05-05,34884.99650588185,Mai,Ajustado (delta),6
+Consumo ativo de Ponta,2025-05-05,5411.6179779535405,Mai,Ajustado (delta),6
+Consumo ativo Fora de Ponta,2025-05-06,35129.32697256103,Mai,Ajustado (delta),6
+Consumo ativo de Ponta,2025-05-06,5596.471232749436,Mai,Ajustado (delta),6
+Consumo ativo Fora de Ponta,2025-05-07,35005.82814385199,Mai,Ajustado (delta),6
+Consumo ativo de Ponta,2025-05-07,6170.891255241045,Mai,Ajustado (delta),6
+Consumo ativo Fora de Ponta,2025-05-08,36777.54574940702,Mai,Ajustado (delta),6
+Consumo ativo de Ponta,2025-05-08,5210.149782026967,Mai,Ajustado (delta),6
+Consumo ativo Fora de Ponta,2025-05-09,40243.54280257156,Mai,Ajustado (delta),6
+Consumo ativo de Ponta,2025-05-09,6078.775865831908,Mai,Ajustado (delta),6
+Consumo ativo Fora de Ponta,2025-05-10,41880.14594451747,Mai,Ajustado (delta),6
+Consumo ativo Fora de Ponta,2025-05-11,42850.24966553607,Mai,Ajustado (delta),6
+Consumo ativo Fora de Ponta,2025-05-12,34490.64748393123,Mai,Ajustado (delta),6
+Consumo ativo de Ponta,2025-05-12,5409.800600448524,Mai,Ajustado (delta),6
+Consumo ativo Fora de Ponta,2025-05-13,35242.31472291739,Mai,Ajustado (delta),6
+Consumo ativo de Ponta,2025-05-13,5536.108337047125,Mai,Ajustado (delta),6
+Consumo ativo Fora de Ponta,2025-05-14,34459.281975471684,Mai,Ajustado (delta),6
+Consumo ativo de Ponta,2025-05-14,5963.190968953521,Mai,Ajustado (delta),6
+Consumo ativo Fora de Ponta,2025-05-15,35575.1639268466,Mai,Ajustado (delta),6
+Consumo ativo de Ponta,2025-05-15,5594.394229886561,Mai,Ajustado (delta),6
+Consumo ativo Fora de Ponta,2025-05-16,36113.09152808509,Mai,Ajustado (delta),6
+Consumo ativo de Ponta,2025-05-16,6237.025065204926,Mai,Ajustado (delta),6
+Consumo ativo Fora de Ponta,2025-05-17,42583.282255015256,Mai,Ajustado (delta),6
+Consumo ativo Fora de Ponta,2025-05-18,39782.1405800348,Mai,Ajustado (delta),6
+Consumo ativo Fora de Ponta,2025-05-19,35314.69894760251,Mai,Ajustado (delta),6
+Consumo ativo de Ponta,2025-05-19,5441.994144823091,Mai,Ajustado (delta),6
+Consumo ativo Fora de Ponta,2025-05-20,34481.93218610556,Mai,Ajustado (delta),6
+Consumo ativo de Ponta,2025-05-20,5453.936911284623,Mai,Ajustado (delta),6
+Consumo ativo Fora de Ponta,2025-05-21,34909.322129898086,Mai,Ajustado (delta),6
+Consumo ativo de Ponta,2025-05-21,5449.912718237802,Mai,Ajustado (delta),6
+Consumo ativo Fora de Ponta,2025-05-22,35247.901630820306,Mai,Ajustado (delta),6
+Consumo ativo de Ponta,2025-05-22,5542.988409030399,Mai,Ajustado (delta),6
+Consumo ativo Fora de Ponta,2025-05-23,36163.994203676,Mai,Ajustado (delta),6
+Consumo ativo de Ponta,2025-05-23,6503.998267403196,Mai,Ajustado (delta),6
+Consumo ativo Fora de Ponta,2025-05-24,42729.51506523718,Mai,Ajustado (delta),6
+Consumo ativo Fora de Ponta,2025-05-25,39545.58437741519,Mai,Ajustado (delta),6
+Consumo ativo Fora de Ponta,2025-05-26,34886.90555803664,Mai,Ajustado (delta),6
+Consumo ativo de Ponta,2025-05-26,5444.979836438474,Mai,Ajustado (delta),6
+Consumo ativo Fora de Ponta,2025-05-27,35294.222590005396,Mai,Ajustado (delta),6
+Consumo ativo de Ponta,2025-05-27,5521.179878970209,Mai,Ajustado (delta),6
+Consumo ativo Fora de Ponta,2025-05-28,35070.21753343123,Mai,Ajustado (delta),6
+Consumo ativo de Ponta,2025-05-28,5622.563581214306,Mai,Ajustado (delta),6
+Consumo ativo Fora de Ponta,2025-05-29,36015.662482464024,Mai,Ajustado (delta),6
+Consumo ativo de Ponta,2025-05-29,5885.294512332963,Mai,Ajustado (delta),6
+Consumo ativo Fora de Ponta,2025-05-30,35921.04466915979,Mai,Ajustado (delta),6
+Consumo ativo de Ponta,2025-05-30,6088.945147502715,Mai,Ajustado (delta),6
+Consumo ativo Fora de Ponta,2025-05-31,42119.29279062358,Mai,Ajustado (delta),6
+Consumo ativo Fora de Ponta,2025-06-01,38848.94052306858,Jun,Ajustado (delta),7
+Consumo ativo Fora de Ponta,2025-06-02,35274.52674250862,Jun,Ajustado (delta),7
+Consumo ativo de Ponta,2025-06-02,5469.384620077258,Jun,Ajustado (delta),7
+Consumo ativo Fora de Ponta,2025-06-03,34032.520225863824,Jun,Ajustado (delta),7
+Consumo ativo de Ponta,2025-06-03,5965.138159137467,Jun,Ajustado (delta),7
+Consumo ativo Fora de Ponta,2025-06-04,33492.33177086912,Jun,Ajustado (delta),7
+Consumo ativo de Ponta,2025-06-04,5541.171031525383,Jun,Ajustado (delta),7
+Consumo ativo Fora de Ponta,2025-06-05,33684.59161572181,Jun,Ajustado (delta),7
+Consumo ativo de Ponta,2025-06-05,6010.187380956805,Jun,Ajustado (delta),7
+Consumo ativo Fora de Ponta,2025-06-06,33623.95974739706,Jun,Ajustado (delta),7
+Consumo ativo de Ponta,2025-06-06,6190.235769628928,Jun,Ajustado (delta),7
+Consumo ativo Fora de Ponta,2025-06-07,43733.92079930952,Jun,Ajustado (delta),7
+Consumo ativo Fora de Ponta,2025-06-08,40172.1008774752,Jun,Ajustado (delta),7
+Consumo ativo Fora de Ponta,2025-06-09,35740.30157240226,Jun,Ajustado (delta),7
+Consumo ativo de Ponta,2025-06-09,5482.625513328087,Jun,Ajustado (delta),7
+Consumo ativo Fora de Ponta,2025-06-10,36172.65063785631,Jun,Ajustado (delta),7
+Consumo ativo de Ponta,2025-06-10,5893.382484162409,Jun,Ajustado (delta),7
+Consumo ativo Fora de Ponta,2025-06-11,35773.8585356212,Jun,Ajustado (delta),7
+Consumo ativo de Ponta,2025-06-11,5700.710813929987,Jun,Ajustado (delta),7
+Consumo ativo Fora de Ponta,2025-06-12,39341.737343641325,Jun,Ajustado (delta),7
+Consumo ativo de Ponta,2025-06-12,6830.342842807843,Jun,Ajustado (delta),7
+Consumo ativo Fora de Ponta,2025-06-13,36426.003532552306,Jun,Ajustado (delta),7
+Consumo ativo de Ponta,2025-06-13,5726.6733497159275,Jun,Ajustado (delta),7
+Consumo ativo Fora de Ponta,2025-06-14,41135.82889609533,Jun,Ajustado (delta),7
+Consumo ativo Fora de Ponta,2025-06-15,37647.565349979595,Jun,Ajustado (delta),7
+Consumo ativo Fora de Ponta,2025-06-16,34529.96625136216,Jun,Ajustado (delta),7
+Consumo ativo de Ponta,2025-06-16,5435.763136234465,Jun,Ajustado (delta),7
+Consumo ativo Fora de Ponta,2025-06-17,34455.288924541346,Jun,Ajustado (delta),7
+Consumo ativo de Ponta,2025-06-17,5714.210250766352,Jun,Ajustado (delta),7
+Consumo ativo Fora de Ponta,2025-06-18,35275.53745101873,Jun,Ajustado (delta),7
+Consumo ativo de Ponta,2025-06-18,5656.444690414959,Jun,Ajustado (delta),7
+Consumo ativo Fora de Ponta,2025-06-19,39089.668953568624,Jun,Ajustado (delta),7
+Consumo ativo Fora de Ponta,2025-06-20,35560.93779524561,Jun,Ajustado (delta),7
+Consumo ativo de Ponta,2025-06-20,5043.600114960158,Jun,Ajustado (delta),7
+Consumo ativo Fora de Ponta,2025-06-21,40798.86829686314,Jun,Ajustado (delta),7
+Consumo ativo Fora de Ponta,2025-06-22,37027.50179373949,Jun,Ajustado (delta),7
+Consumo ativo Fora de Ponta,2025-06-23,33422.90900563498,Jun,Ajustado (delta),7
+Consumo ativo de Ponta,2025-06-23,5460.816983267898,Jun,Ajustado (delta),7
+Consumo ativo Fora de Ponta,2025-06-24,34446.23377196156,Jun,Ajustado (delta),7
+Consumo ativo de Ponta,2025-06-24,6020.957611077239,Jun,Ajustado (delta),7
+Consumo ativo Fora de Ponta,2025-06-25,33416.708816878956,Jun,Ajustado (delta),7
+Consumo ativo de Ponta,2025-06-25,5550.517544408322,Jun,Ajustado (delta),7
+Consumo ativo Fora de Ponta,2025-06-26,35374.345879137974,Jun,Ajustado (delta),7
+Consumo ativo de Ponta,2025-06-26,5638.53054072266,Jun,Ajustado (delta),7
+Consumo ativo Fora de Ponta,2025-06-27,35731.03962790971,Jun,Ajustado (delta),7
+Consumo ativo de Ponta,2025-06-27,5244.550141943338,Jun,Ajustado (delta),7
+Consumo ativo Fora de Ponta,2025-06-28,41836.81465147956,Jun,Ajustado (delta),7
+Consumo ativo Fora de Ponta,2025-06-29,38844.02222548891,Jun,Ajustado (delta),7
+Consumo ativo Fora de Ponta,2025-06-30,35719.0782044657,Jun,Ajustado (delta),7
+Consumo ativo de Ponta,2025-06-30,5538.9642159835785,Jun,Ajustado (delta),7
+Consumo ativo Fora de Ponta,2025-07-01,35441.83919342291,Jul,Ajustado (delta),8
+Consumo ativo de Ponta,2025-07-01,5631.159254334797,Jul,Ajustado (delta),8
+Consumo ativo Fora de Ponta,2025-07-02,37017.71753551994,Jul,Ajustado (delta),8
+Consumo ativo de Ponta,2025-07-02,5676.955093685852,Jul,Ajustado (delta),8
+Consumo ativo Fora de Ponta,2025-07-03,35876.14524790477,Jul,Ajustado (delta),8
+Consumo ativo de Ponta,2025-07-03,5648.7455803762,Jul,Ajustado (delta),8
+Consumo ativo Fora de Ponta,2025-07-04,36043.783875657005,Jul,Ajustado (delta),8
+Consumo ativo de Ponta,2025-07-04,5656.72796281252,Jul,Ajustado (delta),8
+Consumo ativo Fora de Ponta,2025-07-05,40993.37411552369,Jul,Ajustado (delta),8
+Consumo ativo Fora de Ponta,2025-07-06,37162.27604398539,Jul,Ajustado (delta),8
+Consumo ativo Fora de Ponta,2025-07-07,33952.82554680995,Jul,Ajustado (delta),8
+Consumo ativo de Ponta,2025-07-07,5553.892674060494,Jul,Ajustado (delta),8
+Consumo ativo Fora de Ponta,2025-07-08,35978.29313478933,Jul,Ajustado (delta),8
+Consumo ativo de Ponta,2025-07-08,5024.258025799632,Jul,Ajustado (delta),8
+Consumo ativo Fora de Ponta,2025-07-09,9573.403676933383,Jul,Ajustado (delta),8
+Consumo ativo Fora de Ponta,2025-07-10,18914.50456838211,Jul,Ajustado (delta),8
+Consumo ativo de Ponta,2025-07-10,5569.600008210989,Jul,Ajustado (delta),8
+Consumo ativo Fora de Ponta,2025-07-11,36490.06730823068,Jul,Ajustado (delta),8
+Consumo ativo de Ponta,2025-07-11,5679.161909227657,Jul,Ajustado (delta),8
+Consumo ativo Fora de Ponta,2025-07-12,42098.60881601015,Jul,Ajustado (delta),8
+Consumo ativo Fora de Ponta,2025-07-13,37290.41996214729,Jul,Ajustado (delta),8
+Consumo ativo Fora de Ponta,2025-07-14,33707.63076608823,Jul,Ajustado (delta),8
+Consumo ativo de Ponta,2025-07-14,5456.9226029000065,Jul,Ajustado (delta),8
+Consumo ativo Fora de Ponta,2025-07-15,34357.067421995205,Jul,Ajustado (delta),8
+Consumo ativo de Ponta,2025-07-15,6033.83271333098,Jul,Ajustado (delta),8
+Consumo ativo Fora de Ponta,2025-07-16,35472.17751300056,Jul,Ajustado (delta),8
+Consumo ativo de Ponta,2025-07-16,5550.647357087251,Jul,Ajustado (delta),8
+Consumo ativo Fora de Ponta,2025-07-17,34158.08581606817,Jul,Ajustado (delta),8
+Consumo ativo de Ponta,2025-07-17,5553.892674060494,Jul,Ajustado (delta),8
+Consumo ativo Fora de Ponta,2025-07-18,35650.184023167116,Jul,Ajustado (delta),8
+Consumo ativo de Ponta,2025-07-18,6131.394455730955,Jul,Ajustado (delta),8
+Consumo ativo Fora de Ponta,2025-07-19,40962.082363708025,Jul,Ajustado (delta),8
+Consumo ativo Fora de Ponta,2025-07-20,38349.43089913976,Jul,Ajustado (delta),8
+Consumo ativo Fora de Ponta,2025-07-21,34810.74433505184,Jul,Ajustado (delta),8
+Consumo ativo de Ponta,2025-07-21,5696.037557488518,Jul,Ajustado (delta),8
+Consumo ativo Fora de Ponta,2025-07-22,35738.8219777629,Jul,Ajustado (delta),8
+Consumo ativo de Ponta,2025-07-22,5729.6590413313115,Jul,Ajustado (delta),8
+Consumo ativo Fora de Ponta,2025-07-23,36106.97928665905,Jul,Ajustado (delta),8
+Consumo ativo de Ponta,2025-07-23,5714.886237608741,Jul,Ajustado (delta),8
+Consumo ativo Fora de Ponta,2025-07-24,36436.81160728315,Jul,Ajustado (delta),8
+Consumo ativo de Ponta,2025-07-24,6578.752072549,Jul,Ajustado (delta),8
+Consumo ativo Fora de Ponta,2025-07-25,33258.49158108764,Jul,Ajustado (delta),8
+Consumo ativo de Ponta,2025-07-25,4192.809980799538,Jul,Ajustado (delta),8
+Consumo ativo Fora de Ponta,2025-07-26,35277.62238094844,Jul,Ajustado (delta),8
+Consumo ativo Fora de Ponta,2025-07-27,38041.178626827124,Jul,Ajustado (delta),8
+Consumo ativo Fora de Ponta,2025-07-28,35277.87297507306,Jul,Ajustado (delta),8
+Consumo ativo de Ponta,2025-07-28,5572.715512505301,Jul,Ajustado (delta),8
+Consumo ativo Fora de Ponta,2025-07-29,35400.87735639573,Jul,Ajustado (delta),8
+Consumo ativo de Ponta,2025-07-29,6048.703696959791,Jul,Ajustado (delta),8
+Consumo ativo Fora de Ponta,2025-07-30,36710.58299424416,Jul,Ajustado (delta),8
+Consumo ativo de Ponta,2025-07-30,5670.853897776156,Jul,Ajustado (delta),8
+Consumo ativo Fora de Ponta,2025-07-31,35308.09859972615,Jul,Ajustado (delta),8
+Consumo ativo de Ponta,2025-07-31,5994.086386538791,Jul,Ajustado (delta),8
+Consumo ativo Fora de Ponta,2025-08-01,386.725806884628,Jul,Ajustado (delta),8
+Consumo ativo Fora de Ponta,2025-08-01,35363.14329453184,Ago,Ajustado (delta),9
+Consumo ativo de Ponta,2025-08-01,6572.063361624793,Ago,Ajustado (delta),9
+Consumo ativo Fora de Ponta,2025-08-02,44500.52252178395,Ago,Ajustado (delta),9
+Consumo ativo Fora de Ponta,2025-08-03,20266.83088839015,Ago,Ajustado (delta),9
+Consumo ativo Fora de Ponta,2025-08-13,24684.23543804581,Ago,Ajustado (delta),9
+Consumo ativo de Ponta,2025-08-13,5492.491276926745,Ago,Ajustado (delta),9
+Consumo ativo Fora de Ponta,2025-08-14,36091.59564964542,Ago,Ajustado (delta),9
+Consumo ativo de Ponta,2025-08-14,5739.204127404443,Ago,Ajustado (delta),9
+Consumo ativo Fora de Ponta,2025-08-15,35636.727911612965,Ago,Ajustado (delta),9
+Consumo ativo de Ponta,2025-08-15,6230.434618934714,Ago,Ajustado (delta),9
+Consumo ativo Fora de Ponta,2025-08-16,41616.274411292274,Ago,Ajustado (delta),9
+Consumo ativo Fora de Ponta,2025-08-17,39144.724433225565,Ago,Ajustado (delta),9
+Consumo ativo Fora de Ponta,2025-08-18,35240.001453256096,Ago,Ajustado (delta),9
+Consumo ativo de Ponta,2025-08-18,5025.55615258893,Ago,Ajustado (delta),9
+Consumo ativo Fora de Ponta,2025-08-19,35352.33556617202,Ago,Ajustado (delta),9
+Consumo ativo de Ponta,2025-08-19,5447.186651980279,Ago,Ajustado (delta),9
+Consumo ativo Fora de Ponta,2025-08-20,34846.81209131608,Ago,Ajustado (delta),9
+Consumo ativo de Ponta,2025-08-20,5594.264417207632,Ago,Ajustado (delta),9
+Consumo ativo Fora de Ponta,2025-08-21,37784.64820208503,Ago,Ajustado (delta),9
+Consumo ativo de Ponta,2025-08-21,5598.548235612312,Ago,Ajustado (delta),9
+Consumo ativo Fora de Ponta,2025-08-22,36739.91752919034,Ago,Ajustado (delta),9
+Consumo ativo de Ponta,2025-08-22,5529.529586045475,Ago,Ajustado (delta),9
+Consumo ativo Fora de Ponta,2025-08-23,42399.154629314944,Ago,Ajustado (delta),9
+Consumo ativo Fora de Ponta,2025-08-24,37532.299576827005,Ago,Ajustado (delta),9
+Consumo ativo Fora de Ponta,2025-08-25,35344.22969079842,Ago,Ajustado (delta),9
+Consumo ativo de Ponta,2025-08-25,5486.779519053838,Ago,Ajustado (delta),9
+Consumo ativo Fora de Ponta,2025-08-26,35332.31713944037,Ago,Ajustado (delta),9
+Consumo ativo de Ponta,2025-08-26,5503.26572927791,Ago,Ajustado (delta),9
+Consumo ativo Fora de Ponta,2025-08-27,35734.3764371546,Ago,Ajustado (delta),9
+Consumo ativo de Ponta,2025-08-27,5567.6528180270425,Ago,Ajustado (delta),9
+Consumo ativo Fora de Ponta,2025-08-28,33198.95980998133,Ago,Ajustado (delta),9
+Consumo ativo de Ponta,2025-08-28,5998.240392264541,Ago,Ajustado (delta),9
+Consumo ativo Fora de Ponta,2025-08-29,36365.83279327966,Ago,Ajustado (delta),9
+Consumo ativo de Ponta,2025-08-29,6084.497046758845,Ago,Ajustado (delta),9
+Consumo ativo Fora de Ponta,2025-08-30,41735.29914258705,Ago,Ajustado (delta),9
+Consumo ativo Fora de Ponta,2025-08-31,39816.41751802402,Ago,Ajustado (delta),9
+Consumo ativo Fora de Ponta,2025-09-01,367.0898234050934,Ago,Ajustado (delta),9
+Consumo ativo Fora de Ponta,2025-09-01,35405.506867690034,Set,Ajustado (delta),10
+Consumo ativo de Ponta,2025-09-01,5535.329460973547,Set,Ajustado (delta),10
+Consumo ativo Fora de Ponta,2025-09-02,35919.484048032944,Set,Ajustado (delta),10
+Consumo ativo de Ponta,2025-09-02,5516.117184491951,Set,Ajustado (delta),10
+Consumo ativo Fora de Ponta,2025-09-03,35420.296545939585,Set,Ajustado (delta),10
+Consumo ativo de Ponta,2025-09-03,5480.808135823072,Set,Ajustado (delta),10
+Consumo ativo Fora de Ponta,2025-09-04,35762.01366103798,Set,Ajustado (delta),10
+Consumo ativo de Ponta,2025-09-04,5598.028984896593,Set,Ajustado (delta),10
+Consumo ativo Fora de Ponta,2025-09-05,35443.37413929413,Set,Ajustado (delta),10
+Consumo ativo de Ponta,2025-09-05,5836.105438053667,Set,Ajustado (delta),10
+Consumo ativo Fora de Ponta,2025-09-06,42892.34404851146,Set,Ajustado (delta),10
+Consumo ativo Fora de Ponta,2025-09-07,30849.069676169474,Set,Ajustado (delta),10
+Consumo ativo Fora de Ponta,2025-09-08,42185.92817009952,Set,Ajustado (delta),10
+Consumo ativo de Ponta,2025-09-08,5536.108337047125,Set,Ajustado (delta),10
+Consumo ativo Fora de Ponta,2025-09-09,35244.59274571362,Set,Ajustado (delta),10
+Consumo ativo de Ponta,2025-09-09,5371.635672843192,Set,Ajustado (delta),10
+Consumo ativo Fora de Ponta,2025-09-10,36299.455204107,Set,Ajustado (delta),10
+Consumo ativo de Ponta,2025-09-10,5632.299532134034,Set,Ajustado (delta),10
+Consumo ativo Fora de Ponta,2025-09-11,36444.04744609266,Set,Ajustado (delta),10
+Consumo ativo de Ponta,2025-09-11,5599.716549722679,Set,Ajustado (delta),10
+Consumo ativo Fora de Ponta,2025-09-12,30137.74255093223,Set,Ajustado (delta),10
+Consumo ativo de Ponta,2025-09-12,6012.336505486737,Set,Ajustado (delta),10
+Consumo ativo Fora de Ponta,2025-09-13,42538.517011315256,Set,Ajustado (delta),10
+Consumo ativo Fora de Ponta,2025-09-14,36679.48772954448,Set,Ajustado (delta),10
+Consumo ativo Fora de Ponta,2025-09-15,39425.144631061026,Set,Ajustado (delta),10
+Consumo ativo de Ponta,2025-09-15,5493.6595910371125,Set,Ajustado (delta),10
+Consumo ativo Fora de Ponta,2025-09-16,41830.78262912158,Set,Ajustado (delta),10
+Consumo ativo de Ponta,2025-09-16,5576.090642157474,Set,Ajustado (delta),10
+Consumo ativo Fora de Ponta,2025-09-17,28329.11037262884,Set,Ajustado (delta),10
+Consumo ativo de Ponta,2025-09-17,7193.617878274104,Set,Ajustado (delta),10
+Consumo ativo Fora de Ponta,2025-09-18,33747.03034421384,Set,Ajustado (delta),10
+Consumo ativo de Ponta,2025-09-18,5480.937948502002,Set,Ajustado (delta),10
+Consumo ativo Fora de Ponta,2025-09-19,33316.234634845474,Set,Ajustado (delta),10
+Consumo ativo de Ponta,2025-09-19,9735.399236989646,Set,Ajustado (delta),10
+Consumo ativo Fora de Ponta,2025-09-20,48963.88523237367,Set,Ajustado (delta),10
+Consumo ativo Fora de Ponta,2025-09-21,40775.42982337207,Set,Ajustado (delta),10
+Consumo ativo Fora de Ponta,2025-09-22,36062.16369422515,Set,Ajustado (delta),10
+Consumo ativo de Ponta,2025-09-22,5737.058364030304,Set,Ajustado (delta),10
+Consumo ativo Fora de Ponta,2025-09-23,35721.34018638359,Set,Ajustado (delta),10
+Consumo ativo de Ponta,2025-09-23,6136.231269966815,Set,Ajustado (delta),10
+Consumo ativo Fora de Ponta,2025-09-24,36862.64772442854,Set,Ajustado (delta),10
+Consumo ativo de Ponta,2025-09-24,5200.803269144028,Set,Ajustado (delta),10
+Consumo ativo Fora de Ponta,2025-09-25,35897.42544321503,Set,Ajustado (delta),10
+Consumo ativo de Ponta,2025-09-25,5699.282874461761,Set,Ajustado (delta),10
+Consumo ativo Fora de Ponta,2025-09-26,36837.32496792845,Set,Ajustado (delta),10
+Consumo ativo de Ponta,2025-09-26,5882.526021192749,Set,Ajustado (delta),10
+Consumo ativo Fora de Ponta,2025-09-27,46261.51959874218,Set,Ajustado (delta),10
+Consumo ativo Fora de Ponta,2025-09-28,41519.068916581185,Set,Ajustado (delta),10
+Consumo ativo Fora de Ponta,2025-09-29,36118.45146170236,Set,Ajustado (delta),10
+Consumo ativo de Ponta,2025-09-29,5771.977974662394,Set,Ajustado (delta),10
+Consumo ativo Fora de Ponta,2025-09-30,38573.03058395878,Set,Ajustado (delta),10
+Consumo ativo de Ponta,2025-09-30,5551.0816732898365,Set,Ajustado (delta),10
+Consumo ativo Fora de Ponta,2025-10-01,381.3705386629367,Set,Ajustado (delta),10
+Consumo ativo Fora de Ponta,2025-10-01,37536.75095979121,Out,Ajustado (delta),11
+Consumo ativo de Ponta,2025-10-01,5928.532065451615,Out,Ajustado (delta),11
+Consumo ativo Fora de Ponta,2025-10-02,41513.20463168252,Out,Ajustado (delta),11
+Consumo ativo de Ponta,2025-10-02,6226.192538237423,Out,Ajustado (delta),11
+Consumo ativo Fora de Ponta,2025-10-03,43523.810607705,Out,Ajustado (delta),11
+Consumo ativo de Ponta,2025-10-03,5731.99675132437,Out,Ajustado (delta),11
+Consumo ativo Fora de Ponta,2025-10-04,48354.0910155821,Out,Ajustado (delta),11
+Consumo ativo Fora de Ponta,2025-10-05,42618.962217471766,Out,Ajustado (delta),11
+Consumo ativo Fora de Ponta,2025-10-06,38608.971129490084,Out,Ajustado (delta),11
+Consumo ativo de Ponta,2025-10-06,6029.266704301064,Out,Ajustado (delta),11
+Consumo ativo Fora de Ponta,2025-10-07,38453.80022718955,Out,Ajustado (delta),11
+Consumo ativo de Ponta,2025-10-07,6148.175118200672,Out,Ajustado (delta),11
+Consumo ativo Fora de Ponta,2025-10-08,37612.63922568456,Out,Ajustado (delta),11
+Consumo ativo de Ponta,2025-10-08,5628.016795501679,Out,Ajustado (delta),11
+Consumo ativo Fora de Ponta,2025-10-09,43181.4446411516,Out,Ajustado (delta),11
+Consumo ativo de Ponta,2025-10-09,6229.308042531736,Out,Ajustado (delta),11
+Consumo ativo Fora de Ponta,2025-10-10,38084.2566793957,Out,Ajustado (delta),11
+Consumo ativo de Ponta,2025-10-10,8588.008038642947,Out,Ajustado (delta),11
+Consumo ativo Fora de Ponta,2025-10-11,48747.61027674192,Out,Ajustado (delta),11
+Consumo ativo Fora de Ponta,2025-10-12,45824.51317338881,Out,Ajustado (delta),11
+Consumo ativo Fora de Ponta,2025-10-13,37831.68862530326,Out,Ajustado (delta),11
+Consumo ativo de Ponta,2025-10-13,6116.890262578613,Out,Ajustado (delta),11
+Consumo ativo Fora de Ponta,2025-10-14,38895.737052877754,Out,Ajustado (delta),11
+Consumo ativo de Ponta,2025-10-14,5402.012921485067,Out,Ajustado (delta),11
+Consumo ativo Fora de Ponta,2025-10-15,37156.039919145485,Out,Ajustado (delta),11
+Consumo ativo de Ponta,2025-10-15,5904.77634520748,Out,Ajustado (delta),11
+Consumo ativo Fora de Ponta,2025-10-16,41712.99065664604,Out,Ajustado (delta),11
+Consumo ativo de Ponta,2025-10-16,6068.080695301045,Out,Ajustado (delta),11
+Consumo ativo Fora de Ponta,2025-10-17,39763.272031268294,Out,Ajustado (delta),11
+Consumo ativo de Ponta,2025-10-17,6660.355034010742,Out,Ajustado (delta),11
+Consumo ativo Fora de Ponta,2025-10-18,49736.852917820106,Out,Ajustado (delta),11
+Consumo ativo Fora de Ponta,2025-10-19,47101.19541498254,Out,Ajustado (delta),11
+Consumo ativo Fora de Ponta,2025-10-20,39263.975496312145,Out,Ajustado (delta),11
+Consumo ativo de Ponta,2025-10-20,5994.217280990045,Out,Ajustado (delta),11
+Consumo ativo Fora de Ponta,2025-10-21,39497.18573928139,Out,Ajustado (delta),11
+Consumo ativo de Ponta,2025-10-21,5763.669963210893,Out,Ajustado (delta),11
+Consumo ativo Fora de Ponta,2025-10-22,39652.79934893528,Out,Ajustado (delta),11
+Consumo ativo de Ponta,2025-10-22,5913.473794695769,Out,Ajustado (delta),11
+Consumo ativo Fora de Ponta,2025-10-23,37133.2173385634,Out,Ajustado (delta),11
+Consumo ativo de Ponta,2025-10-23,5877.775307990101,Out,Ajustado (delta),11
+Consumo ativo Fora de Ponta,2025-10-24,42377.20627817934,Out,Ajustado (delta),11
+Consumo ativo de Ponta,2025-10-24,6136.751602454858,Out,Ajustado (delta),11
+Consumo ativo Fora de Ponta,2025-10-25,44595.64989763607,Out,Ajustado (delta),11
+Consumo ativo Fora de Ponta,2025-10-26,40682.59986143,Out,Ajustado (delta),11
+Consumo ativo Fora de Ponta,2025-10-27,30326.03283430945,Out,Ajustado (delta),11
+Consumo ativo de Ponta,2025-10-27,4628.328273291716,Out,Ajustado (delta),11
+Consumo ativo Fora de Ponta,2025-10-28,36068.24943059083,Out,Ajustado (delta),11
+Consumo ativo de Ponta,2025-10-28,6101.182928428119,Out,Ajustado (delta),11
+Consumo ativo Fora de Ponta,2025-10-29,40504.035234455805,Out,Ajustado (delta),11
+Consumo ativo de Ponta,2025-10-29,6140.516170143819,Out,Ajustado (delta),11
+Consumo ativo Fora de Ponta,2025-10-30,42022.61819664845,Out,Ajustado (delta),11
+Consumo ativo de Ponta,2025-10-30,6312.517969725674,Out,Ajustado (delta),11
+Consumo ativo Fora de Ponta,2025-10-31,40355.90485219745,Out,Ajustado (delta),11
+Consumo ativo de Ponta,2025-10-31,9066.746115790409,Out,Ajustado (delta),11
+Consumo ativo Fora de Ponta,2025-11-01,198.27243058880694,Out,Ajustado (delta),11
