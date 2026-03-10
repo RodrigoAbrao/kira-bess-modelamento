@@ -30,3 +30,7 @@ Thumbs.db
 # Descomente se quiser ignorar outputs específicos:
 # output/*.html
 # data/*_resultado.csv
+
+# Outputs gerados por exportar_audit_data.py (regeneráveis)
+data/audit_data.json
+data/bess_simulacao_diaria.csv

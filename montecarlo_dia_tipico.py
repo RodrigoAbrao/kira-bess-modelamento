@@ -67,7 +67,7 @@ OUTPUT_DIR = Path("output")
 BESS_CAPACIDADE_KWH = 6_200.0          # Capacidade útil (kWh)
 BESS_POTENCIA_SAIDA = 3_100.0          # Potência máxima de descarga (kW)
 BESS_POTENCIA_CARGA = 1_000.0          # Potência máxima de carga (kW)
-BESS_CARGA_INICIO   = 9                # Início da janela de carga (hora)
+BESS_CARGA_INICIO   = 8                # Início da janela de carga (hora)
 BESS_CARGA_FIM      = 15               # Fim da janela de carga (hora)
 BESS_GRID_MARGIN    = 0.05             # 5% da demanda permanece no grid
 DT = 0.25                              # Intervalo de discretização (h) = 15 min
