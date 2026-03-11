@@ -92,15 +92,23 @@ def calcular_fatura_verde(
     dict
         Dicionário com todos os componentes da fatura.
     """
-    # ── 0. Split automático: tributada (medida) vs isenta (não usada) ────────────
+    # ── 0. Split automático: tributada / isenta / ultrapassagem ─────────────────
     dem_faturada = max(demanda_contratada_kw, demanda_medida_kw)
-    dem_tributada = demanda_medida_kw
-    dem_isenta = dem_faturada - dem_tributada  # ≥ 0
+
+    # Ultrapassagem: excedente acima da contratada → cobrado 2× tarifa cheia
+    dem_ultrapassagem = max(0.0, demanda_medida_kw - demanda_contratada_kw)
+
+    # Tributada = parcela medida dentro da contratada (incide ICMS)
+    dem_tributada = min(demanda_medida_kw, demanda_contratada_kw)
+    dem_isenta = demanda_contratada_kw - dem_tributada  # não usada → sem ICMS
 
     # ── 1. Bases demanda (sem imposto, com desconto fonte 50%) ──────────────
     fator_dem = 1 - DESCONTO_FONTE_INCENTIVADA
     base_dem_trib = dem_tributada * VERDE_DEMANDA_UNICA * fator_dem
     base_dem_isenta = dem_isenta * VERDE_DEMANDA_UNICA * fator_dem
+
+    # Ultrapassagem: 2× tarifa cheia, sem desconto fonte
+    base_dem_ultra = dem_ultrapassagem * VERDE_DEMANDA_UNICA * 2
 
     desconto_dem_trib = dem_tributada * \
         VERDE_DEMANDA_UNICA * DESCONTO_FONTE_INCENTIVADA
@@ -120,6 +128,7 @@ def calcular_fatura_verde(
     # ── 2. Gross-up ─────────────────────────────────────────────────────────────
     valor_dem_trib = base_dem_trib / FATOR_TRIBUTADO
     valor_dem_isenta = base_dem_isenta / FATOR_ISENTO_ICMS
+    valor_dem_ultra = base_dem_ultra / FATOR_TRIBUTADO
 
     valor_tusd_fp = base_tusd_fp / FATOR_TRIBUTADO       # energia sempre tributada
     valor_tusd_hp = base_tusd_hp / FATOR_TRIBUTADO
@@ -139,7 +148,7 @@ def calcular_fatura_verde(
 
     # ── 4. Total Distribuidora ──────────────────────────────────────────────────
     total_distribuidora = (
-        valor_dem_trib + valor_dem_isenta
+        valor_dem_trib + valor_dem_isenta + valor_dem_ultra
         + valor_tusd_fp + valor_tusd_hp
         + encargos
         + ben_bruto - ben_liquido
@@ -158,9 +167,11 @@ def calcular_fatura_verde(
         "dem_faturada": round(dem_faturada, 2),
         "dem_tributada": round(dem_tributada, 2),
         "dem_isenta": round(dem_isenta, 2),
+        "dem_ultrapassagem": round(dem_ultrapassagem, 2),
         # Bases demanda (sem imposto, já com desconto fonte 50%)
         "base_dem_trib": round(base_dem_trib, 2),
         "base_dem_isenta": round(base_dem_isenta, 2),
+        "base_dem_ultra": round(base_dem_ultra, 2),
         # Bases energia (sem imposto, sem desconto)
         "base_tusd_fp": round(base_tusd_fp, 2),
         "base_tusd_hp": round(base_tusd_hp, 2),
@@ -170,6 +181,7 @@ def calcular_fatura_verde(
         # Com imposto (gross-up)
         "valor_dem_trib": round(valor_dem_trib, 2),
         "valor_dem_isenta": round(valor_dem_isenta, 2),
+        "valor_dem_ultra": round(valor_dem_ultra, 2),
         "valor_tusd_fp": round(valor_tusd_fp, 2),
         "valor_tusd_hp": round(valor_tusd_hp, 2),
         # Benefício

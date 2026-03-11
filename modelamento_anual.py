@@ -21,10 +21,11 @@ Fluxo de Execução
 
 3. **Simulação BESS dia a dia** (``simulate_bess_day``):
    - Para cada dia, percorre todos os slots 15-min cronologicamente.
-   - Carga: 09h–15h a 1.000 kW (máx 6.000 kWh/dia, limitado por cap 6.200 kWh).
+   - Carga: 07h30–15h a 1.000 kW (máx 7.500 kWh/dia, limitado por cap 6.200 kWh).
    - Descarga: durante ponta (slots com Consumo HP > 0), cobrindo até 95% da
      demanda medida (5% permanece no grid como margem anti-injeção).
    - Potência max descarga: 3.100 kW por slot.
+   - SOC carry-over: SOC final do dia anterior é o SOC inicial do dia seguinte.
 
 4. **Faturamento** (via ``fatura/``):
    - Para cada mês, agrega consumo/demanda e calcula 3 cenários:
@@ -76,20 +77,33 @@ DATA_DIR = Path("data")
 BESS_CAPACIDADE_KWH = 6_200.0
 BESS_POTENCIA_SAIDA = 3_100.0
 BESS_POTENCIA_CARGA = 1_000.0
-BESS_CARGA_INICIO   = 8
-BESS_CARGA_FIM      = 15
-BESS_GRID_MARGIN    = 0.05   # 5 % da demanda fica no grid (anti-injeção)
+BESS_CARGA_INICIO = 7.5   # 07h30 — aproveita menor demanda matinal
+BESS_CARGA_FIM = 15
+BESS_GRID_MARGIN = 0.05   # 5 % da demanda fica no grid (anti-injeção)
+BESS_WEEKEND_DEM_CAP = 2_800.0  # kW — cap heurístico de demanda FP nos fins de semana (ajustável)
 DT = 0.25  # 15 min em horas
+
+# --- Horário de ponta real (Equatorial Piauí) ---
+# O medidor iplenix classifica HP como 18:30–21:30, mas o horário real da
+# distribuidora é 17:30–20:29.  Reclassificamos em load_and_clean().
+PONTA_INICIO_FRAC = 17.5   # 17 h 30 min  (inclusive)
+PONTA_FIM_FRAC = 20.5   # 20 h 30 min  (exclusive → último slot 20:29)
+
+_MAPA_FP_PARA_HP = {
+    "Consumo ativo Fora de Ponta": "Consumo ativo de Ponta",
+    "Demanda ativa Fora de Ponta": "Demanda ativa de Ponta",
+}
+_MAPA_HP_PARA_FP = {v: k for k, v in _MAPA_FP_PARA_HP.items()}
 
 # --- Solar ---
 SOLAR_KWP = 1_890
 
 # --- CAPEX ---
-CAPEX_SOLAR       = 5_700_000.00
-CAPEX_BESS        = 8_396_490.96
+CAPEX_SOLAR = 5_700_000.00
+CAPEX_BESS = 8_396_490.96
 CAPEX_IMPLANTACAO = 3_000_000.00
-CAPEX_TOTAL       = CAPEX_SOLAR + CAPEX_BESS + CAPEX_IMPLANTACAO
-CAPEX_SOLAR_ONLY  = CAPEX_SOLAR + CAPEX_IMPLANTACAO
+CAPEX_TOTAL = CAPEX_SOLAR + CAPEX_BESS + CAPEX_IMPLANTACAO
+CAPEX_SOLAR_ONLY = CAPEX_SOLAR + CAPEX_IMPLANTACAO
 
 # --- Contrato ---
 DEMANDA_HP_CONTRATADA = 2_980.0
@@ -97,7 +111,7 @@ DEMANDA_FP_CONTRATADA = 3_280.0
 
 # --- Financeiro ---
 VIDA_UTIL_ANOS = 25
-TAXA_DESCONTO  = 0.10
+TAXA_DESCONTO = 0.10
 
 # --- Mapeamento de meses ---
 MESES_REAIS = [
@@ -121,11 +135,16 @@ PARES_DELTA = [
     ("Dez", "iplenix_dez2025.csv", "iplenix_dez2024.csv"),
     ("Jan", "iplenix_jan2026.csv", "iplenix_jan2025.csv"),
 ]
-ORDEM_ANO = ["Nov","Dez","Jan","Fev","Mar","Abr","Mai","Jun","Jul","Ago","Set","Out"]
-_MES_NUM = {"Nov":11,"Dez":12,"Jan":1,"Fev":2,"Mar":3,"Abr":4,
-            "Mai":5,"Jun":6,"Jul":7,"Ago":8,"Set":9,"Out":10}
+ORDEM_ANO = ["Nov", "Dez", "Jan", "Fev", "Mar",
+             "Abr", "Mai", "Jun", "Jul", "Ago", "Set", "Out"]
+_MES_NUM = {"Nov": 11, "Dez": 12, "Jan": 1, "Fev": 2, "Mar": 3, "Abr": 4,
+            "Mai": 5, "Jun": 6, "Jul": 7, "Ago": 8, "Set": 9, "Out": 10}
 CONTRACT_KW = ["Contratad", "Tolerância"]
-ZERO_MED = ["Consumo Reativo Capacitivo", "Demanda Reativa Capacitiva"]
+# Medições reativas que não são usadas na simulação
+ZERO_MED = [
+    "Consumo Reativo Capacitivo", "Demanda Reativa Capacitiva",
+    "Consumo Reativo", "Demanda Reativa",
+]
 
 
 def _brl(v, dec=2):
@@ -166,11 +185,31 @@ def load_and_clean(csv_name):
     df = pd.read_csv(DATA_DIR / csv_name)
     df["Timestamp"] = pd.to_datetime(df["Timestamp"], errors="coerce")
     df = df.dropna(subset=["Timestamp"])
-    df = df.drop_duplicates(subset=["Timestamp", "Grandeza", "Medicao", "Valor"])
+    # Discretizar para o minuto (iPlenix grava duplicatas ±1 s)
+    df["Timestamp"] = df["Timestamp"].dt.floor("min")
+    df = df.drop_duplicates(
+        subset=["Timestamp", "Grandeza", "Medicao"])
     mask = df["Medicao"].apply(lambda m: any(kw in m for kw in CONTRACT_KW))
     df = df[~mask]
     df = df[~df["Medicao"].isin(ZERO_MED)]
+    df = _reclassificar_ponta(df)
     return df.sort_values("Timestamp").reset_index(drop=True)
+
+
+def _reclassificar_ponta(df):
+    """Reclassifica Medicao HP/FP com base no horário real de ponta 17:30–20:29."""
+    hfrac = df.Timestamp.dt.hour + df.Timestamp.dt.minute / 60.0
+    is_ponta = (hfrac >= PONTA_INICIO_FRAC) & (hfrac < PONTA_FIM_FRAC)
+
+    # FP → HP (dentro da ponta real mas classificado como FP pelo medidor)
+    m1 = is_ponta & df.Medicao.isin(_MAPA_FP_PARA_HP)
+    df.loc[m1, "Medicao"] = df.loc[m1, "Medicao"].map(_MAPA_FP_PARA_HP)
+
+    # HP → FP (fora da ponta real mas classificado como HP pelo medidor)
+    m2 = ~is_ponta & df.Medicao.isin(_MAPA_HP_PARA_FP)
+    df.loc[m2, "Medicao"] = df.loc[m2, "Medicao"].map(_MAPA_HP_PARA_FP)
+
+    return df
 
 
 def compute_deltas_avg():
@@ -205,8 +244,10 @@ def compute_deltas_avg():
         dpre = load_and_clean(csv_pre)
         for gr in dpos["Grandeza"].unique():
             for med in dpos[dpos.Grandeza == gr]["Medicao"].unique():
-                vpos = dpos[(dpos.Grandeza == gr) & (dpos.Medicao == med)]["Valor"]
-                vpre = dpre[(dpre.Grandeza == gr) & (dpre.Medicao == med)]["Valor"]
+                vpos = dpos[(dpos.Grandeza == gr) & (
+                    dpos.Medicao == med)]["Valor"]
+                vpre = dpre[(dpre.Grandeza == gr) & (
+                    dpre.Medicao == med)]["Valor"]
                 if vpre.empty or vpos.empty:
                     continue
                 mp, mo = vpre.median(), vpos.median()
@@ -260,7 +301,8 @@ def ajustar_serie(df, deltas):
         mc = mask & (df.Valor <= p90)
         df.loc[mc, "Valor"] = df.loc[mc, "Valor"] * row.Delta_Mediana
         mp = mask & (df.Valor_Orig > p90)
-        dp95 = row.Delta_P95 if not pd.isna(row.Delta_P95) else row.Delta_Mediana
+        dp95 = row.Delta_P95 if not pd.isna(
+            row.Delta_P95) else row.Delta_Mediana
         df.loc[mp, "Valor"] = df.loc[mp, "Valor_Orig"] * dp95
     df.drop(columns=["Valor_Orig"], inplace=True)
     return df
@@ -355,25 +397,28 @@ def load_solar_profile():
     pv.loc[pv.EArray < 0, "EArray"] = 0.0
     solar_profile = pv.groupby(["mes", "hora"])["EArray"].mean()
     monthly_kwh = pv.groupby("mes")["E_Grid"].sum()
-    solar_monthly = {m: float(monthly_kwh.get(_MES_NUM[m], 0)) for m in ORDEM_ANO}
+    solar_monthly = {m: float(monthly_kwh.get(
+        _MES_NUM[m], 0)) for m in ORDEM_ANO}
     annual = sum(solar_monthly.values())
     print(f"    Geracao anual: {_brl(annual/1000, 0)} MWh")
     return solar_profile, solar_monthly
 
 
 # ===== 4. SIMULACAO BESS 15-MIN POR DIA =====
-def simulate_bess_day(day_data, solar_by_hour):
+def simulate_bess_day(day_data, solar_by_hour, initial_soc=0.0,
+                      collect_timeline=False):
     """
     Simula a operação do BESS slot a slot (15 min) para um único dia.
 
     Cronologia do dia:
 
-    1. **00:00–09:00**: Standby. SOC = 0 (BESS inicia vazio cada dia).
-    2. **09:00–15:00**: Carga a 1.000 kW (24 slots × 0,25h = 6.000 kWh max).
+    1. **00:00–07:30**: Standby. SOC = carry-over do dia anterior.
+    2. **07:30–15:00**: Carga a 1.000 kW (30 slots × 0,25h = 7.500 kWh max,
+       limitado pela cap 6.200 kWh).
        Se SOC atingir 6.200 kWh, carga reduzida ao espaço livre.
-    3. **~18:47–21:32**: Ponta. BESS descarrega cobrindo até 95% da demanda.
+    3. **~17:30–20:29**: Ponta. BESS descarrega cobrindo até 95% da demanda.
        Os 5% restantes (grid margin) evitam injeção reversa no grid.
-    4. **21:32–24:00**: Standby.
+    4. **20:30–24:00**: Standby. SOC residual passa para o dia seguinte.
 
     Lógica de descarga (ponta)::
 
@@ -383,14 +428,18 @@ def simulate_bess_day(day_data, solar_by_hour):
         SOC -= actual_discharge_kwh
         residual_kwh = max(0, consumo_slot − actual_discharge_kwh)
 
-    Para dias **sem ponta** (fins de semana/feriados): retorna diretamente
-    os totais FP sem simulação do BESS.
+    Para dias **sem ponta** (fins de semana/feriados):
+
+    - **Fim de semana** (sáb/dom): BESS faz peak-shaving FP — carrega durante
+      07h30–15h (limitado para demanda ≤ 2.800 kW) e descarrega se a demanda
+      líquida (FP − solar) exceder 2.800 kW em qualquer slot.
+    - **Feriados em dia útil**: BESS permanece idle, SOC carrega.
 
     Solar (cenários C2 e C3):
     - Reduz consumo FP slot a slot (``cons_fp - solar_kw × DT``).
     - Reduz demanda FP efetiva (``dem_fp - solar_kw``).
     - Não afeta ponta (solar não gera à noite).
-    - A carga do BESS durante 9h–15h adiciona consumo ao grid FP.
+    - A carga do BESS durante 7h30–15h adiciona consumo ao grid FP.
 
     Parameters
     ----------
@@ -417,17 +466,31 @@ def simulate_bess_day(day_data, solar_by_hour):
         - ``solar_saving``: Economia FP por solar (kWh).
         - ``bess_charge_kwh``: Energia carregada no BESS (kWh).
     """
-    cons_hp = day_data[(day_data.Grandeza == "Consumo") & (day_data.Medicao == "Consumo ativo de Ponta")]
-    cons_fp = day_data[(day_data.Grandeza == "Consumo") & (day_data.Medicao == "Consumo ativo Fora de Ponta")]
-    dem_hp  = day_data[(day_data.Grandeza == "Demanda") & (day_data.Medicao == "Demanda ativa de Ponta")]
-    dem_fp  = day_data[(day_data.Grandeza == "Demanda") & (day_data.Medicao == "Demanda ativa Fora de Ponta")]
+    cons_hp = day_data[(day_data.Grandeza == "Consumo") & (
+        day_data.Medicao == "Consumo ativo de Ponta")]
+    cons_fp = day_data[(day_data.Grandeza == "Consumo") & (
+        day_data.Medicao == "Consumo ativo Fora de Ponta")]
+    dem_hp = day_data[(day_data.Grandeza == "Demanda") & (
+        day_data.Medicao == "Demanda ativa de Ponta")]
+    dem_fp = day_data[(day_data.Grandeza == "Demanda") & (
+        day_data.Medicao == "Demanda ativa Fora de Ponta")]
 
     cons_hp_total = float(cons_hp["Valor"].sum()) if len(cons_hp) > 0 else 0.0
     cons_fp_total = float(cons_fp["Valor"].sum())
     dem_hp_max = float(dem_hp["Valor"].max()) if len(dem_hp) > 0 else 0.0
     dem_fp_max = float(dem_fp["Valor"].max()) if len(dem_fp) > 0 else 0.0
 
-    # Solar savings em consumo FP
+    first_ts = pd.Timestamp(day_data["Timestamp"].iloc[0])
+    is_weekend = first_ts.dayofweek >= 5  # Sab=5, Dom=6
+
+    if is_weekend:
+        # No fim de semana não existe HP — tudo é FP
+        cons_fp_total += cons_hp_total
+        cons_hp_total = 0.0
+        dem_fp_max = max(dem_fp_max, dem_hp_max)
+        dem_hp_max = 0.0
+
+    # Solar savings em consumo FP (solar não gera em 17:30-20:29)
     solar_fp_saving = 0.0
     for _, row in cons_fp.iterrows():
         h = int(row.hora)
@@ -441,13 +504,18 @@ def simulate_bess_day(day_data, solar_by_hour):
         solar_kw = float(solar_by_hour.get(h, 0.0))
         net = max(0, row.Valor - solar_kw)
         dem_fp_solar_max = max(dem_fp_solar_max, net)
+    if is_weekend:
+        # Include HP-window demand (solar = 0 there)
+        dem_fp_solar_max = max(dem_fp_solar_max, float(
+            dem_hp["Valor"].max()) if len(dem_hp) > 0 else 0.0)
     if dem_fp_solar_max == 0.0:
         dem_fp_solar_max = dem_fp_max
 
     has_ponta = cons_hp_total > 0
 
-    if not has_ponta:
-        return {
+    if not has_ponta and not is_weekend:
+        # Feriado em dia útil: BESS permanece idle, SOC carrega
+        result = {
             "cons_hp_total": 0.0, "cons_hp_residual": 0.0,
             "cons_fp_total": cons_fp_total,
             "cons_fp_net": max(0, cons_fp_total - solar_fp_saving),
@@ -455,14 +523,153 @@ def simulate_bess_day(day_data, solar_by_hour):
             "dem_fp_solar": dem_fp_solar_max, "dem_fp_bess": dem_fp_solar_max,
             "dem_hp_resid": 0.0, "bess_dead": False,
             "solar_saving": solar_fp_saving, "bess_charge_kwh": 0.0,
+            "soc_final": initial_soc,
         }
+        if collect_timeline:
+            tl = []
+            soc_np = initial_soc
+            for ts in sorted(day_data["Timestamp"].unique()):
+                slot = day_data[day_data.Timestamp == ts]
+                h = pd.Timestamp(ts).hour
+                fp_dem = slot[(slot.Grandeza == "Demanda") & (
+                    slot.Medicao == "Demanda ativa Fora de Ponta")]
+                fp_con = slot[(slot.Grandeza == "Consumo") & (
+                    slot.Medicao == "Consumo ativo Fora de Ponta")]
+                d_fp = float(fp_dem.Valor.iloc[0]) if len(fp_dem) > 0 else 0.0
+                c_fp = float(fp_con.Valor.iloc[0]) if len(fp_con) > 0 else 0.0
+                sol = float(solar_by_hour.get(h, 0.0))
+                bruta = d_fp
+                solar_liq = max(0.0, bruta - sol)
+                tl.append({
+                    "timestamp": str(ts), "dem_hp_kw": 0.0,
+                    "dem_fp_kw": d_fp, "solar_kw": sol,
+                    "soc_kwh": round(soc_np, 1), "bess_kw": 0.0,
+                    "cons_hp_kwh": 0.0, "cons_fp_kwh": c_fp,
+                    "demanda_bruta_kw": round(bruta, 1),
+                    "demanda_solar_kw": round(solar_liq, 1),
+                    "demanda_liquida_kw": round(solar_liq, 1),
+                })
+            result["timeline"] = tl
+        return result
 
-    # Dia com ponta: BESS carrega 9h-15h, descarrega durante ponta
-    soc = 0.0
+    if is_weekend:
+        # === FIM DE SEMANA: BESS faz peak-shaving FP cap 2800 kW ===
+        # Tudo é FP — meter labels HP/FP mesclados em demanda total.
+        soc = initial_soc
+        bess_charge_total = 0.0
+        bess_discharge_total = 0.0
+        dem_fp_bess_max = 0.0
+        timeline = [] if collect_timeline else None
+
+        all_ts = sorted(day_data["Timestamp"].unique())
+        for ts in all_ts:
+            slot = day_data[day_data.Timestamp == ts]
+            hora = pd.Timestamp(ts).hour
+            minuto = pd.Timestamp(ts).minute
+            hora_frac = hora + minuto / 60.0
+
+            # Weekend: merge HP + FP (tudo é FP)
+            fp_slot_dem = slot[(slot.Grandeza == "Demanda") & (
+                slot.Medicao == "Demanda ativa Fora de Ponta")]
+            hp_slot_dem = slot[(slot.Grandeza == "Demanda") & (
+                slot.Medicao == "Demanda ativa de Ponta")]
+            fp_slot_con = slot[(slot.Grandeza == "Consumo") & (
+                slot.Medicao == "Consumo ativo Fora de Ponta")]
+            hp_slot_con = slot[(slot.Grandeza == "Consumo") & (
+                slot.Medicao == "Consumo ativo de Ponta")]
+            d_fp = float(fp_slot_dem.Valor.iloc[0]) if len(
+                fp_slot_dem) > 0 else 0.0
+            d_hp = float(hp_slot_dem.Valor.iloc[0]) if len(
+                hp_slot_dem) > 0 else 0.0
+            d_total = d_fp + d_hp  # tudo é FP no fim de semana
+            c_fp = float(fp_slot_con.Valor.iloc[0]) if len(
+                fp_slot_con) > 0 else 0.0
+            c_hp = float(hp_slot_con.Valor.iloc[0]) if len(
+                hp_slot_con) > 0 else 0.0
+            c_total = c_fp + c_hp
+            solar_kw = float(solar_by_hour.get(hora, 0.0))
+            bess_kw = 0.0
+
+            net_demand = max(0, d_total - solar_kw)
+
+            if BESS_CARGA_INICIO <= hora_frac < BESS_CARGA_FIM:
+                if net_demand <= BESS_WEEKEND_DEM_CAP:
+                    # Espaço para carregar sem estourar 2800
+                    espaco = BESS_CAPACIDADE_KWH - soc
+                    headroom = BESS_WEEKEND_DEM_CAP - net_demand
+                    p_charge = min(BESS_POTENCIA_CARGA, headroom, espaco / DT)
+                    p_charge = max(0.0, p_charge)
+                    soc += p_charge * DT
+                    bess_charge_total += p_charge * DT
+                    bess_kw = p_charge
+                    final_demand = net_demand + p_charge
+                else:
+                    # Demanda > 2800 mesmo na janela de carga → descarrega
+                    excess = net_demand - BESS_WEEKEND_DEM_CAP
+                    discharge_kw = min(excess, BESS_POTENCIA_SAIDA, soc / DT)
+                    soc -= discharge_kw * DT
+                    bess_discharge_total += discharge_kw * DT
+                    bess_kw = -discharge_kw
+                    final_demand = net_demand - discharge_kw
+            else:
+                # Fora da janela de carga: descarrega se demanda > 2800
+                if net_demand > BESS_WEEKEND_DEM_CAP:
+                    excess = net_demand - BESS_WEEKEND_DEM_CAP
+                    discharge_kw = min(excess, BESS_POTENCIA_SAIDA, soc / DT)
+                    soc -= discharge_kw * DT
+                    bess_discharge_total += discharge_kw * DT
+                    bess_kw = -discharge_kw
+                    final_demand = net_demand - discharge_kw
+                else:
+                    final_demand = net_demand
+
+            dem_fp_bess_max = max(dem_fp_bess_max, final_demand)
+
+            if collect_timeline:
+                bruta = d_total
+                solar_liq = max(0.0, bruta - solar_kw)
+                rede = max(0.0, bruta - solar_kw + bess_kw)
+                timeline.append({
+                    "timestamp": str(ts),
+                    "dem_hp_kw": 0.0,
+                    "dem_fp_kw": round(d_total, 1),
+                    "solar_kw": round(solar_kw, 1),
+                    "soc_kwh": round(soc, 1),
+                    "bess_kw": round(bess_kw, 1),
+                    "cons_hp_kwh": 0.0,
+                    "cons_fp_kwh": round(c_total, 2),
+                    "demanda_bruta_kw": round(bruta, 1),
+                    "demanda_solar_kw": round(solar_liq, 1),
+                    "demanda_liquida_kw": round(rede, 1),
+                })
+
+        if dem_fp_bess_max == 0.0:
+            dem_fp_bess_max = dem_fp_solar_max
+
+        cons_fp_net_wk = max(0.0, cons_fp_total - solar_fp_saving
+                             + bess_charge_total - bess_discharge_total)
+        result = {
+            "cons_hp_total": 0.0, "cons_hp_residual": 0.0,
+            "cons_fp_total": cons_fp_total,
+            "cons_fp_net": cons_fp_net_wk,
+            "dem_hp_max": 0.0, "dem_fp_max": dem_fp_max,
+            "dem_fp_solar": dem_fp_solar_max, "dem_fp_bess": dem_fp_bess_max,
+            "dem_hp_resid": 0.0, "bess_dead": False,
+            "solar_saving": solar_fp_saving,
+            "bess_charge_kwh": bess_charge_total,
+            "soc_final": soc,
+        }
+        if collect_timeline:
+            result["timeline"] = timeline
+        return result
+
+    # Dia com ponta: BESS carrega 7h30-15h, descarrega durante ponta
+    soc = initial_soc
     cons_hp_residual = 0.0
     dem_hp_resid_max = 0.0
     bess_charge_total = 0.0
     dem_fp_bess_max = 0.0
+    timeline = [] if collect_timeline else None
 
     all_ts = sorted(day_data["Timestamp"].unique())
 
@@ -470,27 +677,45 @@ def simulate_bess_day(day_data, solar_by_hour):
         slot = day_data[day_data.Timestamp == ts]
         hora = pd.Timestamp(ts).hour
         minuto = pd.Timestamp(ts).minute
+        hora_frac = hora + minuto / 60.0
 
-        # === CARGA BESS (9h-15h) ===
-        if BESS_CARGA_INICIO <= hora < BESS_CARGA_FIM:
+        # Extrair dados do slot para timeline
+        fp_slot_dem = slot[(slot.Grandeza == "Demanda") & (
+            slot.Medicao == "Demanda ativa Fora de Ponta")]
+        fp_slot_con = slot[(slot.Grandeza == "Consumo") & (
+            slot.Medicao == "Consumo ativo Fora de Ponta")]
+        hp_slot_cons = slot[(slot.Grandeza == "Consumo") & (
+            slot.Medicao == "Consumo ativo de Ponta")]
+        hp_slot_dem = slot[(slot.Grandeza == "Demanda") & (
+            slot.Medicao == "Demanda ativa de Ponta")]
+
+        d_fp = float(fp_slot_dem.Valor.iloc[0]) if len(
+            fp_slot_dem) > 0 else 0.0
+        c_fp = float(fp_slot_con.Valor.iloc[0]) if len(
+            fp_slot_con) > 0 else 0.0
+        d_hp = float(hp_slot_dem.Valor.iloc[0]) if len(
+            hp_slot_dem) > 0 else 0.0
+        c_hp = float(hp_slot_cons.Valor.iloc[0]) if len(
+            hp_slot_cons) > 0 else 0.0
+        solar_kw = float(solar_by_hour.get(hora, 0.0))
+        bess_kw = 0.0  # positive = charge, negative = discharge
+
+        # === CARGA BESS (7h30-15h) ===
+        if BESS_CARGA_INICIO <= hora_frac < BESS_CARGA_FIM:
             espaco = BESS_CAPACIDADE_KWH - soc
             p_charge = min(BESS_POTENCIA_CARGA, espaco / DT)
             soc += p_charge * DT
             bess_charge_total += p_charge * DT
+            bess_kw = p_charge
 
-            fp_slot = slot[(slot.Grandeza == "Demanda") & (slot.Medicao == "Demanda ativa Fora de Ponta")]
-            if len(fp_slot) > 0:
-                solar_kw = float(solar_by_hour.get(hora, 0.0))
-                net = max(0, float(fp_slot.Valor.iloc[0]) - solar_kw) + p_charge
+            if len(fp_slot_dem) > 0:
+                net = max(0, d_fp - solar_kw + p_charge)
                 dem_fp_bess_max = max(dem_fp_bess_max, net)
 
         # === DESCARGA BESS (ponta) ===
-        hp_slot_cons = slot[(slot.Grandeza == "Consumo") & (slot.Medicao == "Consumo ativo de Ponta")]
-        hp_slot_dem  = slot[(slot.Grandeza == "Demanda") & (slot.Medicao == "Demanda ativa de Ponta")]
-
         if len(hp_slot_cons) > 0:
-            cons_kwh = float(hp_slot_cons.Valor.iloc[0])
-            dem_kw = float(hp_slot_dem.Valor.iloc[0]) if len(hp_slot_dem) > 0 else cons_kwh / DT
+            cons_kwh = c_hp
+            dem_kw = d_hp if d_hp > 0 else cons_kwh / DT
 
             # BESS alimenta no máximo 95% da demanda (5% fica no grid p/ anti-injeção)
             bess_target_kw = dem_kw * (1 - BESS_GRID_MARGIN)
@@ -498,25 +723,42 @@ def simulate_bess_day(day_data, solar_by_hour):
             max_discharge_kwh = max_discharge_kw * DT
             actual_discharge = min(soc, max_discharge_kwh)
             soc -= actual_discharge
+            bess_kw = -(actual_discharge / DT)
 
             residual_kwh = max(0.0, cons_kwh - actual_discharge)
             cons_hp_residual += residual_kwh
-            dem_hp_resid_max = max(dem_hp_resid_max, residual_kwh / DT)
+            dem_hp_resid_max = max(dem_hp_resid_max, dem_kw - actual_discharge / DT)
         else:
             # FP slot fora de carga BESS
-            if not (BESS_CARGA_INICIO <= hora < BESS_CARGA_FIM):
-                fp_slot = slot[(slot.Grandeza == "Demanda") & (slot.Medicao == "Demanda ativa Fora de Ponta")]
-                if len(fp_slot) > 0:
-                    solar_kw = float(solar_by_hour.get(hora, 0.0))
-                    net = max(0, float(fp_slot.Valor.iloc[0]) - solar_kw)
+            if not (BESS_CARGA_INICIO <= hora_frac < BESS_CARGA_FIM):
+                if len(fp_slot_dem) > 0:
+                    net = max(0, d_fp - solar_kw)
                     dem_fp_bess_max = max(dem_fp_bess_max, net)
+
+        if collect_timeline:
+            bruta = d_hp + d_fp
+            solar_liq = max(0.0, bruta - solar_kw)
+            rede = max(0.0, bruta - solar_kw + bess_kw)
+            timeline.append({
+                "timestamp": str(ts),
+                "dem_hp_kw": round(d_hp, 1),
+                "dem_fp_kw": round(d_fp, 1),
+                "solar_kw": round(solar_kw, 1),
+                "soc_kwh": round(soc, 1),
+                "bess_kw": round(bess_kw, 1),
+                "cons_hp_kwh": round(c_hp, 2),
+                "cons_fp_kwh": round(c_fp, 2),
+                "demanda_bruta_kw": round(bruta, 1),
+                "demanda_solar_kw": round(solar_liq, 1),
+                "demanda_liquida_kw": round(rede, 1),
+            })
 
     if dem_fp_bess_max == 0.0:
         dem_fp_bess_max = dem_fp_solar_max
 
     cons_fp_net = max(0.0, cons_fp_total - solar_fp_saving + bess_charge_total)
 
-    return {
+    result = {
         "cons_hp_total": cons_hp_total,
         "cons_hp_residual": cons_hp_residual,
         "cons_fp_total": cons_fp_total,
@@ -529,7 +771,11 @@ def simulate_bess_day(day_data, solar_by_hour):
         "bess_dead": soc <= 1.0 and cons_hp_total > 0,
         "solar_saving": solar_fp_saving,
         "bess_charge_kwh": bess_charge_total,
+        "soc_final": soc,
     }
+    if collect_timeline:
+        result["timeline"] = timeline
+    return result
 
 
 # ===== 5. ITERACAO DIA-A-DIA =====
@@ -572,6 +818,8 @@ def compute_year():
 
     dias = sorted(year.dia.unique())
     day_results = []
+    all_timeline = []
+    soc_carryover = 0.0
 
     for i, dia in enumerate(dias):
         day_data = year[year.dia == dia].copy()
@@ -587,7 +835,11 @@ def compute_year():
                 solar_for_month[h] = 0.0
         solar_s = pd.Series(solar_for_month)
 
-        res = simulate_bess_day(day_data, solar_s)
+        res = simulate_bess_day(day_data, solar_s, initial_soc=soc_carryover,
+                                collect_timeline=True)
+        soc_carryover = res["soc_final"]
+        if "timeline" in res:
+            all_timeline.extend(res.pop("timeline"))
         day_results.append({"dia": dia, "mes": mes, "tipo": tipo, **res})
 
         if (i + 1) % 50 == 0:
@@ -602,7 +854,8 @@ def compute_year():
     n_total = len(df_days)
     n_ponta = int(df_days.has_ponta.sum())
     n_over = int(df_days.has_overflow.sum())
-    print(f"    {n_total} dias simulados, {n_ponta} com ponta, {n_over} com HP residual")
+    print(
+        f"    {n_total} dias simulados, {n_ponta} com ponta, {n_over} com HP residual")
 
     # ==================================================================
     #  FATURAS MES A MES
@@ -664,8 +917,8 @@ def compute_year():
         total_c3 += c3
 
         row_str = (f"  {mes:<5s}| R$ {_brl(c1):>10s} | R$ {_brl(c2):>10s} | "
-                   f"R$ {_brl(c3):>10s} | {_brl(cons_hp,0):>8s} | "
-                   f"{_brl(cons_hp_resid,0):>8s} |{n_p:>4d} |{n_o:>4d} |{n_bd:>7d}  ")
+                   f"R$ {_brl(c3):>10s} | {_brl(cons_hp, 0):>8s} | "
+                   f"{_brl(cons_hp_resid, 0):>8s} |{n_p:>4d} |{n_o:>4d} |{n_bd:>7d}  ")
         print(row_str)
 
         monthly.append({
@@ -684,8 +937,8 @@ def compute_year():
     no_ = sum(m["n_overflow"] for m in monthly)
     nb_ = sum(m["n_bess_dead"] for m in monthly)
     tot_str = (f"  {'TOTAL':<5s}| R$ {_brl(total_c1):>10s} | R$ {_brl(total_c2):>10s} | "
-               f"R$ {_brl(total_c3):>10s} | {_brl(hp_t,0):>8s} | "
-               f"{_brl(hp_r,0):>8s} |{np_:>4d} |{no_:>4d} |{nb_:>7d}  ")
+               f"R$ {_brl(total_c3):>10s} | {_brl(hp_t, 0):>8s} | "
+               f"{_brl(hp_r, 0):>8s} |{np_:>4d} |{no_:>4d} |{nb_:>7d}  ")
     print(tot_str)
 
     # ==================================================================
@@ -709,13 +962,17 @@ def compute_year():
     # ==================================================================
     #  OUTLIERS
     # ==================================================================
-    overflow = df_days[df_days.has_overflow].sort_values("cons_hp_residual", ascending=False)
+    overflow = df_days[df_days.has_overflow].sort_values(
+        "cons_hp_residual", ascending=False)
 
     print(f"\n\n  {'='*95}")
-    print(f"  DIAS OUTLIER - BESS NAO COBRIU 100% DA PONTA ({len(overflow)} dias)")
+    print(
+        f"  DIAS OUTLIER - BESS NAO COBRIU 100% DA PONTA ({len(overflow)} dias)")
     print(f"  {'='*95}")
-    print(f"  HP residual total: {_brl(float(overflow.cons_hp_residual.sum()), 0)} kWh/ano")
-    custo_res = float(overflow.cons_hp_residual.sum()) / 1000 * VERDE_TUSD_HP / FATOR_TRIBUTADO
+    print(
+        f"  HP residual total: {_brl(float(overflow.cons_hp_residual.sum()), 0)} kWh/ano")
+    custo_res = float(overflow.cons_hp_residual.sum()) / \
+        1000 * VERDE_TUSD_HP / FATOR_TRIBUTADO
     print(f"  Custo TUSD HP residual: R$ {_brl(custo_res)}/ano")
     print()
     hdr2 = (f"  {'Dia':<12s}|{'DoW':<10s}|{'Mes':<5s}|{'HP Total':>10s}|"
@@ -727,9 +984,9 @@ def compute_year():
         bess_used = r.cons_hp_total - r.cons_hp_residual
         bd = "SIM" if r.bess_dead else "nao"
         print(f"  {ds}|{r.dow:<10s}|{r.mes:<5s}|"
-              f" {_brl(r.cons_hp_total,0):>8s} |"
-              f" {_brl(bess_used,0):>8s} |"
-              f" {_brl(r.cons_hp_residual,0):>8s} |"
+              f" {_brl(r.cons_hp_total, 0):>8s} |"
+              f" {_brl(bess_used, 0):>8s} |"
+              f" {_brl(r.cons_hp_residual, 0):>8s} |"
               f" {r.dem_hp_max:>8,.0f} |{bd:>7s}  ")
 
     # ==================================================================
@@ -749,9 +1006,9 @@ def compute_year():
         covered = r.cons_hp_total - r.cons_hp_residual
         pct = covered / r.cons_hp_total * 100 if r.cons_hp_total > 0 else 100
         print(f"  {i:<4d}|{ds}|{r.dow:<10s}|{r.mes:<5s}|"
-              f" {_brl(r.cons_hp_total,0):>8s} |"
-              f" {_brl(covered,0):>8s} |"
-              f" {_brl(r.cons_hp_residual,0):>8s} |"
+              f" {_brl(r.cons_hp_total, 0):>8s} |"
+              f" {_brl(covered, 0):>8s} |"
+              f" {_brl(r.cons_hp_residual, 0):>8s} |"
               f" {pct:>8.1f}% ")
 
     # ==================================================================
@@ -765,10 +1022,11 @@ def compute_year():
     for p in [10, 25, 50, 75, 90, 95, 99]:
         v = np.percentile(hp_vals, p)
         ok = "ok" if v <= BESS_CAPACIDADE_KWH else "BESS!"
-        print(f"    P{p:>2d}: {_brl(v,0):>8s} kWh   {ok}")
-    print(f"    Max: {_brl(hp_vals.max(),0):>8s} kWh")
+        print(f"    P{p:>2d}: {_brl(v, 0):>8s} kWh   {ok}")
+    print(f"    Max: {_brl(hp_vals.max(), 0):>8s} kWh")
     bess_daily_e = BESS_POTENCIA_CARGA * (BESS_CARGA_FIM - BESS_CARGA_INICIO)
-    print(f"    BESS: {_brl(BESS_CAPACIDADE_KWH,0):>8s} kWh cap  /  {_brl(bess_daily_e,0)} kWh/dia charge")
+    print(
+        f"    BESS: {_brl(BESS_CAPACIDADE_KWH, 0):>8s} kWh cap  /  {_brl(bess_daily_e, 0)} kWh/dia charge")
 
     # ==================================================================
     #  ANALISE FINANCEIRA
@@ -826,10 +1084,19 @@ def compute_year():
     ]
     df_days[export_cols].to_csv(DATA_DIR / "bess_simulacao_diaria.csv",
                                 index=False, float_format="%.2f")
-    print(f"\n\n  Exportado: data/bess_simulacao_diaria.csv ({len(df_days)} dias)")
+    print(
+        f"\n\n  Exportado: data/bess_simulacao_diaria.csv ({len(df_days)} dias)")
     pd.DataFrame(monthly).to_csv(DATA_DIR / "modelamento_anual_resultado.csv",
                                  index=False, float_format="%.2f")
     print("  Exportado: data/modelamento_anual_resultado.csv")
+
+    # Timeline 15-min (para gráfico interativo)
+    if all_timeline:
+        df_tl = pd.DataFrame(all_timeline)
+        df_tl.to_csv(DATA_DIR / "bess_timeline_15min.csv",
+                     index=False, float_format="%.1f")
+        print(
+            f"  Exportado: data/bess_timeline_15min.csv ({len(df_tl)} slots)")
 
     return df_days, monthly
 

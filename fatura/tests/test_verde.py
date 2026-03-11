@@ -33,10 +33,10 @@ def resultado_base():
 # ── Testes de estrutura ────────────────────────────────────────────────────────
 
 CHAVES_ESPERADAS = [
-    "dem_faturada", "dem_tributada", "dem_isenta",
-    "base_dem_trib", "base_dem_isenta",
+    "dem_faturada", "dem_tributada", "dem_isenta", "dem_ultrapassagem",
+    "base_dem_trib", "base_dem_isenta", "base_dem_ultra",
     "base_tusd_fp", "base_tusd_hp", "tarifa_hp_efetiva", "desconto_hp", "desconto_fonte_total",
-    "valor_dem_trib", "valor_dem_isenta", "valor_tusd_fp", "valor_tusd_hp",
+    "valor_dem_trib", "valor_dem_isenta", "valor_dem_ultra", "valor_tusd_fp", "valor_tusd_hp",
     "ben_liquido", "ben_bruto", "impostos_ben", "encargos",
     "total_distribuidora", "total_consumo_kwh", "base_comercializadora", "total_comercializadora",
     "custo_total",
@@ -62,8 +62,9 @@ def test_medida_maior_que_contratada():
         consumo_hp_kwh=10_000, consumo_fp_kwh=50_000,
     )
     assert r["dem_faturada"] == pytest.approx(300.0)
-    assert r["dem_tributada"] == pytest.approx(300.0)
+    assert r["dem_tributada"] == pytest.approx(200.0)
     assert r["dem_isenta"] == pytest.approx(0.0)
+    assert r["dem_ultrapassagem"] == pytest.approx(100.0)
 
 
 # ── Testes de base (sem imposto) ───────────────────────────────────────────────
@@ -150,6 +151,7 @@ def test_total_distribuidora_formula(resultado_base):
     esperado = (
         resultado_base["valor_dem_trib"]
         + resultado_base["valor_dem_isenta"]
+        + resultado_base["valor_dem_ultra"]
         + resultado_base["valor_tusd_fp"]
         + resultado_base["valor_tusd_hp"]
         + resultado_base["encargos"]
@@ -241,16 +243,19 @@ def test_demanda_toda_isenta():
 
 
 def test_demanda_toda_tributada():
-    """Medida >= contratada → toda demanda tributada."""
+    """Medida >= contratada → tributável = contratada, excesso é ultrapassagem."""
     r = calcular_fatura_verde(
         demanda_contratada_kw=1000, demanda_medida_kw=1500,
         consumo_hp_kwh=10_000, consumo_fp_kwh=50_000,
     )
     assert r["dem_isenta"] == pytest.approx(0.0)
-    assert r["dem_tributada"] == pytest.approx(1500.0)
+    assert r["dem_tributada"] == pytest.approx(1000.0)
+    assert r["dem_ultrapassagem"] == pytest.approx(500.0)
     fator_dem = 1 - DESCONTO_FONTE_INCENTIVADA
-    esperado = (1500 * VERDE_DEMANDA_UNICA * fator_dem) / FATOR_TRIBUTADO
-    assert r["valor_dem_trib"] == pytest.approx(esperado, abs=0.01)
+    esperado_trib = (1000 * VERDE_DEMANDA_UNICA * fator_dem) / FATOR_TRIBUTADO
+    esperado_ultra = (500 * VERDE_DEMANDA_UNICA * 2) / FATOR_TRIBUTADO
+    assert r["valor_dem_trib"] == pytest.approx(esperado_trib, abs=0.01)
+    assert r["valor_dem_ultra"] == pytest.approx(esperado_ultra, abs=0.01)
     assert r["valor_dem_isenta"] == 0.0
 
 
@@ -268,12 +273,12 @@ def test_valores_absolutos():
     # desconto_fonte_total = 3280 × 32.50 × 0.5 = 53300.00
     assert r["desconto_fonte_total"] == pytest.approx(53_300.00, abs=0.01)
 
-    # base_comercializadora = 60000 × 0.308 = 18480.00
-    assert r["base_comercializadora"] == pytest.approx(18_480.00, abs=0.01)
+    # base_comercializadora = 60000 × 0.306 = 18360.00
+    assert r["base_comercializadora"] == pytest.approx(18_360.00, abs=0.01)
 
-    # total_comercializadora = 18480.00 / FATOR_COMERCIALIZADORA
+    # total_comercializadora = 18360.00 / FATOR_COMERCIALIZADORA
     assert r["total_comercializadora"] == pytest.approx(
-        18_480.00 / FATOR_COMERCIALIZADORA, abs=0.01)
+        18_360.00 / FATOR_COMERCIALIZADORA, abs=0.01)
 
     assert r["custo_total"] > 0
 

@@ -133,7 +133,7 @@ A distribuidora fatura a demanda com split automático entre tributada e isenta:
 | Demanda medida (usada) | ICMS + PIS + COFINS | Sempre |
 | Demanda não usada (contratada − medida) | Só PIS + COFINS | Quando contrat. > medida |
 | TUSD Energia (HP e FP) | ICMS + PIS + COFINS | Sempre |
-| Ultrapassagem | 200% até 5%, 300% acima | Quando medida > contrat. |
+| Ultrapassagem | 200% (2× tarifa cheia) | Quando medida > contrat. |
 
 ### 1.6 Dados de Entrada
 

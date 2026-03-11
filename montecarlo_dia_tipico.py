@@ -67,20 +67,31 @@ OUTPUT_DIR = Path("output")
 BESS_CAPACIDADE_KWH = 6_200.0          # Capacidade útil (kWh)
 BESS_POTENCIA_SAIDA = 3_100.0          # Potência máxima de descarga (kW)
 BESS_POTENCIA_CARGA = 1_000.0          # Potência máxima de carga (kW)
-BESS_CARGA_INICIO   = 8                # Início da janela de carga (hora)
-BESS_CARGA_FIM      = 15               # Fim da janela de carga (hora)
-BESS_GRID_MARGIN    = 0.05             # 5% da demanda permanece no grid
-DT = 0.25                              # Intervalo de discretização (h) = 15 min
+BESS_CARGA_INICIO = 7.5              # 07h30 — menor demanda matinal
+BESS_CARGA_FIM = 15               # Fim da janela de carga (hora)
+BESS_GRID_MARGIN = 0.05             # 5% da demanda permanece no grid
+# Intervalo de discretização (h) = 15 min
+DT = 0.25
+
+# --- Horário de ponta real (Equatorial Piauí) ---
+PONTA_INICIO_FRAC = 17.5   # 17 h 30 min  (inclusive)
+PONTA_FIM_FRAC = 20.5   # 20 h 30 min  (exclusive → último slot 20:29)
+
+_MAPA_FP_PARA_HP = {
+    "Consumo ativo Fora de Ponta": "Consumo ativo de Ponta",
+    "Demanda ativa Fora de Ponta": "Demanda ativa de Ponta",
+}
+_MAPA_HP_PARA_FP = {v: k for k, v in _MAPA_FP_PARA_HP.items()}
 
 # --- Solar ---
 SOLAR_KWP = 1_890
 
 # --- CAPEX ---
-CAPEX_SOLAR       = 5_700_000.00
-CAPEX_BESS        = 8_396_490.96
+CAPEX_SOLAR = 5_700_000.00
+CAPEX_BESS = 8_396_490.96
 CAPEX_IMPLANTACAO = 3_000_000.00
-CAPEX_TOTAL       = CAPEX_SOLAR + CAPEX_BESS + CAPEX_IMPLANTACAO  # R$ 17.096.490,96
-CAPEX_SOLAR_ONLY  = CAPEX_SOLAR + CAPEX_IMPLANTACAO               # R$ 8.700.000,00
+CAPEX_TOTAL = CAPEX_SOLAR + CAPEX_BESS + CAPEX_IMPLANTACAO  # R$ 17.096.490,96
+CAPEX_SOLAR_ONLY = CAPEX_SOLAR + CAPEX_IMPLANTACAO               # R$ 8.700.000,00
 
 # --- Contrato ---
 DEMANDA_HP_CONTRATADA = 2_980.0        # kW
@@ -88,7 +99,7 @@ DEMANDA_FP_CONTRATADA = 3_280.0        # kW
 
 # --- Financeiro ---
 VIDA_UTIL_ANOS = 25
-TAXA_DESCONTO  = 0.10
+TAXA_DESCONTO = 0.10
 
 # --- Bootstrap ---
 N_BOOTSTRAP = 1_000                    # Número de dias sintéticos
@@ -151,11 +162,27 @@ def load_and_clean(csv_name: str) -> pd.DataFrame:
     df = pd.read_csv(DATA_DIR / csv_name)
     df["Timestamp"] = pd.to_datetime(df["Timestamp"], errors="coerce")
     df = df.dropna(subset=["Timestamp"])
-    df = df.drop_duplicates(subset=["Timestamp", "Grandeza", "Medicao", "Valor"])
+    df = df.drop_duplicates(
+        subset=["Timestamp", "Grandeza", "Medicao", "Valor"])
     mask = df["Medicao"].apply(lambda m: any(kw in m for kw in CONTRACT_KW))
     df = df[~mask]
     df = df[~df["Medicao"].isin(ZERO_MED)]
+    df = _reclassificar_ponta(df)
     return df.sort_values("Timestamp").reset_index(drop=True)
+
+
+def _reclassificar_ponta(df):
+    """Reclassifica Medicao HP/FP com base no horário real de ponta 17:30–20:29."""
+    hfrac = df.Timestamp.dt.hour + df.Timestamp.dt.minute / 60.0
+    is_ponta = (hfrac >= PONTA_INICIO_FRAC) & (hfrac < PONTA_FIM_FRAC)
+
+    m1 = is_ponta & df.Medicao.isin(_MAPA_FP_PARA_HP)
+    df.loc[m1, "Medicao"] = df.loc[m1, "Medicao"].map(_MAPA_FP_PARA_HP)
+
+    m2 = ~is_ponta & df.Medicao.isin(_MAPA_HP_PARA_FP)
+    df.loc[m2, "Medicao"] = df.loc[m2, "Medicao"].map(_MAPA_HP_PARA_FP)
+
+    return df
 
 
 # ═══════════════════════════════════════════════════════════════════════════════
@@ -195,7 +222,8 @@ def build_sampling_pool() -> pd.DataFrame:
 
         # Identificar dias COM ponta (dias úteis)
         dias_com_ponta = set()
-        hp_mask = (df.Grandeza == "Consumo") & (df.Medicao == "Consumo ativo de Ponta")
+        hp_mask = (df.Grandeza == "Consumo") & (
+            df.Medicao == "Consumo ativo de Ponta")
         for d in df[hp_mask].dia.unique():
             dias_com_ponta.add(d)
 
@@ -437,6 +465,8 @@ def simulate_bess_typical_day(dia_df: pd.DataFrame) -> dict:
 
     for _, row in dia_df.iterrows():
         hora = int(row.hora)
+        minuto_mc = int(row.minuto)
+        hora_frac = hora + minuto_mc / 60.0
         cons_hp_kwh = float(row.cons_hp)
         cons_fp_kwh = float(row.cons_fp)
         dem_hp_kw = float(row.dem_hp)
@@ -447,8 +477,8 @@ def simulate_bess_typical_day(dia_df: pd.DataFrame) -> dict:
         residual = 0.0
         soc_before = soc
 
-        # ─── CARGA (9h–15h) ─────────────────────────────────────────────────
-        if BESS_CARGA_INICIO <= hora < BESS_CARGA_FIM:
+        # ─── CARGA (7h30–15h) ────────────────────────────────────────────────
+        if BESS_CARGA_INICIO <= hora_frac < BESS_CARGA_FIM:
             espaco = BESS_CAPACIDADE_KWH - soc
             p_charge = min(BESS_POTENCIA_CARGA, espaco / DT)
             charge = p_charge * DT
@@ -485,7 +515,8 @@ def simulate_bess_typical_day(dia_df: pd.DataFrame) -> dict:
             "soc_after": soc,
         })
 
-    coverage = (1 - cons_hp_residual / cons_hp_total) if cons_hp_total > 0 else 1.0
+    coverage = (1 - cons_hp_residual /
+                cons_hp_total) if cons_hp_total > 0 else 1.0
     bess_dead = soc <= 1.0 and cons_hp_total > 0
 
     print(f"    HP total: {_brl(cons_hp_total, 0)} kWh")
@@ -757,7 +788,7 @@ def export_csv(dia_df: pd.DataFrame, bess_detail: pd.DataFrame):
     print("\n[6] Exportando CSV...")
 
     merged = dia_df[["slot", "horario", "cons_hp", "cons_fp",
-                      "dem_hp", "dem_fp"]].copy()
+                     "dem_hp", "dem_fp"]].copy()
     merged["bess_charge"] = bess_detail["charge"].values
     merged["bess_discharge"] = bess_detail["discharge"].values
     merged["hp_residual"] = bess_detail["residual"].values
@@ -965,7 +996,8 @@ def print_results(fin: dict, bess_sim: dict):
     print(f"    {'-'*48}")
     print(f"    {'C1 - Base AZUL':<30s} | R$ {_brl(fin['c1_mes']):>11s}")
     print(f"    {'C2 - Solar AZUL':<30s} | R$ {_brl(fin['c2_mes']):>11s}")
-    print(f"    {'C3 - Solar+BESS VERDE':<30s} | R$ {_brl(fin['c3_mes']):>11s}")
+    print(
+        f"    {'C3 - Solar+BESS VERDE':<30s} | R$ {_brl(fin['c3_mes']):>11s}")
     print(f"    {'-'*48}")
     eco_mes = fin['c1_mes'] - fin['c3_mes']
     print(f"    Economia mensal:  R$ {_brl(eco_mes)}")
@@ -975,10 +1007,13 @@ def print_results(fin: dict, bess_sim: dict):
     print(f"    {'-'*50}")
     print(f"    {'C1 - Base AZUL':<30s} | R$ {_brl(fin['c1_ano']):>13s}")
     print(f"    {'C2 - Solar AZUL':<30s} | R$ {_brl(fin['c2_ano']):>13s}")
-    print(f"    {'C3 - Solar+BESS VERDE':<30s} | R$ {_brl(fin['c3_ano']):>13s}")
+    print(
+        f"    {'C3 - Solar+BESS VERDE':<30s} | R$ {_brl(fin['c3_ano']):>13s}")
     print(f"    {'-'*50}")
-    print(f"    Economia Solar:          R$ {_brl(fin['eco_solar_ano']):>13s}/ano")
-    print(f"    Economia Solar+BESS:     R$ {_brl(fin['eco_total_ano']):>13s}/ano")
+    print(
+        f"    Economia Solar:          R$ {_brl(fin['eco_solar_ano']):>13s}/ano")
+    print(
+        f"    Economia Solar+BESS:     R$ {_brl(fin['eco_total_ano']):>13s}/ano")
 
     print(f"\n  {'ANÁLISE FINANCEIRA — SOLAR + BESS':─^70}")
     print(f"    CAPEX:              R$ {_brl(CAPEX_TOTAL)}")

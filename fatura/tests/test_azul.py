@@ -38,12 +38,13 @@ def resultado_base():
 
 CHAVES_ESPERADAS = [
     "dem_hp_faturada", "dem_fp_faturada",
-    "dem_hp_tributada", "dem_hp_isenta", "dem_fp_tributada", "dem_fp_isenta",
-    "base_dem_hp_trib", "base_dem_hp_isenta",
-    "base_dem_fp_trib", "base_dem_fp_isenta",
+    "dem_hp_tributada", "dem_hp_isenta", "dem_hp_ultrapassagem",
+    "dem_fp_tributada", "dem_fp_isenta", "dem_fp_ultrapassagem",
+    "base_dem_hp_trib", "base_dem_hp_isenta", "base_dem_hp_ultra",
+    "base_dem_fp_trib", "base_dem_fp_isenta", "base_dem_fp_ultra",
     "base_tusd_hp", "base_tusd_fp",
-    "valor_dem_hp_trib", "valor_dem_hp_isenta",
-    "valor_dem_fp_trib", "valor_dem_fp_isenta",
+    "valor_dem_hp_trib", "valor_dem_hp_isenta", "valor_dem_hp_ultra",
+    "valor_dem_fp_trib", "valor_dem_fp_isenta", "valor_dem_fp_ultra",
     "valor_tusd_hp", "valor_tusd_fp",
     "soma_itens", "desconto_fonte_total",
     "ben_liquido", "ben_bruto", "impostos_ben",
@@ -165,10 +166,12 @@ def test_gross_up_energia_sempre_tributada(resultado_base):
 
 def test_soma_itens(resultado_base):
     esperado = (
-        resultado_base["valor_dem_hp_trib"] +
-        resultado_base["valor_dem_hp_isenta"]
-        + resultado_base["valor_dem_fp_trib"] +
-        resultado_base["valor_dem_fp_isenta"]
+        resultado_base["valor_dem_hp_trib"]
+        + resultado_base["valor_dem_hp_isenta"]
+        + resultado_base["valor_dem_hp_ultra"]
+        + resultado_base["valor_dem_fp_trib"]
+        + resultado_base["valor_dem_fp_isenta"]
+        + resultado_base["valor_dem_fp_ultra"]
         + resultado_base["valor_tusd_hp"] + resultado_base["valor_tusd_fp"]
     )
     assert resultado_base["soma_itens"] == pytest.approx(esperado, abs=0.05)
@@ -292,7 +295,7 @@ def test_demanda_toda_isenta():
 
 
 def test_demanda_toda_tributada():
-    """Se medida >= contratada, toda demanda é tributada."""
+    """Se medida >= contratada, tributável = contratada, excesso é ultrapassagem."""
     r = calcular_fatura_azul(
         demanda_hp_contratada_kw=1000, demanda_fp_contratada_kw=2000,
         demanda_hp_medida_kw=1500, demanda_fp_medida_kw=2500,
@@ -300,12 +303,19 @@ def test_demanda_toda_tributada():
     )
     assert r["dem_hp_isenta"] == pytest.approx(0.0)
     assert r["dem_fp_isenta"] == pytest.approx(0.0)
-    assert r["dem_hp_tributada"] == pytest.approx(1500.0)
-    assert r["dem_fp_tributada"] == pytest.approx(2500.0)
-    # Gross-up deve usar fator tributado (base já com desconto 50%)
+    # Tributada capped at contratada
+    assert r["dem_hp_tributada"] == pytest.approx(1000.0)
+    assert r["dem_fp_tributada"] == pytest.approx(2000.0)
+    # Ultrapassagem = excedente
+    assert r["dem_hp_ultrapassagem"] == pytest.approx(500.0)
+    assert r["dem_fp_ultrapassagem"] == pytest.approx(500.0)
+    # Gross-up: tributada com desconto 50%, ultra 2× tarifa cheia
     fator_dem = 1 - DESCONTO_FONTE_INCENTIVADA
-    esperado_hp = (1500 * AZUL_DEMANDA_HP * fator_dem) / FATOR_TRIBUTADO
-    assert r["valor_dem_hp_trib"] == pytest.approx(esperado_hp, abs=0.01)
+    esperado_hp_trib = (1000 * AZUL_DEMANDA_HP * fator_dem) / FATOR_TRIBUTADO
+    esperado_hp_ultra = (500 * AZUL_DEMANDA_HP * 2) / FATOR_TRIBUTADO
+    assert r["valor_dem_hp_trib"] == pytest.approx(esperado_hp_trib, abs=0.01)
+    assert r["valor_dem_hp_ultra"] == pytest.approx(
+        esperado_hp_ultra, abs=0.01)
     assert r["valor_dem_hp_isenta"] == 0.0
 
 
@@ -326,11 +336,11 @@ def test_valores_absolutos_fatura():
     # total_consumo = 115251.52 + 1206468.05 = 1321719.57
     assert r["total_consumo_kwh"] == pytest.approx(1_321_719.57, abs=0.01)
 
-    # base_comercializadora = 1321719.57 × 0.308 = 407,089.63
-    assert r["base_comercializadora"] == pytest.approx(407_089.63, abs=0.01)
+    # base_comercializadora = 1321719.57 × 0.306 = 404,446.19
+    assert r["base_comercializadora"] == pytest.approx(404_446.19, abs=0.01)
 
-    # total_comercializadora = 407089.63 / FATOR_COMERCIALIZADORA
+    # total_comercializadora = 404446.19 / FATOR_COMERCIALIZADORA
     assert r["total_comercializadora"] == pytest.approx(
-        407_089.63 / FATOR_COMERCIALIZADORA, abs=0.01)
+        404_446.19 / FATOR_COMERCIALIZADORA, abs=0.01)
 
     assert r["custo_total"] > 0

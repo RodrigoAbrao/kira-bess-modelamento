@@ -61,7 +61,8 @@ ICMS: float = 0.2250           # 22,50 %
 PIS_COFINS: float = PIS + COFINS                        # ≈ 4,0536 %
 FATOR_TRIBUTADO: float = (1 - ICMS) * (1 - PIS_COFINS)  # ≈ 0,7436
 FATOR_ISENTO_ICMS: float = 1 - PIS_COFINS               # ≈ 0,9595
-FATOR_COMERCIALIZADORA: float = 1 - ICMS                 # ≈ 0,775  (TE: só ICMS, sem PIS/COFINS)
+# ≈ 0,775  (TE: só ICMS, sem PIS/COFINS)
+FATOR_COMERCIALIZADORA: float = 1 - ICMS
 
 # ─── Tarifa AZUL ────────────────────────────────────────────────────────────────
 AZUL_DEMANDA_HP: float = 88.82        # R$ / kW   (Ponta) — cheia, sem desconto
@@ -82,4 +83,4 @@ DESCONTO_FONTE_INCENTIVADA: float = 0.50
 
 # ─── Comercializadora (TE) ──────────────────────────────────────────────────────
 # R$ / kWh  (base sem imposto; gross-up tributado é aplicado)
-TE_COMERCIALIZADORA: float = 0.308
+TE_COMERCIALIZADORA: float = 0.306

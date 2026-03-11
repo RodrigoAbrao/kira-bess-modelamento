@@ -87,6 +87,6 @@ def test_valores_hardcoded():
     assert VERDE_TUSD_HP == pytest.approx(2296.63)
     assert VERDE_TUSD_FP == pytest.approx(140.21)
 
-    assert TE_COMERCIALIZADORA == pytest.approx(0.308)
+    assert TE_COMERCIALIZADORA == pytest.approx(0.306)
 
     assert DESCONTO_FONTE_INCENTIVADA == pytest.approx(0.50)

@@ -94,15 +94,23 @@ def calcular_fatura_azul(
     dict
         Dicionário com todos os componentes da fatura.
     """
-    # ── 0. Split automático: tributada (medida) vs isenta (não usada) ────────────
+    # ── 0. Split automático: tributada / isenta / ultrapassagem ─────────────────
     dem_hp_faturada = max(demanda_hp_contratada_kw, demanda_hp_medida_kw)
     dem_fp_faturada = max(demanda_fp_contratada_kw, demanda_fp_medida_kw)
 
-    dem_hp_tributada = demanda_hp_medida_kw
-    dem_hp_isenta = dem_hp_faturada - dem_hp_tributada  # ≥ 0
+    # Ultrapassagem: excedente acima da contratada → cobrado 2× tarifa cheia
+    dem_hp_ultrapassagem = max(
+        0.0, demanda_hp_medida_kw - demanda_hp_contratada_kw)
+    dem_fp_ultrapassagem = max(
+        0.0, demanda_fp_medida_kw - demanda_fp_contratada_kw)
 
-    dem_fp_tributada = demanda_fp_medida_kw
-    dem_fp_isenta = dem_fp_faturada - dem_fp_tributada  # ≥ 0
+    # Tributada = parcela medida dentro da contratada (incide ICMS)
+    dem_hp_tributada = min(demanda_hp_medida_kw, demanda_hp_contratada_kw)
+    dem_hp_isenta = demanda_hp_contratada_kw - \
+        dem_hp_tributada  # não usada → sem ICMS
+
+    dem_fp_tributada = min(demanda_fp_medida_kw, demanda_fp_contratada_kw)
+    dem_fp_isenta = demanda_fp_contratada_kw - dem_fp_tributada
 
     # ── 1. Bases (sem imposto) ──────────────────────────────────────────────────
     # Desconto de fonte incentivada (50%) aplica-se à DEMANDA
@@ -131,6 +139,10 @@ def calcular_fatura_azul(
     base_tusd_hp = consumo_hp_mwh * AZUL_TUSD_HP
     base_tusd_fp = consumo_fp_mwh * AZUL_TUSD_FP
 
+    # Ultrapassagem: 2× tarifa cheia, sem desconto fonte
+    base_dem_hp_ultra = dem_hp_ultrapassagem * AZUL_DEMANDA_HP * 2
+    base_dem_fp_ultra = dem_fp_ultrapassagem * AZUL_DEMANDA_FP * 2
+
     # ── 2. Gross-up (imposto embutido) ──────────────────────────────────────────
     valor_dem_hp_trib = base_dem_hp_trib / FATOR_TRIBUTADO
     valor_dem_hp_isenta = base_dem_hp_isenta / FATOR_ISENTO_ICMS
@@ -140,9 +152,12 @@ def calcular_fatura_azul(
     valor_tusd_hp = base_tusd_hp / FATOR_TRIBUTADO      # energia sempre tributada
     valor_tusd_fp = base_tusd_fp / FATOR_TRIBUTADO
 
+    valor_dem_hp_ultra = base_dem_hp_ultra / FATOR_TRIBUTADO
+    valor_dem_fp_ultra = base_dem_fp_ultra / FATOR_TRIBUTADO
+
     soma_itens = (
-        valor_dem_hp_trib + valor_dem_hp_isenta
-        + valor_dem_fp_trib + valor_dem_fp_isenta
+        valor_dem_hp_trib + valor_dem_hp_isenta + valor_dem_hp_ultra
+        + valor_dem_fp_trib + valor_dem_fp_isenta + valor_dem_fp_ultra
         + valor_tusd_hp + valor_tusd_fp
     )
 
@@ -176,21 +191,27 @@ def calcular_fatura_azul(
         "dem_fp_faturada": round(dem_fp_faturada, 2),
         "dem_hp_tributada": round(dem_hp_tributada, 2),
         "dem_hp_isenta": round(dem_hp_isenta, 2),
+        "dem_hp_ultrapassagem": round(dem_hp_ultrapassagem, 2),
         "dem_fp_tributada": round(dem_fp_tributada, 2),
         "dem_fp_isenta": round(dem_fp_isenta, 2),
+        "dem_fp_ultrapassagem": round(dem_fp_ultrapassagem, 2),
         # Bases demanda (sem imposto, já com desconto fonte 50%)
         "base_dem_hp_trib": round(base_dem_hp_trib, 2),
         "base_dem_hp_isenta": round(base_dem_hp_isenta, 2),
+        "base_dem_hp_ultra": round(base_dem_hp_ultra, 2),
         "base_dem_fp_trib": round(base_dem_fp_trib, 2),
         "base_dem_fp_isenta": round(base_dem_fp_isenta, 2),
+        "base_dem_fp_ultra": round(base_dem_fp_ultra, 2),
         # Bases energia (sem imposto, sem desconto)
         "base_tusd_hp": round(base_tusd_hp, 2),
         "base_tusd_fp": round(base_tusd_fp, 2),
         # Com imposto (gross-up)
         "valor_dem_hp_trib": round(valor_dem_hp_trib, 2),
         "valor_dem_hp_isenta": round(valor_dem_hp_isenta, 2),
+        "valor_dem_hp_ultra": round(valor_dem_hp_ultra, 2),
         "valor_dem_fp_trib": round(valor_dem_fp_trib, 2),
         "valor_dem_fp_isenta": round(valor_dem_fp_isenta, 2),
+        "valor_dem_fp_ultra": round(valor_dem_fp_ultra, 2),
         "valor_tusd_hp": round(valor_tusd_hp, 2),
         "valor_tusd_fp": round(valor_tusd_fp, 2),
         "soma_itens": round(soma_itens, 2),
