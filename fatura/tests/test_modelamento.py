@@ -1,14 +1,6 @@
 """Testes unitários — simulate_bess_day e lógica de simulação BESS."""
 
-import pytest
-import pandas as pd
-import numpy as np
-import sys
-from pathlib import Path
-
-# Adicionar raiz do projeto ao path para importar modelamento_anual
-sys.path.insert(0, str(Path(__file__).resolve().parents[2]))
-
+from fatura.premissas import VERDE_TUSD_HP, VERDE_TUSD_FP, FATOR_TRIBUTADO
 from modelamento_anual import (
     simulate_bess_day,
     BESS_CAPACIDADE_KWH,
@@ -20,7 +12,14 @@ from modelamento_anual import (
     BESS_WEEKEND_DEM_CAP,
     DT,
 )
-from fatura.premissas import VERDE_TUSD_HP, VERDE_TUSD_FP, FATOR_TRIBUTADO
+import pytest
+import pandas as pd
+import numpy as np
+import sys
+from pathlib import Path
+
+# Adicionar raiz do projeto ao path para importar modelamento_anual
+sys.path.insert(0, str(Path(__file__).resolve().parents[2]))
 
 
 # ── Helpers para construir day_data sintético ────────────────────────────────
@@ -68,8 +67,8 @@ def _flat_solar(kw=500.0):
 
 
 def _make_weekday_slots(date_str, dem_fp=2000.0, cons_fp_per_slot=500.0,
-                         dem_hp=2500.0, cons_hp_per_slot=600.0,
-                         n_charge_slots=30, n_hp_slots=12):
+                        dem_hp=2500.0, cons_hp_per_slot=600.0,
+                        n_charge_slots=30, n_hp_slots=12):
     """
     Gera slots para um dia útil típico:
     - n_charge_slots de FP na janela de carga (07:30–15:00)
@@ -81,9 +80,9 @@ def _make_weekday_slots(date_str, dem_fp=2000.0, cons_fp_per_slot=500.0,
     h, m = 7, 30
     for _ in range(n_charge_slots):
         slots.append({"hora": h, "minuto": m, "grandeza": "Demanda",
-                       "medicao": "Demanda ativa Fora de Ponta", "valor": dem_fp})
+                      "medicao": "Demanda ativa Fora de Ponta", "valor": dem_fp})
         slots.append({"hora": h, "minuto": m, "grandeza": "Consumo",
-                       "medicao": "Consumo ativo Fora de Ponta", "valor": cons_fp_per_slot})
+                      "medicao": "Consumo ativo Fora de Ponta", "valor": cons_fp_per_slot})
         m += 15
         if m >= 60:
             m -= 60
@@ -93,9 +92,9 @@ def _make_weekday_slots(date_str, dem_fp=2000.0, cons_fp_per_slot=500.0,
     h, m = 17, 30
     for _ in range(n_hp_slots):
         slots.append({"hora": h, "minuto": m, "grandeza": "Demanda",
-                       "medicao": "Demanda ativa de Ponta", "valor": dem_hp})
+                      "medicao": "Demanda ativa de Ponta", "valor": dem_hp})
         slots.append({"hora": h, "minuto": m, "grandeza": "Consumo",
-                       "medicao": "Consumo ativo de Ponta", "valor": cons_hp_per_slot})
+                      "medicao": "Consumo ativo de Ponta", "valor": cons_hp_per_slot})
         m += 15
         if m >= 60:
             m -= 60
@@ -105,15 +104,15 @@ def _make_weekday_slots(date_str, dem_fp=2000.0, cons_fp_per_slot=500.0,
 
 
 def _make_weekend_slots(date_str, dem_fp=2000.0, cons_fp_per_slot=500.0,
-                         n_slots=48):
+                        n_slots=48):
     """Gera slots para um dia de fim de semana — tudo FP."""
     slots = []
     h, m = 0, 0
     for _ in range(n_slots):
         slots.append({"hora": h, "minuto": m, "grandeza": "Demanda",
-                       "medicao": "Demanda ativa Fora de Ponta", "valor": dem_fp})
+                      "medicao": "Demanda ativa Fora de Ponta", "valor": dem_fp})
         slots.append({"hora": h, "minuto": m, "grandeza": "Consumo",
-                       "medicao": "Consumo ativo Fora de Ponta", "valor": cons_fp_per_slot})
+                      "medicao": "Consumo ativo Fora de Ponta", "valor": cons_fp_per_slot})
         m += 15
         if m >= 60:
             m -= 60
@@ -146,7 +145,7 @@ class TestBessDiaUtil:
         n_hp = 12
         cons_hp_per = 600.0
         day = _make_weekday_slots("2025-11-03", cons_hp_per_slot=cons_hp_per,
-                                   n_hp_slots=n_hp)
+                                  n_hp_slots=n_hp)
         r = simulate_bess_day(day, _zero_solar(), initial_soc=0.0)
         assert r["cons_hp_total"] == pytest.approx(n_hp * cons_hp_per, abs=1.0)
 
@@ -171,11 +170,11 @@ class TestSocProporcional:
         cons_hp_per = dem_hp * DT  # 500 kWh por slot
 
         day = _make_weekday_slots("2025-11-03", dem_hp=dem_hp,
-                                   cons_hp_per_slot=cons_hp_per,
-                                   n_hp_slots=n_hp)
+                                  cons_hp_per_slot=cons_hp_per,
+                                  n_hp_slots=n_hp)
         # SOC = 3000 kWh — não cobre tudo, forçando budget
         r = simulate_bess_day(day, _zero_solar(), initial_soc=3000.0,
-                               collect_timeline=True)
+                              collect_timeline=True)
 
         # Verificar que tem descarga em todos os slots HP
         hp_discharges = [t for t in r["timeline"] if t["bess_kw"] < -1.0]
@@ -189,10 +188,10 @@ class TestSocProporcional:
         cons_hp_per = dem_hp * DT
 
         day = _make_weekday_slots("2025-11-03", dem_hp=dem_hp,
-                                   cons_hp_per_slot=cons_hp_per,
-                                   n_hp_slots=n_hp)
+                                  cons_hp_per_slot=cons_hp_per,
+                                  n_hp_slots=n_hp)
         r = simulate_bess_day(day, _zero_solar(), initial_soc=2000.0,
-                               collect_timeline=True)
+                              collect_timeline=True)
 
         # Verificar que o último slot HP ainda tem descarga
         hp_slots = [t for t in r["timeline"]
@@ -209,9 +208,10 @@ class TestSocProporcional:
         cons_hp_per = dem_hp * DT
 
         day = _make_weekday_slots("2025-11-03", dem_hp=dem_hp,
-                                   cons_hp_per_slot=cons_hp_per,
-                                   n_hp_slots=n_hp)
-        r = simulate_bess_day(day, _zero_solar(), initial_soc=BESS_CAPACIDADE_KWH)
+                                  cons_hp_per_slot=cons_hp_per,
+                                  n_hp_slots=n_hp)
+        r = simulate_bess_day(day, _zero_solar(),
+                              initial_soc=BESS_CAPACIDADE_KWH)
         total_hp = n_hp * cons_hp_per
         # Com 6200 kWh e demanda de 2400 kWh total, deve cobrir ~95%
         covered = total_hp - r["cons_hp_residual"]
@@ -240,7 +240,8 @@ class TestCargaHeadroom:
     def test_headroom_with_solar_allows_more_charge(self):
         """Solar reduz dem_líquida, permitindo p_charge maior."""
         dem_fp = 3000.0
-        solar = _flat_solar(kw=500.0)  # Solar 500 kW → dem_liq = 2500 → headroom = 600
+        # Solar 500 kW → dem_liq = 2500 → headroom = 600
+        solar = _flat_solar(kw=500.0)
         day = _make_weekday_slots("2025-11-03", dem_fp=dem_fp, n_hp_slots=4)
         r = simulate_bess_day(day, solar, initial_soc=0.0)
         # Com solar, deve carregar mais do que sem solar com mesma dem_fp
@@ -253,7 +254,8 @@ class TestCargaHeadroom:
         day = _make_weekday_slots("2025-11-03", dem_fp=dem_fp, n_hp_slots=4)
         r = simulate_bess_day(day, _zero_solar(), initial_soc=0.0)
         # Deve carregar normalmente: 30 slots × 1000 kW × 0.25h = 7500, cap 6200
-        assert r["bess_charge_kwh"] == pytest.approx(BESS_CAPACIDADE_KWH, abs=50)
+        assert r["bess_charge_kwh"] == pytest.approx(
+            BESS_CAPACIDADE_KWH, abs=50)
 
 
 # ══════════════════════════════════════════════════════════════════════════════
@@ -275,7 +277,8 @@ class TestBessFimDeSemana:
         # Criar weekend com demanda alta = 3200 kW (> 2800 cap)
         day = _make_weekend_slots("2025-11-01", dem_fp=3200.0, n_slots=48)
         # SOC cheio para cobrir todos os slots com excess de 400 kW
-        r = simulate_bess_day(day, _zero_solar(), initial_soc=BESS_CAPACIDADE_KWH)
+        r = simulate_bess_day(day, _zero_solar(),
+                              initial_soc=BESS_CAPACIDADE_KWH)
         # dem_fp_bess deve ser próximo ou abaixo de 2800 (peak-shaving)
         assert r["dem_fp_bess"] <= BESS_WEEKEND_DEM_CAP + 100, \
             f"dem_fp_bess ({r['dem_fp_bess']:.0f}) deve ser próximo a {BESS_WEEKEND_DEM_CAP}"
@@ -301,9 +304,9 @@ class TestBessFeriado:
         h, m = 8, 0
         for _ in range(40):
             slots.append({"hora": h, "minuto": m, "grandeza": "Demanda",
-                           "medicao": "Demanda ativa Fora de Ponta", "valor": 2000.0})
+                          "medicao": "Demanda ativa Fora de Ponta", "valor": 2000.0})
             slots.append({"hora": h, "minuto": m, "grandeza": "Consumo",
-                           "medicao": "Consumo ativo Fora de Ponta", "valor": 500.0})
+                          "medicao": "Consumo ativo Fora de Ponta", "valor": 500.0})
             m += 15
             if m >= 60:
                 m -= 60
@@ -325,12 +328,14 @@ class TestDisplayOutlier:
 
     def test_tarifa_hp_efetiva_formula(self):
         """Verifica a fórmula correta da tarifa HP efetiva."""
-        tarifa_hp_efetiva = VERDE_TUSD_FP + (VERDE_TUSD_HP - VERDE_TUSD_FP) * 0.5
+        tarifa_hp_efetiva = VERDE_TUSD_FP + \
+            (VERDE_TUSD_HP - VERDE_TUSD_FP) * 0.5
         assert tarifa_hp_efetiva == pytest.approx(1218.42, abs=0.01)
 
     def test_tarifa_hp_efetiva_less_than_tusd_hp(self):
         """Tarifa efetiva deve ser ~metade da TUSD HP (com desconto)."""
-        tarifa_hp_efetiva = VERDE_TUSD_FP + (VERDE_TUSD_HP - VERDE_TUSD_FP) * 0.5
+        tarifa_hp_efetiva = VERDE_TUSD_FP + \
+            (VERDE_TUSD_HP - VERDE_TUSD_FP) * 0.5
         assert tarifa_hp_efetiva < VERDE_TUSD_HP
         ratio = tarifa_hp_efetiva / VERDE_TUSD_HP
         assert ratio == pytest.approx(0.5305, abs=0.01)
@@ -338,9 +343,12 @@ class TestDisplayOutlier:
     def test_custo_residual_calculation(self):
         """Custo residual deve usar tarifa_hp_efetiva, não VERDE_TUSD_HP."""
         hp_residual_kwh = 10_000.0  # 10 MWh
-        tarifa_hp_efetiva = VERDE_TUSD_FP + (VERDE_TUSD_HP - VERDE_TUSD_FP) * 0.5
-        custo_correto = (hp_residual_kwh / 1000) * tarifa_hp_efetiva / FATOR_TRIBUTADO
-        custo_errado = (hp_residual_kwh / 1000) * VERDE_TUSD_HP / FATOR_TRIBUTADO
+        tarifa_hp_efetiva = VERDE_TUSD_FP + \
+            (VERDE_TUSD_HP - VERDE_TUSD_FP) * 0.5
+        custo_correto = (hp_residual_kwh / 1000) * \
+            tarifa_hp_efetiva / FATOR_TRIBUTADO
+        custo_errado = (hp_residual_kwh / 1000) * \
+            VERDE_TUSD_HP / FATOR_TRIBUTADO
         assert custo_correto < custo_errado
         assert custo_errado / custo_correto == pytest.approx(1.885, abs=0.01)
 
