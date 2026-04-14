@@ -80,7 +80,8 @@ BESS_POTENCIA_CARGA = 1_000.0
 BESS_CARGA_INICIO = 7.5   # 07h30 — aproveita menor demanda matinal
 BESS_CARGA_FIM = 15
 BESS_GRID_MARGIN = 0.05   # 5 % da demanda fica no grid (anti-injeção)
-BESS_WEEKEND_DEM_CAP = 2_800.0  # kW — cap heurístico de demanda FP nos fins de semana (ajustável)
+# kW — cap heurístico de demanda FP nos fins de semana (ajustável)
+BESS_WEEKEND_DEM_CAP = 2_800.0
 DT = 0.25  # 15 min em horas
 
 # --- Horário de ponta real (Equatorial Piauí) ---
@@ -673,6 +674,17 @@ def simulate_bess_day(day_data, solar_by_hour, initial_soc=0.0,
 
     all_ts = sorted(day_data["Timestamp"].unique())
 
+    # Precomputar slots HP para descarga SOC-proporcional
+    hp_timestamps = set()
+    for ts in all_ts:
+        slot_pre = day_data[day_data.Timestamp == ts]
+        hp_check = slot_pre[(slot_pre.Grandeza == "Consumo") & (
+            slot_pre.Medicao == "Consumo ativo de Ponta")]
+        if len(hp_check) > 0:
+            hp_timestamps.add(ts)
+    total_hp_slots = len(hp_timestamps)
+    spent_hp_slots = 0
+
     for ts in all_ts:
         slot = day_data[day_data.Timestamp == ts]
         hora = pd.Timestamp(ts).hour
@@ -704,6 +716,10 @@ def simulate_bess_day(day_data, solar_by_hour, initial_soc=0.0,
         if BESS_CARGA_INICIO <= hora_frac < BESS_CARGA_FIM:
             espaco = BESS_CAPACIDADE_KWH - soc
             p_charge = min(BESS_POTENCIA_CARGA, espaco / DT)
+            # A4: Headroom — limitar carga para que dem_FP não ultrapasse BESS_POTENCIA_SAIDA
+            dem_liquida = max(0, d_fp - solar_kw)
+            headroom = max(0, BESS_POTENCIA_SAIDA - dem_liquida)
+            p_charge = min(p_charge, headroom)
             soc += p_charge * DT
             bess_charge_total += p_charge * DT
             bess_kw = p_charge
@@ -712,22 +728,31 @@ def simulate_bess_day(day_data, solar_by_hour, initial_soc=0.0,
                 net = max(0, d_fp - solar_kw + p_charge)
                 dem_fp_bess_max = max(dem_fp_bess_max, net)
 
-        # === DESCARGA BESS (ponta) ===
+        # === DESCARGA BESS (ponta) — SOC-proporcional ===
         if len(hp_slot_cons) > 0:
             cons_kwh = c_hp
             dem_kw = d_hp if d_hp > 0 else cons_kwh / DT
 
             # BESS alimenta no máximo 95% da demanda (5% fica no grid p/ anti-injeção)
             bess_target_kw = dem_kw * (1 - BESS_GRID_MARGIN)
-            max_discharge_kw = min(bess_target_kw, BESS_POTENCIA_SAIDA)
+            # A2: Budget SOC-proporcional — distribuir SOC uniformemente entre slots restantes
+            remaining_hp_slots = total_hp_slots - spent_hp_slots
+            if remaining_hp_slots > 0:
+                budget_kw = soc / (remaining_hp_slots * DT)
+            else:
+                budget_kw = BESS_POTENCIA_SAIDA
+            max_discharge_kw = min(
+                bess_target_kw, BESS_POTENCIA_SAIDA, budget_kw)
             max_discharge_kwh = max_discharge_kw * DT
             actual_discharge = min(soc, max_discharge_kwh)
             soc -= actual_discharge
             bess_kw = -(actual_discharge / DT)
+            spent_hp_slots += 1
 
             residual_kwh = max(0.0, cons_kwh - actual_discharge)
             cons_hp_residual += residual_kwh
-            dem_hp_resid_max = max(dem_hp_resid_max, dem_kw - actual_discharge / DT)
+            dem_hp_resid_max = max(
+                dem_hp_resid_max, dem_kw - actual_discharge / DT)
         else:
             # FP slot fora de carga BESS
             if not (BESS_CARGA_INICIO <= hora_frac < BESS_CARGA_FIM):
@@ -971,8 +996,9 @@ def compute_year():
     print(f"  {'='*95}")
     print(
         f"  HP residual total: {_brl(float(overflow.cons_hp_residual.sum()), 0)} kWh/ano")
+    tarifa_hp_efetiva = VERDE_TUSD_FP + (VERDE_TUSD_HP - VERDE_TUSD_FP) * 0.5
     custo_res = float(overflow.cons_hp_residual.sum()) / \
-        1000 * VERDE_TUSD_HP / FATOR_TRIBUTADO
+        1000 * tarifa_hp_efetiva / FATOR_TRIBUTADO
     print(f"  Custo TUSD HP residual: R$ {_brl(custo_res)}/ano")
     print()
     hdr2 = (f"  {'Dia':<12s}|{'DoW':<10s}|{'Mes':<5s}|{'HP Total':>10s}|"

@@ -33,7 +33,7 @@ para manter consistência.
 | BESS — Capacidade | 6.200 kWh úteis | Descontando DoD e degradação |
 | BESS — Potência descarga | 3.100 kW | C-rate ≈ 0,5C |
 | BESS — Potência carga | 1.000 kW | C-rate ≈ 0,16C |
-| BESS — Janela de carga | 09h–15h (24 slots × 15 min) | Fora de ponta, 6.000 kWh/dia máx |
+| BESS — Janela de carga | 07h30–15h (30 slots × 15 min) | Fora de ponta, 7.500 kWh/dia máx |
 | BESS — Janela de descarga | ~18h47–21h32 (12 slots × 15 min) | Horário de ponta (automático via medidor) |
 | BESS — Margem anti-injeção | 5% da demanda permanece no grid | Proteção contra relé de injeção reversa |
 
@@ -239,10 +239,10 @@ resultado é muito próximo. A vantagem do bootstrap é:
 A simulação percorre os 96 slots do dia mediano:
 
 1. **Standby (00h–09h):** SOC = 0. BESS inicia vazio.
-2. **Carga (09h–15h):**
+2. **Carga (07h30–15h):**
    - `p_charge = min(1.000 kW, (6.200 − SOC) / 0,25)`
    - `SOC += p_charge × 0,25`
-   - 24 slots × 250 kWh/slot = 6.000 kWh máximo (limitado pela capacidade).
+   - 30 slots × 250 kWh/slot = 7.500 kWh máximo (limitado pela capacidade 6.200 kWh).
 3. **Ponta (~18h47–21h32):**
    - Para cada slot com `cons_hp > 0`:
      - `bess_target_kw = dem_hp × (1 − 0,05)` → 95% da demanda
@@ -440,7 +440,9 @@ Para cada um dos **357 dias** do ano:
 - **Dia útil (com ponta):** Pelo menos 1 registro de "Consumo ativo de Ponta".
   São ~244 dias. O BESS opera normalmente.
 - **Fim de semana / feriado (sem ponta):** 0 registros HP. São ~113 dias.
-  O BESS fica em standby.
+  O BESS opera em modo peak-shaving FP: carrega 07h30–15h (limitando
+  dem_FP ≤ 2.800 kW via headroom) e descarrega se a demanda FP líquida
+  (FP − solar) exceder 2.800 kW em qualquer slot.
 
 #### 3.5.2 Ciclo do BESS (dia útil)
 
@@ -450,8 +452,8 @@ SOC = 0 kWh  (BESS inicia vazio cada dia)
 Para cada timestamp ts do dia (≈192 registros, 4 medições × 96 slots):
     hora = ts.hour
 
-    # ───── CARGA (09h ≤ hora < 15h) ─────
-    Se 9 ≤ hora < 15:
+    # ───── CARGA (07h30 ≤ hora < 15h) ─────
+    Se 7.5 ≤ hora < 15:
         espaço = 6.200 − SOC
         p_charge = min(1.000, espaço / 0.25)  kW
         SOC += p_charge × 0.25  kWh
